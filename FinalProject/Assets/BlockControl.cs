@@ -49,8 +49,8 @@ public class Block {
 	};
 
 
-	public static int BLOCK_NUM_X = 9; // 블록을 배치할 수 있는 X 방향 최댓값.
-	public static int BLOCK_NUM_Y = 9; // 블록을 배치할 수 있는 Y 방향 최댓값.
+	public static int BLOCK_NUM_X = 7; // 블록을 배치할 수 있는 X 방향 최댓값.
+	public static int BLOCK_NUM_Y = 7; // 블록을 배치할 수 있는 Y 방향 최댓값.
 }
 
 

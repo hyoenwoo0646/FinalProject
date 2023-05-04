@@ -54,8 +54,7 @@ public class LevelControl {
 		this.level_datas = new List<LevelData>();
 	}
 
-	public void loadLevelData(
-		TextAsset level_data_text)
+	public void loadLevelData(TextAsset level_data_text)
 	{
 		// 텍스트 데이터를 문자열로서 받아들인다.
 		string level_texts = level_data_text.text;
