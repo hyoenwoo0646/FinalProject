@@ -3,6 +3,20 @@ using System.Collections;
 
 public class ScoreCounter : MonoBehaviour {
 
+	private static ScoreCounter instance = null;
+
+	public static ScoreCounter Instance
+    {
+        get
+        {
+			if(null == instance)
+            {
+				return null;
+            }
+			return instance;
+        }
+    }
+
 	public struct Count { // 점수 관리용 구조체.
 		public int ignite; // 발화 수.
 		public int score; // 점수.
@@ -10,11 +24,18 @@ public class ScoreCounter : MonoBehaviour {
 	};
 	public Count last; // 마지막(이번) 점수.
 	public Count best; // 최고 점수.
-	public static int QUOTA_SCORE = 1000; // 클리어에 필요한 점수.
+	public static int QUOTA_SCORE = 500; // 클리어에 필요한 점수.
 	public GUIStyle guistyle; // 폰트 스타일.
 
+    private void Awake()
+    {
+        if(null == instance)
+        {
+			instance = this;
+        }
+    }
 
-	void Start() {
+    void Start() {
 		this.last.ignite = 0;
 		this.last.score = 0;
 		this.last.total_socre = 0;
