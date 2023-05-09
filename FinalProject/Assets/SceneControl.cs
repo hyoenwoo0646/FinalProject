@@ -4,6 +4,28 @@ using UnityEngine.SceneManagement;
 
 public class SceneControl : MonoBehaviour {
 
+	private static SceneControl instance = null;
+
+	public static SceneControl Instance
+	{
+		get
+		{
+			if (null == instance)
+			{
+				return null;
+			}
+			return instance;
+		}
+	}
+
+	private void Awake()
+	{
+		if (null == instance)
+		{
+			instance = this;
+		}
+	}
+
 	private ScoreCounter score_counter = null;
 	public enum STEP {
 		NONE = -1, // 상태 정보 없음.

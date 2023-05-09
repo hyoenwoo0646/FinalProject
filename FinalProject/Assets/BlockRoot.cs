@@ -233,7 +233,7 @@ public class BlockRoot : MonoBehaviour {
 	public static Vector3 calcBlockPosition(Block.iPosition i_pos) {
 		// 배치할 좌측 상단 모퉁이 위치를 초깃값으로 설정.
 		Vector3 position = new Vector3(-(Block.BLOCK_NUM_X / 2.0f - 0.5f),
-		                               -(Block.BLOCK_NUM_Y / 1.7f - 0.5f), 0.0f);
+		                               -(Block.BLOCK_NUM_Y / 1.9f - 0.5f), 0.0f);
 		// 초깃값＋그리드 좌표 × 블록 크기.
 		position.x += (float)i_pos.x * Block.COLLISION_SIZE;
 		position.y += (float)i_pos.y * Block.COLLISION_SIZE;
