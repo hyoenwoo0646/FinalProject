@@ -5,18 +5,39 @@ using UnityEngine.UI;
 
 public class PlayerSlider : MonoBehaviour
 {
+    private static PlayerSlider instance = null;
+
+    public static PlayerSlider Instance
+    {
+        get
+        {
+            if (null == instance)
+            {
+                return null;
+            }
+            return instance;
+        }
+    }
+
+
     public Slider playerSlider;
     public GameObject fill;
 
     public int hpFull;
     public int hpCurrent;
 
-    float time;
+    public int bossdamage;
 
     private void Awake()
     {
+        if (null == instance)
+        {
+            instance = this;
+        }
+
         hpCurrent = 100;
         hpFull = 100;
+        bossdamage = 5;
     }
 
     // Start is called before the first frame update
@@ -29,10 +50,21 @@ public class PlayerSlider : MonoBehaviour
     void Update()
     {
         playerSlider.value = (float)hpCurrent / hpFull;
+        if(SaveData.invokecount == false)
+        {
+            bossdamage = 0;
+            Invoke("clearstun", 6f);
+            SaveData.invokecount = true;
+        }
     }
 
     void hpdown()
     {
-        hpCurrent -= 5;
+        hpCurrent = hpCurrent - bossdamage;
+    }
+
+    void clearstun()
+    {
+        bossdamage = 5;
     }
 }

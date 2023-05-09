@@ -10,4 +10,6 @@ public class SaveData : ScriptableObject
     public static bool blueblock = false;
     public static bool greenblock = false;
     public static bool purpleblock = false;
+
+    public static bool invokecount = true;
 }

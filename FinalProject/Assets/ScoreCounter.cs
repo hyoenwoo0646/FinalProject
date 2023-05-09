@@ -24,7 +24,7 @@ public class ScoreCounter : MonoBehaviour {
 	};
 	public Count last; // 마지막(이번) 점수.
 	public Count best; // 최고 점수.
-	public static int QUOTA_SCORE = 500; // 클리어에 필요한 점수.
+	//public static int QUOTA_SCORE = 2000; // 클리어에 필요한 점수.
 	public GUIStyle guistyle; // 폰트 스타일.
 
     private void Awake()
@@ -80,14 +80,14 @@ public class ScoreCounter : MonoBehaviour {
 	{
 		this.last.total_socre += this.last.score; // 합계 스코어를 갱신.
 	}
-	public bool isGameClear()
-	{
-		bool is_clear = false;
-		// 현재 합계 스코어가 클리어 기준보다 크다면.
-		if(this.last.total_socre > QUOTA_SCORE) {
-			is_clear = true;
-		}
-		return(is_clear);
-	}
+	//public bool isGameClear()
+	//{
+	//	bool is_clear = false;
+	//	 현재 합계 스코어가 클리어 기준보다 크다면.
+	//	if(this.last.total_socre > QUOTA_SCORE) {
+	//		is_clear = true;
+	//	}
+	//	return(is_clear);
+	//}
 
 }

@@ -72,12 +72,12 @@ public class SceneControl : MonoBehaviour {
 		// 상태변화대기-----.
 		if(this.next_step == STEP.NONE) {
 			switch(this.step) {
-			case STEP.PLAY:
+		//	case STEP.PLAY:
 				// 클리어 조건을 만족하면.
-				if(this.score_counter.isGameClear()) {
-					this.next_step = STEP.CLEAR; // 클리어 상태로 이행.
-				}
-				break;
+		//		if(this.score_counter.isGameClear()) {
+		//			this.next_step = STEP.CLEAR; // 클리어 상태로 이행.
+		//		}
+		//		break;
 			}
 		}
 		// 상태가 변화하면------.

@@ -5,6 +5,20 @@ using UnityEngine.UI;
 
 public class FirstBossSlider : MonoBehaviour
 {
+    private static FirstBossSlider instance = null;
+
+    public static FirstBossSlider Instance
+    {
+        get
+        {
+            if (null == instance)
+            {
+                return null;
+            }
+            return instance;
+        }
+    }
+
     public Slider bossSlider;
     public GameObject fill;
 
@@ -16,10 +30,17 @@ public class FirstBossSlider : MonoBehaviour
     int damage;
     int temp = 0;
 
+    public int damagePlus = 0;
+
     private void Awake()
     {
-        hpCurrent = 500;
-        hpFull = 500;
+        if (null == instance)
+        {
+            instance = this;
+        }
+
+        hpCurrent = 2000;
+        hpFull = 2000;
     }
     // Start is called before the first frame update
     void Start()
@@ -39,12 +60,12 @@ public class FirstBossSlider : MonoBehaviour
             temp = totalscore;
 
             damage = temp;
-            hpCurrent -= damage;
+            hpCurrent -= damage + damagePlus;
         }
         if(temp != totalscore)
         {
             damage = totalscore - temp;
-            hpCurrent -= damage;
+            hpCurrent -= damage + damagePlus;
 
             temp = totalscore;
         }
