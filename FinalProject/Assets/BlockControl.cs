@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 
 // 블록에 관련된 정보를 다룬다.
@@ -13,15 +14,15 @@ public class Block {
 
 	public enum COLOR { // 블록 색상.
 		NONE = -1, // 색 지정 없음.
-		PINK = 0, // 분홍색.
+		RED = 0, // 분홍색.
 		BLUE, // 파란색.
-		YELLOW, // 노란색.
+		WHITE, // 노란색.
 		GREEN, // 녹색.
-		MAGENTA, // 마젠타.
+		PURPLE, // 마젠타.
 		ORANGE, // 오렌지.
 		GRAY, // 회색.
 		NUM, // 색상이 몇 종류인지 나타낸다(=7).
-		FIRST = PINK, // 초기 색상(분홍색).
+		FIRST = RED, // 초기 색상(분홍색).
 		LAST = ORANGE, // 마지막 색상(오렌지).
 		NORMAL_COLOR_NUM = GRAY, // 일반 색상(그레이 이외 색)의 수.
 	};
@@ -85,6 +86,7 @@ public class BlockControl : MonoBehaviour {
 
 	void Start() {
 		this.setColor(this.color); // 색을 칠한다.
+		//image.GetComponent<Image>().sprite = Resources.Load("Element", typeof(Sprite)) as Sprite;
 
 		this.next_step = Block.STEP.IDLE; // 다음 블록을 대기 중으로.
 	}
@@ -166,6 +168,26 @@ public class BlockControl : MonoBehaviour {
 				break;
 
 			case Block.STEP.VACANT:
+				if(this.color == Block.COLOR.WHITE)
+                    {
+						SaveData.whiteblock = true;
+                    }
+				else if(this.color == Block.COLOR.RED)
+                    {
+						SaveData.redblock = true;
+                    }
+				else if(this.color == Block.COLOR.BLUE)
+                    {
+						SaveData.blueblock = true;
+                    }
+				else if(this.color == Block.COLOR.GREEN)
+                    {
+						SaveData.greenblock = true;
+                    }
+				else if(this.color == Block.COLOR.PURPLE)
+                    {
+						SaveData.purpleblock = true;
+                    }
 				this.position_offset = Vector3.zero;
 				this.setVisible(false); // 블록을 비표시로.
 				break;
@@ -256,20 +278,20 @@ public class BlockControl : MonoBehaviour {
 		Color color_value; // Color 클래스는 색을 나타낸다.
 		switch(this.color) { // 칠할 색에 따라서 분기한다.
 		default:
-		case Block.COLOR.PINK:
-			color_value = new Color(1.0f, 0.5f, 0.5f);
+		case Block.COLOR.RED:
+			color_value = Color.red;
 			break;
 		case Block.COLOR.BLUE:
 			color_value = Color.blue;
 			break;
-		case Block.COLOR.YELLOW:
-			color_value = Color.yellow;
+		case Block.COLOR.WHITE:
+			color_value = Color.white;
 			break;
 		case Block.COLOR.GREEN:
 			color_value = Color.green;
 			break;
-		case Block.COLOR.MAGENTA:
-			color_value = Color.magenta;
+		case Block.COLOR.PURPLE:
+			color_value = new Color(0.3f, 0f, 0.5f);
 			break;
 		case Block.COLOR.ORANGE:
 			color_value = new Color(1.0f, 0.46f, 0.0f);

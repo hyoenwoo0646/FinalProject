@@ -82,7 +82,7 @@ public class LevelControl {
 				// 각 워드를 float값으로 변환하고 level_data에 저장. 
 				switch(n) {
 				case 0:
-					level_data.probability[(int)Block.COLOR.PINK] =
+					level_data.probability[(int)Block.COLOR.RED] =
 						float.Parse(word); break;
 				case 1:
 					level_data.probability[(int)Block.COLOR.BLUE] =
@@ -94,10 +94,10 @@ public class LevelControl {
 					level_data.probability[(int)Block.COLOR.ORANGE] =
 						float.Parse(word); break;
 				case 4:
-					level_data.probability[(int)Block.COLOR.YELLOW] =
+					level_data.probability[(int)Block.COLOR.WHITE] =
 						float.Parse(word); break;
 				case 5:
-					level_data.probability[(int)Block.COLOR.MAGENTA] =
+					level_data.probability[(int)Block.COLOR.PURPLE] =
 						float.Parse(word); break;
 				case 6:
 					level_data.heat_time =
