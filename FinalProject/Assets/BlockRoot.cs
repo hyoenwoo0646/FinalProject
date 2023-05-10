@@ -15,6 +15,33 @@ public class BlockRoot : MonoBehaviour {
 	public TextAsset levelData = null; // 레벨 데이터의 텍스트를 저장.
 	public LevelControl level_control; // LevelControl를 저장.
 
+	public BlockControl BlockPosition = null;
+
+	public GameObject SpecialPrefab = null;
+
+	private static BlockRoot instance = null;
+
+	int VaciCount = 0;
+	public static BlockRoot Instance
+	{
+		get
+		{
+			if (null == instance)
+			{
+				return null;
+			}
+			return instance;
+		}
+	}
+
+	private void Awake()
+	{
+		if (null == instance)
+		{
+			instance = this;
+		}
+	}
+
 
 	void Start() {
 		this.main_camera = GameObject.FindGameObjectWithTag("MainCamera");
@@ -107,11 +134,21 @@ public class BlockRoot : MonoBehaviour {
 					// 직전에 연쇄가 아니라면 발화 횟수 리셋.
 					this.score_counter.clearIgniteCount();
 				}
-				// 발화 횟수를 늘린다.
-				this.score_counter.addIgniteCount(ignite_count);
+
+				if (ignite_count >= 4)
+                {
+					Vector3 spawnPos = new Vector3(BlockPosition.i_pos.x - (Block.BLOCK_NUM_X / 2.0f - 0.5f), BlockPosition.i_pos.y - (Block.BLOCK_NUM_Y / 1.9f - 0.5f), 0);
+					Debug.Log("스폰 포인트"+spawnPos);
+
+					GameObject game_object =
+					Instantiate(this.BlockPrefab,spawnPos, Quaternion.identity) as GameObject;
+
+				}
+					// 발화 횟수를 늘린다.
+					this.score_counter.addIgniteCount(ignite_count);
 				// 합계 스코어 갱신.
 				this.score_counter.updateTotalScore();
-
+				VaciCount = ignite_count;
 
 
 				// ＝한 군데라도 맞춰진 곳이 있으면.
@@ -227,7 +264,53 @@ public class BlockRoot : MonoBehaviour {
 			}
 		}
 	}
+	//public void SpecialinitialSetUp()
+	//{
+	//	// 크기는 9×9로 한다.
+	//	this.blocks =
+	//		new BlockControl[Block.BLOCK_NUM_X, Block.BLOCK_NUM_Y];
+	//	// 블록의 색 번호.
+	//	int color_index = 0;
 
+	//	Block.COLOR color = Block.COLOR.FIRST;
+
+
+	//	for (int y = 0; y < Block.BLOCK_NUM_Y; y++)
+	//	{ // 처음행부터 시작행부터 마지막행까지.
+	//		for (int x = 0; x < Block.BLOCK_NUM_X; x++)
+	//		{// 왼쪽 끝에서부터 오른쪽 끝까지.
+	//		 // BlockPrefab의 인스턴스를 씬 위에 만든다.
+	//			GameObject game_object =
+	//				Instantiate(this.BlockPrefab) as GameObject;
+	//			// 위에서 만든 블록의 BlockControl 클래스를 가져온다.
+	//			BlockControl block = game_object.GetComponent<BlockControl>();
+	//			// 블록을 칸에 넣는다.
+	//			this.blocks[x, y] = block;
+	//			// 블록의 위치 정보(그리드 좌표)를 설정.
+	//			block.i_pos.x = x;
+	//			block.i_pos.y = y;
+	//			// 각 BlockControl이 연계하는 GameRoot는 자신이라고 설정.
+	//			block.block_root = this;
+	//			// 그리드 좌표를 실제 위치(씬 좌표)로 변환.
+	//			Vector3 position = BlockRoot.calcBlockPosition(block.i_pos);
+	//			// 씬 상의 블록 위치를 이동.
+	//			block.transform.position = position;
+
+	//			// 블록의 색을 변경. 
+	//			// block.setColor((Block.COLOR)color_index);
+	//			// 지금의 출현 확률을 바탕으로 색을 결정한다.
+	//			color = this.selectBlockColor();
+	//			block.setColor(color);
+
+	//			// 블록의 이름을 설정(후술).
+	//			block.name = "block(" + block.i_pos.x.ToString() +
+	//				"," + block.i_pos.y.ToString() + ")";
+	//			// 모든 종류의 색 중에서 임의로 한 색을 선택.
+	//			color_index =
+	//				Random.Range(0, (int)Block.COLOR.NORMAL_COLOR_NUM);
+	//		}
+	//	}
+	//}
 
 	// 지정된 그리드 좌표에서 씬 상의 좌표를 구한다. 
 	public static Vector3 calcBlockPosition(Block.iPosition i_pos) {
@@ -417,8 +500,10 @@ public class BlockRoot : MonoBehaviour {
 			for(int x = lx; x < rx + 1; x++) {
 				// 나열된 같은 색 블록을 발화 상태로.
 				this.blocks[x, start.i_pos.y].toVanishing();
+				BlockPosition = this.blocks[x, start.i_pos.y];//y값
 				ret = true;
 			}
+			
 		} while(false);
 		normal_block_num = 0;
 		if(! start.isVanishing()) {
@@ -474,9 +559,14 @@ public class BlockRoot : MonoBehaviour {
 			for(int y = dy; y < uy + 1; y++) {
 				this.blocks[start.i_pos.x, y].toVanishing();
 				ret = true;
+
+				BlockPosition = this.blocks[start.i_pos.x, y];
 			}
 		} while(false);
-		return(ret);
+
+		Debug.Log(BlockPosition); 
+
+		return (ret);
 	}
 
 

@@ -22,6 +22,7 @@ public class ScoreCounter : MonoBehaviour {
 		public int score; // 점수.
 		public int total_socre; // 합계 점수.
 	};
+
 	public Count last; // 마지막(이번) 점수.
 	public Count best; // 최고 점수.
 	//public static int QUOTA_SCORE = 2000; // 클리어에 필요한 점수.
