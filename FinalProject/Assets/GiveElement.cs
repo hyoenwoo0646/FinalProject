@@ -5,38 +5,11 @@ using UnityEngine.UI;
 
 public class GiveElement : MonoBehaviour
 {
-
-    private static GiveElement instance = null;
-
     public GameObject whiteBlock; 
     public GameObject redBlock; 
     public GameObject greenBlock; 
     public GameObject blueBlock; 
-    public GameObject purpleBlock;
-
-    public int CurBlockColor = 0;
-
-    
-    public static GiveElement Instance
-    {
-        get
-        {
-            if (null == instance)
-            {
-                return null;
-            }
-            return instance;
-        }
-    }
-
-    private void Awake()
-    {
-        if (null == instance)
-        {
-            instance = this;
-        }
-    }
-
+    public GameObject purpleBlock; 
     // Start is called before the first frame update
     void Start()
     {
@@ -56,32 +29,22 @@ public class GiveElement : MonoBehaviour
         if (SaveData.whiteblock == true)
         {
             whiteBlock.SetActive(true);
-            CurBlockColor = 1;
-            Debug.Log("white");
         }
         if (SaveData.redblock == true)
         {
             redBlock.SetActive(true);
-            CurBlockColor = 2;
-            Debug.Log("red");
         }
         if (SaveData.greenblock == true)
         {
             greenBlock.SetActive(true);
-            CurBlockColor = 4;
-            Debug.Log("green");
         }
         if (SaveData.blueblock == true)
         {
             blueBlock.SetActive(true);
-            CurBlockColor = 3;
-            Debug.Log("blue");
         }
         if (SaveData.purpleblock == true)
         {
             purpleBlock.SetActive(true);
-            CurBlockColor = 5;
-            Debug.Log("purple");
         }
     }
 

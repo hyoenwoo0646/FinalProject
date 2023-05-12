@@ -76,29 +76,6 @@ public class BlockControl : MonoBehaviour {
 	public Material opaque_material; // 불투명용 재질.
 	public Material transparent_material; // 반투명용 재질.
 
-	private static BlockControl instance = null;
-
-	
-	public static BlockControl Instance
-	{
-		get
-		{
-			if (null == instance)
-			{
-				return null;
-			}
-			return instance;
-		}
-	}
-
-	private void Awake()
-	{
-		if (null == instance)
-		{
-			instance = this;
-		}
-	}
-
 
 	private struct StepFall {
 		public float velocity; // 낙하속도.
@@ -191,30 +168,25 @@ public class BlockControl : MonoBehaviour {
 				break;
 
 			case Block.STEP.VACANT:
-				if(this.color ==  Block.COLOR.WHITE)
+				if(this.color == Block.COLOR.WHITE)
                     {
 						SaveData.whiteblock = true;
-						
                     }
 				else if(this.color == Block.COLOR.RED)
                     {
 						SaveData.redblock = true;
-						
                     }
 				else if(this.color == Block.COLOR.BLUE)
                     {
 						SaveData.blueblock = true;
-						
                     }
 				else if(this.color == Block.COLOR.GREEN)
                     {
 						SaveData.greenblock = true;
-						
                     }
 				else if(this.color == Block.COLOR.PURPLE)
                     {
 						SaveData.purpleblock = true;
-						
                     }
 				this.position_offset = Vector3.zero;
 				this.setVisible(false); // 블록을 비표시로.
