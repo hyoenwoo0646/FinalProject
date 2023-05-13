@@ -723,12 +723,6 @@ public class BlockRoot : MonoBehaviour
 
 	public void SelectSpecialColor()
 	{
-
-		Debug.Log("화이트"+SaveData.whiteblock);
-		Debug.Log("레드"+SaveData.redblock);
-		Debug.Log("퍼플"+SaveData.purpleblock);
-		Debug.Log("블루"+SaveData.blueblock);
-		Debug.Log("그린"+SaveData.greenblock);
 		if (SaveData.redblock)
         {
 			this.blocks[targetBlockX, targetBlockY].color = Block.COLOR.REDSPECIAL;
@@ -748,7 +742,6 @@ public class BlockRoot : MonoBehaviour
 		if (SaveData.greenblock)
 		{
 			this.blocks[targetBlockX, targetBlockY].color = Block.COLOR.GRESPECIAL;
-		}
-		
+		}	
 	}
 }

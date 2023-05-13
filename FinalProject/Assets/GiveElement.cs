@@ -5,11 +5,12 @@ using UnityEngine.UI;
 
 public class GiveElement : MonoBehaviour
 {
-    public GameObject whiteBlock; 
-    public GameObject redBlock; 
-    public GameObject greenBlock; 
-    public GameObject blueBlock; 
-    public GameObject purpleBlock; 
+    public GameObject whiteBlock;
+    public GameObject redBlock;
+    public GameObject greenBlock;
+    public GameObject blueBlock;
+    public GameObject purpleBlock;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -52,13 +53,20 @@ public class GiveElement : MonoBehaviour
     void ElementReact()
     {
         //얼음 반응
-        if(SaveData.whiteblock == true)
+        if (SaveData.whiteblock == true)
         {
             //얼음 + 번개 주는 데미지 증가
             if (SaveData.purpleblock == true)
             {
                 Debug.Log("데미지 증가");
-                FirstBossSlider.Instance.damagePlus = 20;
+                if (SaveData.stagecount == 0)
+                {
+                    FirstBossSlider.Instance.damagePlus = 20;
+                }
+                else if (SaveData.stagecount == 1)
+                {
+                    SecondBossSlider.Instance.damagePlus = 20;
+                }
                 Invoke("StopDamagePlus", 5f);
 
                 whiteBlock.SetActive(false);
@@ -69,7 +77,7 @@ public class GiveElement : MonoBehaviour
             }
 
             //얼음 + 불 반응 없음
-            else if(SaveData.redblock == true)
+            else if (SaveData.redblock == true)
             {
                 whiteBlock.SetActive(false);
                 redBlock.SetActive(false);
@@ -77,9 +85,9 @@ public class GiveElement : MonoBehaviour
                 SaveData.whiteblock = false;
                 SaveData.redblock = false;
             }
-            
+
             //얼음 + 풀 반응 없음
-            else if(SaveData.greenblock == true)
+            else if (SaveData.greenblock == true)
             {
                 whiteBlock.SetActive(false);
                 greenBlock.SetActive(false);
@@ -88,7 +96,7 @@ public class GiveElement : MonoBehaviour
                 SaveData.greenblock = false;
             }
 
-            
+
         }
 
         //불 반응
@@ -97,7 +105,14 @@ public class GiveElement : MonoBehaviour
             //불 + 풀 추가 데미지
             if (SaveData.greenblock == true)
             {
-                FirstBossSlider.Instance.hpCurrent -= 200;
+                if (SaveData.stagecount == 0)
+                {
+                    FirstBossSlider.Instance.hpCurrent -= 200;
+                }
+                else if (SaveData.stagecount == 1)
+                {
+                    SecondBossSlider.Instance.hpCurrent -= 200;
+                }
                 Debug.Log("추가데미지");
 
                 redBlock.SetActive(false);
@@ -108,7 +123,7 @@ public class GiveElement : MonoBehaviour
             }
 
             //불 + 번개 반응 없음
-            else if(SaveData.purpleblock == true)
+            else if (SaveData.purpleblock == true)
             {
                 redBlock.SetActive(false);
                 purpleBlock.SetActive(false);
@@ -118,7 +133,7 @@ public class GiveElement : MonoBehaviour
             }
 
             //불 + 물 반응 없음
-            else if(SaveData.blueblock == true)
+            else if (SaveData.blueblock == true)
             {
                 redBlock.SetActive(false);
                 blueBlock.SetActive(false);
@@ -146,7 +161,7 @@ public class GiveElement : MonoBehaviour
             }
 
             //번개 + 풀 반응 없음
-            else if(SaveData.greenblock == true)
+            else if (SaveData.greenblock == true)
             {
                 purpleBlock.SetActive(false);
                 greenBlock.SetActive(false);
@@ -193,7 +208,14 @@ public class GiveElement : MonoBehaviour
 
     void dotDamage()
     {
-        FirstBossSlider.Instance.hpCurrent -= 10;
+        if (SaveData.stagecount == 0)
+        {
+            FirstBossSlider.Instance.hpCurrent -= 10;
+        }
+        else if (SaveData.stagecount == 1)
+        {
+            SecondBossSlider.Instance.hpCurrent -= 10;
+        }
     }
 
     void StopdotDamage()
@@ -203,6 +225,13 @@ public class GiveElement : MonoBehaviour
 
     void StopDamagePlus()
     {
-        FirstBossSlider.Instance.damagePlus = 0;
+        if (SaveData.stagecount == 0)
+        {
+            FirstBossSlider.Instance.damagePlus = 0;
+        }
+        else if (SaveData.stagecount == 1)
+        {
+            SecondBossSlider.Instance.damagePlus = 0;
+        }
     }
 }

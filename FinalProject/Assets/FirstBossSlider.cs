@@ -25,9 +25,11 @@ public class FirstBossSlider : MonoBehaviour
     public int hpFull;
     public int hpCurrent;
 
+    public int dmgTxt;
 
     int totalscore;
     int damage;
+    int finalDamage;
     int temp = 0;
 
     public int damagePlus = 0;
@@ -60,18 +62,27 @@ public class FirstBossSlider : MonoBehaviour
             temp = totalscore;
 
             damage = temp;
-            hpCurrent -= damage + damagePlus;
+            finalDamage = damage + damagePlus;
+            hpCurrent -= finalDamage;
+
+            //DamageText.Instance.CreateDamageText(new Vector3(-1, 0, 0), finalDamage);
+
         }
-        if(temp != totalscore)
+        if (temp != totalscore)
         {
+            
             damage = totalscore - temp;
-            hpCurrent -= damage + damagePlus;
+            finalDamage = damage + damagePlus;
+            hpCurrent -= finalDamage;
+
+            //DamageText.Instance.CreateDamageText(new Vector3(-1, 0, 0), finalDamage);
+
 
             temp = totalscore;
         }
 
 
-        if(bossSlider.value == 0)
+        if(bossSlider.value <= 0)
         {
             fill.SetActive(false);
         }

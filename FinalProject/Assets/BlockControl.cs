@@ -76,7 +76,7 @@ public class BlockControl : MonoBehaviour {
 	private Vector3 position_offset_initial = Vector3.zero; // 교체 전 위치.
 	public Vector3 position_offset = Vector3.zero; // 교체 후 위치.
 
-	public Vector3 sp_position_offset = BlockRoot.Instance.spawnPos;
+	//public Vector3 sp_position_offset = BlockRoot.Instance.spawnPos;
 
 
 	public float vanish_timer = -1.0f; // 블록이 사라질 때까지의 시간.
@@ -213,24 +213,33 @@ public class BlockControl : MonoBehaviour {
 				if(this.color == Block.COLOR.WHITE)
                     {
 						SaveData.whiteblock = true;
+						
                     }
 				else if(this.color == Block.COLOR.RED)
                     {
 						SaveData.redblock = true;
-                    }
-				else if(this.color == Block.COLOR.BLUE)
+						
+
+					}
+					else if(this.color == Block.COLOR.BLUE)
                     {
 						SaveData.blueblock = true;
-                    }
-				else if(this.color == Block.COLOR.GREEN)
+						
+
+					}
+					else if(this.color == Block.COLOR.GREEN)
                     {
 						SaveData.greenblock = true;
-                    }
-				else if(this.color == Block.COLOR.PURPLE)
+						
+
+					}
+					else if(this.color == Block.COLOR.PURPLE)
                     {
 						SaveData.purpleblock = true;
-                    }
-				this.position_offset = Vector3.zero;
+						
+
+					}
+					this.position_offset = Vector3.zero;
 				this.setVisible(false); // 블록을 비표시로.
 				break;
 
@@ -246,15 +255,7 @@ public class BlockControl : MonoBehaviour {
 				this.fall.velocity = 0.0f; // 낙하 속도를 
 					if (BlockRoot.Instance.VaciCount >= 4)
 					{
-						//this.blocks[targetBlockX / 2, targetBlockY / 2].sp_changeColor((int)spawnPos.y);
-						int x = BlockRoot.Instance.targetBlockX;
-						int y = BlockRoot.Instance.targetBlockY;
-
-						pos.x = x;
-						pos.y = y;
-
 						BlockRoot.Instance.SelectSpecialColor();
-						//SetBlockColor(pos,color);
 					}
 					break;
 			}

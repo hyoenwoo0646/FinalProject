@@ -12,5 +12,7 @@ public class SaveData : ScriptableObject
     public static bool purpleblock = false;
 
     public static bool invokecount = true;
+
+    public static int stagecount = 0;
 }
 

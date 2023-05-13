@@ -123,5 +123,9 @@ public class SceneControl : MonoBehaviour {
 		}
 	}
 
-
+	public void nextScene()
+    {
+		SaveData.stagecount = 1;
+		SceneManager.LoadScene("Stage1");
+    }
 }

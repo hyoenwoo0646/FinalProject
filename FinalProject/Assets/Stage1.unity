@@ -398,7 +398,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bossSlider: {fileID: 276046100}
+  shieldSlider: {fileID: 2062614103}
   fill: {fileID: 2014843450}
+  shieldfill: {fileID: 710382770}
   hpFull: 0
   hpCurrent: 0
   damagePlus: 0
@@ -1767,6 +1769,8 @@ MonoBehaviour:
   greenBlock: {fileID: 1413864895}
   blueBlock: {fileID: 2009873486}
   purpleBlock: {fileID: 1845943163}
+  tutorial: {fileID: 0}
+  stage1: {fileID: 0}
 --- !u!4 &1686770738
 Transform:
   m_ObjectHideFlags: 0
@@ -2315,6 +2319,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BlockPrefab: {fileID: 7219248312660473641, guid: a6937daf954a19649b7241b530a8671d, type: 3}
   levelData: {fileID: 4900000, guid: e37b301011f4c3b4e9cba67e18bbc282, type: 3}
+  spawnPos: {x: 0, y: 0, z: 0}
+  targetBlockX: 2
+  targetBlockY: 3
+  VaciCount: 0
 --- !u!4 &1898484537
 Transform:
   m_ObjectHideFlags: 0
@@ -2527,7 +2535,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2062614102}
   - component: {fileID: 2062614103}
-  - component: {fileID: 2062614104}
   m_Layer: 5
   m_Name: ShieldSlider
   m_TagString: Untagged
@@ -2609,20 +2616,3 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &2062614104
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2062614101}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78d498892c4ce9e4c84d8936e2f8bd05, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bossSlider: {fileID: 2062614103}
-  fill: {fileID: 710382770}
-  hpFull: 0
-  hpCurrent: 0
-  damagePlus: 0
