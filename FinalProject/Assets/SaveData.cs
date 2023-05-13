@@ -13,3 +13,4 @@ public class SaveData : ScriptableObject
 
     public static bool invokecount = true;
 }
+

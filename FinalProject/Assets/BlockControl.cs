@@ -7,6 +7,8 @@ using UnityEngine.UI;
 public class Block {
 	public static float COLLISION_SIZE = 1.0f; // 블록의 충돌 크기.
 	public static float VANISH_TIME = 3.0f; // 발화하고 사라지는 시간.
+
+
 	public struct iPosition { // 그리드에서의 좌표를 나타내는 구조체.
 		public int x; // X좌표.
 		public int y; // Y좌표.
@@ -21,6 +23,11 @@ public class Block {
 		PURPLE, // 마젠타.
 		ORANGE, // 오렌지.
 		GRAY, // 회색.
+		REDSPECIAL,
+		BLUSPECIAL,
+		GRESPECIAL,
+		WHISPECIAL,
+		PURSPECIAL,
 		NUM, // 색상이 몇 종류인지 나타낸다(=7).
 		FIRST = RED, // 초기 색상(분홍색).
 		LAST = ORANGE, // 마지막 색상(오렌지).
@@ -50,6 +57,8 @@ public class Block {
 	};
 
 
+
+
 	public static int BLOCK_NUM_X = 7; // 블록을 배치할 수 있는 X 방향 최댓값.
 	public static int BLOCK_NUM_Y = 7; // 블록을 배치할 수 있는 Y 방향 최댓값.
 }
@@ -67,6 +76,8 @@ public class BlockControl : MonoBehaviour {
 	private Vector3 position_offset_initial = Vector3.zero; // 교체 전 위치.
 	public Vector3 position_offset = Vector3.zero; // 교체 후 위치.
 
+	public Vector3 sp_position_offset = BlockRoot.Instance.spawnPos;
+
 
 	public float vanish_timer = -1.0f; // 블록이 사라질 때까지의 시간.
 	public Block.DIR4 slide_dir = Block.DIR4.NONE; // 슬라이드된 방향.
@@ -75,6 +86,37 @@ public class BlockControl : MonoBehaviour {
 	// 10-------.
 	public Material opaque_material; // 불투명용 재질.
 	public Material transparent_material; // 반투명용 재질.
+	
+	Block.iPosition pos = new Block.iPosition();
+	Block block = new Block();
+
+
+
+	private static BlockControl instance = null;
+
+
+	public static BlockControl Instance
+	{
+		get
+		{
+			if (null == instance)
+			{
+				return null;
+			}
+			return instance;
+		}
+	}
+
+	private void Awake()
+	{
+		if (null == instance)
+		{
+			instance = this;
+		}
+		
+		
+
+	}
 
 
 	private struct StepFall {
@@ -201,8 +243,20 @@ public class BlockControl : MonoBehaviour {
 				break;
 			case Block.STEP.FALL:
 				this.setVisible(true); // 블록을 표시.
-				this.fall.velocity = 0.0f; // 낙하 속도를 리셋.
-				break;
+				this.fall.velocity = 0.0f; // 낙하 속도를 
+					if (BlockRoot.Instance.VaciCount >= 4)
+					{
+						//this.blocks[targetBlockX / 2, targetBlockY / 2].sp_changeColor((int)spawnPos.y);
+						int x = BlockRoot.Instance.targetBlockX;
+						int y = BlockRoot.Instance.targetBlockY;
+
+						pos.x = x;
+						pos.y = y;
+
+						BlockRoot.Instance.SelectSpecialColor();
+						//SetBlockColor(pos,color);
+					}
+					break;
 			}
 			this.step_timer = 0.0f;
 		}
@@ -296,6 +350,26 @@ public class BlockControl : MonoBehaviour {
 		case Block.COLOR.ORANGE:
 			color_value = new Color(1.0f, 0.46f, 0.0f);
 			break;
+		case Block.COLOR.REDSPECIAL:
+			color_value = new Color(255 / 255f, 140 / 255f, 0 / 255f);
+				break;
+			//red special
+		case Block.COLOR.BLUSPECIAL:
+			color_value = new Color(0 / 255f, 191 / 255f, 255 / 255f);
+				//red special
+				break;
+		case Block.COLOR.WHISPECIAL:
+			color_value = new Color(240 / 255f, 230 / 255f, 140 / 255f);
+				//red special
+				break;
+		case Block.COLOR.GRESPECIAL:
+			color_value = new Color(124 / 255f, 252 / 255f, 0 / 255f);
+				//red special
+				break;
+		case Block.COLOR.PURSPECIAL:
+			color_value = new Color(199 / 255f, 21 / 255f, 133 / 255f);
+				//red special
+				break;
 		}
 		// 이 GameObject의 머티리얼 색상을 변경.
 		this.GetComponent<Renderer>().material.color = color_value;
@@ -477,6 +551,24 @@ public class BlockControl : MonoBehaviour {
 
 	}
 
+	//public void sp_changeColor(int start_ipos_y)
+	//{
+	//	// 지정 위치까지 y좌표를 이동.
+	//	this.position_offset.y =
+	//		(float)(start_ipos_y - this.i_pos.y) *
+	//			Block.COLLISION_SIZE;
+	//	this.next_step = Block.STEP.FALL;
+
+
+	//	// int color_index = Random.Range(
+	//	// (int)Block.COLOR.FIRST, (int)Block.COLOR.LAST + 1);
+	//	// this.setColor((Block.COLOR)color_index);
+	//	// 현재 레벨의 출현 확률을 바탕으로 블록의 색을 결정한다.
+	//	Block.COLOR color = Block.COLOR.SPECIAL;
+	//	this.setColor(color);
+
+	//}
+
 	public bool isVacant()
 	{
 		bool is_vacant = false;
@@ -491,5 +583,18 @@ public class BlockControl : MonoBehaviour {
 		bool is_sliding = (this.position_offset.x != 0.0f);
 		return(is_sliding);
 	}
+	//public static void SetBlockColor(Vector2Int position, Block.COLOR color)
+	//{
+	//	GameObject blockObject = GameObject.Find(position.x + "," + position.y);
+	//	if (blockObject != null)
+	//	{
+	//		Block block = blockObject.GetComponent<Block>();
+	//		if (block != null)
+	//		{
+	//			Block.COLOR color = color;
+	//			// 블록의 색상 변경 처리 추가
+	//		}
+	//	}
+	//}
 
 }
