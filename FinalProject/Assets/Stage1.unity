@@ -1373,6 +1373,7 @@ MonoBehaviour:
   hpFull: 0
   hpCurrent: 0
   bossdamage: 0
+  stuntime: 0
 --- !u!1 &1221833145
 GameObject:
   m_ObjectHideFlags: 0

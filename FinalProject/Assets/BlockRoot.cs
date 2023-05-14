@@ -22,10 +22,12 @@ public class BlockRoot : MonoBehaviour
 
 	private static BlockRoot instance = null;
 	bool hasExecuted = false;
+	
 
 	public int targetBlockX = 2; // 예시로 2번째 열의 블록을 대상으로 설정
 	public int targetBlockY = 3; // 예시로 3번째 행의 블록을 대상으로 설정
 	public int VaciCount = 0;
+	public int TutorialCount = 0;
 	public static BlockRoot Instance
 	{
 		get
@@ -61,7 +63,9 @@ public class BlockRoot : MonoBehaviour
 		// 획득한 마우스 위치를 X와 Y만으로 한다.
 		Vector2 mouse_position_xy =
 			new Vector2(mouse_position.x, mouse_position.y);
-		if (this.grabbed_block == null)
+
+		
+			if (this.grabbed_block == null)
 		{ // 블록을 잡지 않았을 때.
 			if (!this.is_has_falling_block())
 			{
@@ -166,6 +170,7 @@ public class BlockRoot : MonoBehaviour
 				this.score_counter.updateTotalScore();
 
 				VaciCount = ignite_count;
+				TutorialCount++;
 
 
 				// ＝한 군데라도 맞춰진 곳이 있으면.
@@ -883,4 +888,5 @@ public class BlockRoot : MonoBehaviour
 			SecondBossSlider.Instance.damagePlus = 0;
 		}
 	}
+	
 }

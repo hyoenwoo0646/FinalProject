@@ -67,6 +67,11 @@ public class GiveElement : MonoBehaviour
                 {
                     SecondBossSlider.Instance.damagePlus = 20;
                 }
+                else if (SaveData.stagecount == -1)
+                {
+                    TutorialBossSlider.Instance.damagePlus = 20;
+                }
+
                 Invoke("StopDamagePlus", 5f);
 
                 whiteBlock.SetActive(false);
@@ -112,6 +117,10 @@ public class GiveElement : MonoBehaviour
                 else if (SaveData.stagecount == 1)
                 {
                     SecondBossSlider.Instance.hpCurrent -= 200;
+                }
+                else if (SaveData.stagecount == -1)
+                {
+                    TutorialBossSlider.Instance.hpCurrent -= 200;
                 }
                 Debug.Log("추가데미지");
 
@@ -217,6 +226,10 @@ public class GiveElement : MonoBehaviour
         {
             SecondBossSlider.Instance.hpCurrent -= 10;
         }
+        else if (SaveData.stagecount == -1)
+        {
+            TutorialBossSlider.Instance.hpCurrent -= 10;
+        }
     }
 
     void StopdotDamage()
@@ -233,6 +246,10 @@ public class GiveElement : MonoBehaviour
         else if (SaveData.stagecount == 1)
         {
             SecondBossSlider.Instance.damagePlus = 0;
+        }
+        else if (SaveData.stagecount == -1)
+        {
+            TutorialBossSlider.Instance.damagePlus = 0;
         }
     }
 }
