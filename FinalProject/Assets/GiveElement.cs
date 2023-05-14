@@ -90,7 +90,6 @@ public class GiveElement : MonoBehaviour
                 if(SaveData.tutorialcount == 1)
                 {
                     SaveData.elementReact = true;
-                    SaveData.tutorialcount = 2;
                 }            
                 Debug.Log("데미지 증가");
                 if (SaveData.stagecount == 0)
@@ -147,7 +146,6 @@ public class GiveElement : MonoBehaviour
                 if (SaveData.tutorialcount == 1)
                 {
                     SaveData.elementReact = true;
-                    SaveData.tutorialcount = 2;
                 }
                 if (SaveData.stagecount == 0)
                 {
@@ -202,7 +200,6 @@ public class GiveElement : MonoBehaviour
                 if (SaveData.tutorialcount == 1)
                 {
                     SaveData.elementReact = true;
-                    SaveData.tutorialcount = 2;
                 }
 
                 PurpleBlueReact();
@@ -234,7 +231,6 @@ public class GiveElement : MonoBehaviour
                 if (SaveData.tutorialcount == 1)
                 {
                     SaveData.elementReact = true;
-                    SaveData.tutorialcount = 2;
                 }
 
                 BlueWhiteReact();
@@ -258,10 +254,9 @@ public class GiveElement : MonoBehaviour
             //풀 + 물 체력 회복
             if (SaveData.blueblock == true)
             {
-                if (SaveData.tutorialcount == 1)
+                if (SaveData.tutorialcount == 2)
                 {
                     SaveData.elementReact = true;
-                    SaveData.tutorialcount = 2;
                 }
                 GreenBlueReact();
 

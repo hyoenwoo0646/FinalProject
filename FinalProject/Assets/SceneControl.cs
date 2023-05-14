@@ -133,4 +133,9 @@ public class SceneControl : MonoBehaviour {
 		SaveData.stagecount = -1;
 		SceneManager.LoadScene("tutorial");
 	}
+
+	public void GameStart()
+    {
+		SceneManager.LoadScene("Tutorial");
+    }
 }

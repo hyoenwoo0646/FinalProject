@@ -210,10 +210,9 @@ public class BlockControl : MonoBehaviour {
 				break;
 
 			case Block.STEP.VACANT:
-				if(SaveData.isPause == false && SaveData.tutorialcount == 0)
+				if(SaveData.isPause == false && SaveData.tutorialcount == 1)
                 {
 					SaveData.vacant = true;
-					SaveData.tutorialcount = 1;
 				}
 				if (this.color == Block.COLOR.WHITE)
                 {

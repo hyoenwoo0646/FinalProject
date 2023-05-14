@@ -888,10 +888,9 @@ public class BlockRoot : MonoBehaviour
 		{
 			this.blocks[targetBlockX, targetBlockY].color = Block.COLOR.GRESPECIAL;
 		}
-		if(SaveData.tutorialcount == 2)
+		if(SaveData.tutorialcount == 3)
         {
 			SaveData.specialblock = true;
-			SaveData.tutorialcount = 3;
 		}
 	}
 

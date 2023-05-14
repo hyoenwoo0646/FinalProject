@@ -13,83 +13,62 @@ public class PanelManager : MonoBehaviour
     public GameObject panel5;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (SaveData.isPause == true)
-        {
-            PauseGame();
-        }
 
         if(SaveData.vacant == true)
         {
             panel2.SetActive(true);
-            SaveData.isPause = true;
         }
 
         if (SaveData.elementReact == true && panel2.activeSelf == false)
         {
             panel3.SetActive(true);
-            SaveData.isPause = true;
         }
 
         if(SaveData.specialblock == true)
         {
             panel4.SetActive(true);
-            SaveData.isPause = true;
         }
 
-        if(SaveData.specialreact == true)
+        if(SaveData.specialreact == true && panel4.activeSelf == false)
         {
             panel5.SetActive(true);
-            SaveData.isPause = true;
         }
-    }
-
-
-    void PauseGame()
-    {
-        Time.timeScale = 0;
-    }
-    void ResumeGame()
-    {
-        Time.timeScale = 1;
-        
-        SaveData.isPause = false;
     }
 
     public void Offpanel()
     {
+        SaveData.tutorialcount = 1;
         panel.SetActive(false);
-        ResumeGame();
     }
     public void Offpanel2()
     {
+        SaveData.tutorialcount = 2;
         panel2.SetActive(false);
         SaveData.vacant = false;
-        ResumeGame();
     }
     public void Offpanel3()
     {
+        SaveData.tutorialcount = 3;
         panel3.SetActive(false);
         SaveData.elementReact = false;
-        ResumeGame();
     }
     public void Offpanel4()
     {
+        SaveData.tutorialcount = 4;
         panel4.SetActive(false);
         SaveData.specialblock = false;
-        ResumeGame();
     }
 
     public void GameStart()
     {
-        SaveData.isPause = false;
         SaveData.stagecount = 0;
         SceneManager.LoadScene("MainScene");
     }
