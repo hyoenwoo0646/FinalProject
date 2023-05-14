@@ -10,6 +10,31 @@ public class GiveElement : MonoBehaviour
     public GameObject greenBlock;
     public GameObject blueBlock;
     public GameObject purpleBlock;
+    public bool Active = false;
+    public bool Active2 = false;
+
+    private static GiveElement instance = null;
+
+    public static GiveElement Instance
+    {
+        get
+        {
+            if (null == instance)
+            {
+                return null;
+            }
+            return instance;
+        }
+    }
+
+    private void Awake()
+    {
+        if (null == instance)
+        {
+            instance = this;
+        }
+    }
+
 
     // Start is called before the first frame update
     void Start()
@@ -30,22 +55,27 @@ public class GiveElement : MonoBehaviour
         if (SaveData.whiteblock == true)
         {
             whiteBlock.SetActive(true);
+            Active = true;
         }
         if (SaveData.redblock == true)
         {
             redBlock.SetActive(true);
+            Active = true;
         }
         if (SaveData.greenblock == true)
         {
             greenBlock.SetActive(true);
+            Active = true;
         }
         if (SaveData.blueblock == true)
         {
             blueBlock.SetActive(true);
+            Active = true;
         }
         if (SaveData.purpleblock == true)
         {
             purpleBlock.SetActive(true);
+            Active = true;
         }
     }
 
@@ -58,6 +88,7 @@ public class GiveElement : MonoBehaviour
             //얼음 + 번개 주는 데미지 증가
             if (SaveData.purpleblock == true)
             {
+                Active2 = true;
                 Debug.Log("데미지 증가");
                 if (SaveData.stagecount == 0)
                 {
@@ -110,6 +141,7 @@ public class GiveElement : MonoBehaviour
             //불 + 풀 추가 데미지
             if (SaveData.greenblock == true)
             {
+                Active2 = true;
                 if (SaveData.stagecount == 0)
                 {
                     FirstBossSlider.Instance.hpCurrent -= 200;
@@ -158,6 +190,7 @@ public class GiveElement : MonoBehaviour
             //번개 + 물 지속 데미지
             if (SaveData.blueblock == true)
             {
+                Active2 = true;
                 Debug.Log("지속 데미지");
                 InvokeRepeating("dotDamage", 0f, 1f);
                 Invoke("StopdotDamage", 5f);
@@ -201,6 +234,7 @@ public class GiveElement : MonoBehaviour
         //풀 반응
         if (SaveData.greenblock == true)
         {
+            Active2 = true;
             //풀 + 물 체력 회복
             if (SaveData.blueblock == true)
             {
