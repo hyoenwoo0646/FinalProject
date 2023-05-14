@@ -32,6 +32,26 @@ public class DamageText : MonoBehaviour
     public void CreateDamageText(Vector3 hitPoint, int hitDamage)
     {
         GameObject damageText = Instantiate(dmgTxt, hitPoint, Quaternion.identity, canvas.transform);
-        damageText.GetComponent<TextMeshPro>().text = hitDamage.ToString();
+        if(SaveData.whiteblock == true)
+        {
+            damageText.GetComponent<TextMeshProUGUI>().color = Color.white;
+        }
+        if (SaveData.redblock == true)
+        {
+            damageText.GetComponent<TextMeshProUGUI>().color = Color.red;
+        }
+        if (SaveData.blueblock == true)
+        {
+            damageText.GetComponent<TextMeshProUGUI>().color = Color.blue;
+        }
+        if (SaveData.greenblock == true)
+        {
+            damageText.GetComponent<TextMeshProUGUI>().color = Color.green;
+        }
+        if (SaveData.purpleblock == true)
+        {
+            damageText.GetComponent<TextMeshProUGUI>().color = new Color(0.3f, 0f, 0.5f);
+        }
+        damageText.GetComponent<TextMeshProUGUI>().text = hitDamage.ToString();
     }
 }

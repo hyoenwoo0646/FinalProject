@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ShieldSlider : MonoBehaviour
+public class FirstBossSlider : MonoBehaviour
 {
-    private static ShieldSlider instance = null;
+    private static FirstBossSlider instance = null;
 
-    public static ShieldSlider Instance
+    public static FirstBossSlider Instance
     {
         get
         {
@@ -25,9 +25,11 @@ public class ShieldSlider : MonoBehaviour
     public int hpFull;
     public int hpCurrent;
 
+    int damagecount;
 
     int totalscore;
     int damage;
+    int finalDamage;
     int temp = 0;
 
     public int damagePlus = 0;
@@ -45,7 +47,7 @@ public class ShieldSlider : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
@@ -55,23 +57,40 @@ public class ShieldSlider : MonoBehaviour
 
 
         totalscore = ScoreCounter.Instance.last.total_socre;
-        if (temp == 0)
+        if(temp == 0)
         {
             temp = totalscore;
 
             damage = temp;
-            hpCurrent -= damage + damagePlus;
+            finalDamage = damage + damagePlus;
+            hpCurrent -= finalDamage;
+
+            damagecount = 1;
+            if(damagecount == 1)
+            {
+                DamageText.Instance.CreateDamageText(Camera.main.WorldToScreenPoint(new Vector3(0, 5.5f, 0)), finalDamage);
+                damagecount = 0;
+            }
+
         }
         if (temp != totalscore)
         {
+            
             damage = totalscore - temp;
-            hpCurrent -= damage + damagePlus;
+            finalDamage = damage + damagePlus;
+            hpCurrent -= finalDamage;
 
+            damagecount = 1;
+            if (damagecount == 1)
+            {
+                DamageText.Instance.CreateDamageText(Camera.main.WorldToScreenPoint(new Vector3(0, 5.5f, 0)), finalDamage);
+                damagecount = 0;
+            }
             temp = totalscore;
         }
 
 
-        if (bossSlider.value == 0)
+        if(bossSlider.value <= 0)
         {
             fill.SetActive(false);
         }

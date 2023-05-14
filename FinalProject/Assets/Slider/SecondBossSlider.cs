@@ -31,9 +31,12 @@ public class SecondBossSlider : MonoBehaviour
     public int shieldFull;
     public int shieldCurrent;
 
+    int damagecount;
+
 
     int totalscore;
     int damage;
+    int finalDamage;
     int temp = 0;
 
     public int damagePlus = 0;
@@ -70,18 +73,39 @@ public class SecondBossSlider : MonoBehaviour
             temp = totalscore;
 
             damage = temp;
-            hpCurrent -= damage + damagePlus;
+            finalDamage = damage + damagePlus;
+            hpCurrent -= finalDamage;
+
+            damagecount = 1;
+            if (damagecount == 1)
+            {
+                DamageText.Instance.CreateDamageText(Camera.main.WorldToScreenPoint(new Vector3(0, 5.5f, 0)), finalDamage);
+                damagecount = 0;
+            }
         }
         if (temp != totalscore)
         {
             damage = totalscore - temp;
-            hpCurrent -= damage + damagePlus;
+            finalDamage = damage + damagePlus;
+            hpCurrent -= finalDamage;
+
+            damagecount = 1;
+            if (damagecount == 1)
+            {
+                DamageText.Instance.CreateDamageText(Camera.main.WorldToScreenPoint(new Vector3(0, 5.5f, 0)), finalDamage);
+                damagecount = 0;
+            }
 
             temp = totalscore;
         }
 
 
-        if (bossSlider.value == 0)
+        if (bossSlider.value <= 0)
+        {
+            fill.SetActive(false);
+        }
+
+        if(shieldSlider.value <= 0)
         {
             fill.SetActive(false);
         }
