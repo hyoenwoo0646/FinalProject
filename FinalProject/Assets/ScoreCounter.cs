@@ -47,12 +47,12 @@ public class ScoreCounter : MonoBehaviour {
 		int x = 20;
 		int y = 50;
 		GUI.color = Color.black;
-		this.print_value(x + 20, y, "발화 카운트", this.last.ignite);
-		y += 30;
-		this.print_value(x + 20, y, "가산 스코어", this.last.score);
-		y += 30;
-		this.print_value(x + 20, y, "합계 스코어", this.last.total_socre);
-		y += 30;
+		//this.print_value(x + 20, y, "발화 카운트", this.last.ignite);
+		//y += 30;
+		//this.print_value(x + 20, y, "가산 스코어", this.last.score);
+		//y += 30;
+		//this.print_value(x + 20, y, "합계 스코어", this.last.total_socre);
+		//y += 30;
 	}
 	public void print_value(int x, int y, string label, int value)
 	{

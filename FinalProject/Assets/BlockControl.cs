@@ -210,36 +210,32 @@ public class BlockControl : MonoBehaviour {
 				break;
 
 			case Block.STEP.VACANT:
-				if(this.color == Block.COLOR.WHITE)
-                    {
-						SaveData.whiteblock = true;
-						
-                    }
+				if(SaveData.isPause == false && SaveData.tutorialcount == 0)
+                {
+					SaveData.vacant = true;
+					SaveData.tutorialcount = 1;
+				}
+				if (this.color == Block.COLOR.WHITE)
+                {
+					SaveData.whiteblock = true;						
+                }
 				else if(this.color == Block.COLOR.RED)
-                    {
-						SaveData.redblock = true;
-						
-
-					}
-					else if(this.color == Block.COLOR.BLUE)
-                    {
-						SaveData.blueblock = true;
-						
-
-					}
-					else if(this.color == Block.COLOR.GREEN)
-                    {
-						SaveData.greenblock = true;
-						
-
-					}
-					else if(this.color == Block.COLOR.PURPLE)
-                    {
-						SaveData.purpleblock = true;
-						
-
-					}
-					this.position_offset = Vector3.zero;
+                {
+					SaveData.redblock = true;
+				}
+				else if(this.color == Block.COLOR.BLUE)
+                {
+					SaveData.blueblock = true;
+				}
+				else if(this.color == Block.COLOR.GREEN)
+                {
+					SaveData.greenblock = true;						
+				}
+				else if(this.color == Block.COLOR.PURPLE)
+                {
+					SaveData.purpleblock = true;						
+				}
+				this.position_offset = Vector3.zero;
 				this.setVisible(false); // 블록을 비표시로.
 				break;
 

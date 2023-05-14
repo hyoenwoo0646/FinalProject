@@ -449,6 +449,12 @@ public class BlockRoot : MonoBehaviour
 		//불 + 풀 특수블럭
 		if(block0.color == Block.COLOR.REDSPECIAL && block1.color == Block.COLOR.GRESPECIAL)
         {
+			SaveData.specialreact = true;
+			GiveElement.Instance.RedGreenReact();
+			if(SaveData.stagecount == -1)
+            {
+				TutorialBossSlider.Instance.hpCurrent -= 500;
+            }
 			if(SaveData.stagecount == 0)
             {
 				FirstBossSlider.Instance.hpCurrent -= 500;
@@ -464,6 +470,12 @@ public class BlockRoot : MonoBehaviour
 
 		if (block1.color == Block.COLOR.REDSPECIAL && block0.color == Block.COLOR.GRESPECIAL)
 		{
+			SaveData.specialreact = true;
+			GiveElement.Instance.RedGreenReact();
+			if (SaveData.stagecount == -1)
+			{
+				TutorialBossSlider.Instance.hpCurrent -= 500;
+			}
 			if (SaveData.stagecount == 0)
 			{
 				FirstBossSlider.Instance.hpCurrent -= 500;
@@ -479,6 +491,12 @@ public class BlockRoot : MonoBehaviour
 		//얼음 + 번개 특수블럭
 		if(block0.color == Block.COLOR.WHISPECIAL && block1.color == Block.COLOR.PURSPECIAL)
         {
+			SaveData.specialreact = true;
+			GiveElement.Instance.WhitePurpleReact();
+			if (SaveData.stagecount == -1)
+			{
+				TutorialBossSlider.Instance.damagePlus -= 50;
+			}
 			if (SaveData.stagecount == 0)
 			{
 				FirstBossSlider.Instance.damagePlus = 50;
@@ -487,12 +505,17 @@ public class BlockRoot : MonoBehaviour
 			{
 				SecondBossSlider.Instance.damagePlus = 50;
 			}
-			Invoke("StopDamagePlus", 5f);
 			block0.toVanishing();
 			block1.toVanishing();
 		}
 		if (block1.color == Block.COLOR.WHISPECIAL && block0.color == Block.COLOR.PURSPECIAL)
 		{
+			SaveData.specialreact = true;
+			GiveElement.Instance.WhitePurpleReact();
+			if (SaveData.stagecount == -1)
+			{
+				TutorialBossSlider.Instance.damagePlus -= 50;
+			}
 			if (SaveData.stagecount == 0)
 			{
 				FirstBossSlider.Instance.damagePlus = 50;
@@ -501,7 +524,6 @@ public class BlockRoot : MonoBehaviour
 			{
 				SecondBossSlider.Instance.damagePlus = 50;
 			}
-			Invoke("StopDamagerPlus", 5f);
 
 			block0.toVanishing();
 			block1.toVanishing();
@@ -510,15 +532,15 @@ public class BlockRoot : MonoBehaviour
 		//번개 + 물 특수블럭
 		if (block0.color == Block.COLOR.PURSPECIAL && block1.color == Block.COLOR.BLUSPECIAL)
 		{
-			InvokeRepeating("dotDamage", 0f, 1f);
-			Invoke("StopdotDamage", 5f);
+			SaveData.specialreact = true;
+			GiveElement.Instance.PurpleBlueReact();
 			block0.toVanishing();
 			block1.toVanishing();
 		}
 		if (block1.color == Block.COLOR.PURSPECIAL && block0.color == Block.COLOR.BLUSPECIAL)
 		{
-			InvokeRepeating("dotDamage", 0f, 1f);
-			Invoke("StopdotDamage", 5f);
+			SaveData.specialreact = true;
+			GiveElement.Instance.PurpleBlueReact();
 			block0.toVanishing();
 			block1.toVanishing();
 		}
@@ -526,8 +548,10 @@ public class BlockRoot : MonoBehaviour
 		//물 + 얼음 특수블럭
 		if (block0.color == Block.COLOR.BLUSPECIAL && block1.color == Block.COLOR.WHISPECIAL)
 		{
+			SaveData.specialreact = true;
 			PlayerSlider.Instance.stuntime = 10;
 			SaveData.invokecount = false;
+			GiveElement.Instance.BlueWhiteReact();
 
 			block0.toVanishing();
 			block1.toVanishing();
@@ -535,8 +559,10 @@ public class BlockRoot : MonoBehaviour
 
 		if (block1.color == Block.COLOR.BLUSPECIAL && block0.color == Block.COLOR.WHISPECIAL)
 		{
+			SaveData.specialreact = true;
 			PlayerSlider.Instance.stuntime = 10;
 			SaveData.invokecount = false;
+			GiveElement.Instance.BlueWhiteReact();
 
 			block0.toVanishing();
 			block1.toVanishing();
@@ -545,12 +571,16 @@ public class BlockRoot : MonoBehaviour
 		//풀 + 물 특수블럭
 		if (block0.color == Block.COLOR.GRESPECIAL && block1.color == Block.COLOR.BLUSPECIAL)
 		{
+			SaveData.specialreact = true;
+			GiveElement.Instance.GreenBlueReact();
 			PlayerSlider.Instance.hpCurrent += 50;
 			block0.toVanishing();
 			block1.toVanishing();
 		}
 		if (block1.color == Block.COLOR.GRESPECIAL && block0.color == Block.COLOR.BLUSPECIAL)
 		{
+			SaveData.specialreact = true;
+			GiveElement.Instance.GreenBlueReact();
 			PlayerSlider.Instance.hpCurrent += 50;
 			block0.toVanishing();
 			block1.toVanishing();
@@ -857,7 +887,12 @@ public class BlockRoot : MonoBehaviour
 		if (SaveData.greenblock)
 		{
 			this.blocks[targetBlockX, targetBlockY].color = Block.COLOR.GRESPECIAL;
-		}	
+		}
+		if(SaveData.tutorialcount == 2)
+        {
+			SaveData.specialblock = true;
+			SaveData.tutorialcount = 3;
+		}
 	}
 
 	void dotDamage()

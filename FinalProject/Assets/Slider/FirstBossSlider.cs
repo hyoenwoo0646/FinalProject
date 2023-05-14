@@ -47,7 +47,7 @@ public class FirstBossSlider : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        ScoreCounter.Instance.last.total_socre = 0;
     }
 
     // Update is called once per frame

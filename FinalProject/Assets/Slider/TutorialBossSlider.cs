@@ -20,16 +20,11 @@ public class TutorialBossSlider : MonoBehaviour
     }
 
     public Slider bossSlider;
-    public Slider shieldSlider;
 
     public GameObject fill;
-    public GameObject shieldfill;
 
     public int hpFull;
     public int hpCurrent;
-
-    public int shieldFull;
-    public int shieldCurrent;
 
     int damagecount;
 
@@ -48,23 +43,19 @@ public class TutorialBossSlider : MonoBehaviour
             instance = this;
         }
 
-        shieldCurrent = 1000;
-        shieldFull = 1000;
-
         hpCurrent = 2000;
         hpFull = 2000;
     }
     // Start is called before the first frame update
     void Start()
     {
-
+        ScoreCounter.Instance.last.total_socre = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
         bossSlider.value = (float)hpCurrent / hpFull;
-        shieldSlider.value = (float)shieldCurrent / shieldFull;
 
 
         totalscore = ScoreCounter.Instance.last.total_socre;
@@ -105,9 +96,5 @@ public class TutorialBossSlider : MonoBehaviour
             fill.SetActive(false);
         }
 
-        if(shieldSlider.value <= 0)
-        {
-            fill.SetActive(false);
-        }
     }
 }

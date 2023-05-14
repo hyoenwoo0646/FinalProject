@@ -14,5 +14,15 @@ public class SaveData : ScriptableObject
     public static bool invokecount = true;
 
     public static int stagecount = 0;
+    public static int tutorialcount = 0;
+
+    public static bool vacant = false;
+    public static bool isPause = true;
+
+    public static bool elementReact = false;
+
+    public static bool specialblock = false;
+
+    public static bool specialreact = false;
 }
 

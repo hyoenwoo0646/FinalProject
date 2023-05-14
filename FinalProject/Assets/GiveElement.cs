@@ -11,9 +11,6 @@ public class GiveElement : MonoBehaviour
     public GameObject blueBlock;
     public GameObject purpleBlock;
 
-    public bool Active = false;
-    public bool Active2 = false;
-
     public GameObject redgreen;
     public GameObject bluewhite;
     public GameObject greenblue;
@@ -61,28 +58,23 @@ public class GiveElement : MonoBehaviour
     {
         if (SaveData.whiteblock == true)
         {
-            whiteBlock.SetActive(true);
-            Active = true;
+            whiteBlock.SetActive(true);           
         }
         if (SaveData.redblock == true)
         {
             redBlock.SetActive(true);
-            Active = true;
         }
         if (SaveData.greenblock == true)
         {
             greenBlock.SetActive(true);
-            Active = true;
         }
         if (SaveData.blueblock == true)
         {
             blueBlock.SetActive(true);
-            Active = true;
         }
         if (SaveData.purpleblock == true)
         {
             purpleBlock.SetActive(true);
-            Active = true;
         }
     }
 
@@ -95,7 +87,11 @@ public class GiveElement : MonoBehaviour
             //얼음 + 번개 주는 데미지 증가
             if (SaveData.purpleblock == true)
             {
-                Active2 = true;
+                if(SaveData.tutorialcount == 1)
+                {
+                    SaveData.elementReact = true;
+                    SaveData.tutorialcount = 2;
+                }            
                 Debug.Log("데미지 증가");
                 if (SaveData.stagecount == 0)
                 {
@@ -110,9 +106,7 @@ public class GiveElement : MonoBehaviour
                     TutorialBossSlider.Instance.damagePlus = 20;
                 }
 
-                whitepurple.SetActive(true);
-
-                Invoke("StopDamagePlus", 5f);
+                WhitePurpleReact();
 
                 whiteBlock.SetActive(false);
                 purpleBlock.SetActive(false);
@@ -150,7 +144,11 @@ public class GiveElement : MonoBehaviour
             //불 + 풀 추가 데미지
             if (SaveData.greenblock == true)
             {
-                Active2 = true;
+                if (SaveData.tutorialcount == 1)
+                {
+                    SaveData.elementReact = true;
+                    SaveData.tutorialcount = 2;
+                }
                 if (SaveData.stagecount == 0)
                 {
                     FirstBossSlider.Instance.hpCurrent -= 200;
@@ -165,8 +163,7 @@ public class GiveElement : MonoBehaviour
                 }
                 Debug.Log("추가데미지");
 
-                redgreen.SetActive(true);
-                Invoke("RedGreen", 1f);
+                RedGreenReact();
 
                 redBlock.SetActive(false);
                 greenBlock.SetActive(false);
@@ -202,11 +199,13 @@ public class GiveElement : MonoBehaviour
             //번개 + 물 지속 데미지
             if (SaveData.blueblock == true)
             {
-                purpleblue.SetActive(true);
-                Active2 = true;
-                Debug.Log("지속 데미지");
-                InvokeRepeating("dotDamage", 0f, 1f);
-                Invoke("StopdotDamage", 5f);
+                if (SaveData.tutorialcount == 1)
+                {
+                    SaveData.elementReact = true;
+                    SaveData.tutorialcount = 2;
+                }
+
+                PurpleBlueReact();
 
                 purpleBlock.SetActive(false);
                 blueBlock.SetActive(false);
@@ -232,11 +231,18 @@ public class GiveElement : MonoBehaviour
             //물 + 얼음 보스 스턴
             if (SaveData.whiteblock == true)
             {
-                bluewhite.SetActive(true);
+                if (SaveData.tutorialcount == 1)
+                {
+                    SaveData.elementReact = true;
+                    SaveData.tutorialcount = 2;
+                }
+
+                BlueWhiteReact();
+
                 Debug.Log("보스 스턴");
                 PlayerSlider.Instance.stuntime = 6;
                 SaveData.invokecount = false;
-                Invoke("BlueWhite", PlayerSlider.Instance.stuntime);
+                
 
                 blueBlock.SetActive(false);
                 whiteBlock.SetActive(false);
@@ -249,12 +255,16 @@ public class GiveElement : MonoBehaviour
         //풀 반응
         if (SaveData.greenblock == true)
         {
-            Active2 = true;
             //풀 + 물 체력 회복
             if (SaveData.blueblock == true)
             {
-                greenblue.SetActive(true);
-                Invoke("GreenBlue", 1f);
+                if (SaveData.tutorialcount == 1)
+                {
+                    SaveData.elementReact = true;
+                    SaveData.tutorialcount = 2;
+                }
+                GreenBlueReact();
+
                 Debug.Log("체력 회복");
                 PlayerSlider.Instance.hpCurrent += 20;
 
@@ -319,5 +329,38 @@ public class GiveElement : MonoBehaviour
     void GreenBlue()
     {
         greenblue.SetActive(false);
+    }
+
+    public void RedGreenReact()
+    {
+        redgreen.SetActive(true);
+        Invoke("RedGreen", 1f);
+    }
+    
+    public void WhitePurpleReact()
+    {
+        whitepurple.SetActive(true);
+
+        Invoke("StopDamagePlus", 5f);
+    }
+
+    public void PurpleBlueReact()
+    {
+        purpleblue.SetActive(true);
+        Debug.Log("지속 데미지");
+        InvokeRepeating("dotDamage", 0f, 1f);
+        Invoke("StopdotDamage", 5f);
+    }
+
+    public void BlueWhiteReact()
+    {
+        bluewhite.SetActive(true);
+        Invoke("BlueWhite", PlayerSlider.Instance.stuntime);
+    }
+
+    public void GreenBlueReact()
+    {
+        greenblue.SetActive(true);
+        Invoke("GreenBlue", 1f);
     }
 }
