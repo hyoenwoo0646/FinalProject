@@ -134,8 +134,5 @@ public class SceneControl : MonoBehaviour {
 		SceneManager.LoadScene("tutorial");
 	}
 
-	public void GameStart()
-    {
-		SceneManager.LoadScene("Tutorial");
-    }
+	
 }

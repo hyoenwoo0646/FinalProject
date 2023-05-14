@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class FirstBossSlider : MonoBehaviour
 {
@@ -21,6 +22,7 @@ public class FirstBossSlider : MonoBehaviour
 
     public Slider bossSlider;
     public GameObject fill;
+    public GameObject panel;
 
     public int hpFull;
     public int hpCurrent;
@@ -93,6 +95,7 @@ public class FirstBossSlider : MonoBehaviour
         if(bossSlider.value <= 0)
         {
             fill.SetActive(false);
+            panel.SetActive(true);
         }
     }
 }

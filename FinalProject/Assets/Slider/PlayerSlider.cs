@@ -22,7 +22,10 @@ public class PlayerSlider : MonoBehaviour
 
     public Slider playerSlider;
     public GameObject fill;
+    public GameObject panel;
+    public GameObject Button;
 
+    public bool playgame = false;
     public int hpFull;
     public int hpCurrent;
 
@@ -40,23 +43,42 @@ public class PlayerSlider : MonoBehaviour
         hpFull = 100;
         bossdamage = 5;
     }
-
+    IEnumerator MyCoroutine()
+    {
+        
+        yield return new WaitForSeconds(3.0f);
+       
+    }
     // Start is called before the first frame update
     void Start()
     {
+        StartCoroutine(MyCoroutine());
         InvokeRepeating("hpdown", 3f, 3f);
     }
 
     // Update is called once per frame
     void Update()
     {
+
+
         playerSlider.value = (float)hpCurrent / hpFull;
-        if(SaveData.invokecount == false)
-        {
-            bossdamage = 0;
-            Invoke("clearstun", stuntime);
-            SaveData.invokecount = true;
-        }
+            if (SaveData.invokecount == false)
+            {
+                bossdamage = 0;
+                Invoke("clearstun", stuntime);
+                SaveData.invokecount = true;
+            }
+
+            if (playerSlider.value <= 0)
+            {
+                fill.SetActive(false);
+                panel.SetActive(true);
+            }
+        
+
+        
+        
+
     }
 
     void hpdown()
@@ -68,4 +90,7 @@ public class PlayerSlider : MonoBehaviour
     {
         bossdamage = 5;
     }
+
+
+
 }

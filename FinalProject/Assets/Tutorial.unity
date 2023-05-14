@@ -1045,13 +1045,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bossSlider: {fileID: 276046100}
-  shieldSlider: {fileID: 0}
   fill: {fileID: 2014843450}
-  shieldfill: {fileID: 2014843450}
   hpFull: 0
   hpCurrent: 0
-  shieldFull: 0
-  shieldCurrent: 0
   damagePlus: 0
 --- !u!1 &307004014
 GameObject:
@@ -3454,6 +3450,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerSlider: {fileID: 1180247666}
   fill: {fileID: 1688191628}
+  panel: {fileID: 0}
   hpFull: 0
   hpCurrent: 0
   bossdamage: 0

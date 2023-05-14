@@ -26,6 +26,7 @@ public class FinalBossSlider : MonoBehaviour
     public GameObject fill;
     public GameObject fireshieldfill;
     public GameObject watershieldfill;
+    public GameObject Panel;
 
     public int hpFull;
     public int hpCurrent;
@@ -188,6 +189,7 @@ public class FinalBossSlider : MonoBehaviour
         if (bossSlider.value <= 0)
         {
             fill.SetActive(false);
+            Panel.SetActive(true);
         }
 
         if (fireshieldSlider.value <= 0)

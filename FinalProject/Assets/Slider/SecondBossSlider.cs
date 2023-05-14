@@ -24,6 +24,7 @@ public class SecondBossSlider : MonoBehaviour
 
     public GameObject fill;
     public GameObject fireshieldfill;
+    public GameObject panel;
 
     public int hpFull;
     public int hpCurrent;
@@ -154,11 +155,13 @@ public class SecondBossSlider : MonoBehaviour
         if (bossSlider.value <= 0)
         {
             fill.SetActive(false);
+            panel.SetActive(true);
         }
 
         if (fireshieldSlider.value <= 0)
         {
             fireshieldfill.SetActive(false);
+
         }
     }
 }
