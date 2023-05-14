@@ -98,11 +98,29 @@ public class GiveElement : MonoBehaviour
                 }
                 else if (SaveData.stagecount == 1)
                 {
-                    SecondBossSlider.Instance.damagePlus = 20;
+                    if (SecondBossSlider.Instance.fireshieldSlider.gameObject.activeSelf == true)
+                    {
+                        SecondBossSlider.Instance.damagePlus = 0;
+                    }
+                    else if(SecondBossSlider.Instance.fireshieldSlider.gameObject.activeSelf == false)
+                    {
+                        SecondBossSlider.Instance.damagePlus = 20;
+                    }
                 }
                 else if (SaveData.stagecount == -1)
                 {
                     TutorialBossSlider.Instance.damagePlus = 20;
+                }
+                else if (SaveData.stagecount == 2)
+                {
+                    if(FinalBossSlider.Instance.fireshieldSlider.gameObject.activeSelf == true || FinalBossSlider.Instance.watershieldSlider.gameObject.activeSelf == true)
+                    {
+                        FinalBossSlider.Instance.damagePlus = 0;
+                    }
+                    else if(FinalBossSlider.Instance.fireshieldSlider.gameObject.activeSelf == false && FinalBossSlider.Instance.watershieldSlider.gameObject.activeSelf == false)
+                    {
+                        FinalBossSlider.Instance.damagePlus = 20;
+                    }
                 }
 
                 WhitePurpleReact();
@@ -153,11 +171,29 @@ public class GiveElement : MonoBehaviour
                 }
                 else if (SaveData.stagecount == 1)
                 {
-                    SecondBossSlider.Instance.hpCurrent -= 200;
+                    if (SecondBossSlider.Instance.fireshieldSlider.gameObject.activeSelf == true)
+                    {
+                        SecondBossSlider.Instance.hpCurrent -= 0;
+                    }
+                    else if (SecondBossSlider.Instance.fireshieldSlider.gameObject.activeSelf == false)
+                    {
+                        SecondBossSlider.Instance.hpCurrent -= 200;
+                    }         
                 }
                 else if (SaveData.stagecount == -1)
                 {
                     TutorialBossSlider.Instance.hpCurrent -= 200;
+                }
+                else if (SaveData.stagecount == 2)
+                {
+                    if (FinalBossSlider.Instance.fireshieldSlider.gameObject.activeSelf == true || FinalBossSlider.Instance.watershieldSlider.gameObject.activeSelf == true)
+                    {
+                        FinalBossSlider.Instance.hpCurrent -= 0;
+                    }
+                    else if (FinalBossSlider.Instance.fireshieldSlider.gameObject.activeSelf == false && FinalBossSlider.Instance.watershieldSlider.gameObject.activeSelf == false)
+                    {
+                        FinalBossSlider.Instance.hpCurrent -= 200;
+                    }                  
                 }
                 Debug.Log("추가데미지");
 
@@ -280,11 +316,30 @@ public class GiveElement : MonoBehaviour
         }
         else if (SaveData.stagecount == 1)
         {
-            SecondBossSlider.Instance.hpCurrent -= 10;
+            if (SecondBossSlider.Instance.fireshieldSlider.gameObject.activeSelf == true)
+            {
+                SecondBossSlider.Instance.hpCurrent -= 0;
+            }
+            else if (SecondBossSlider.Instance.fireshieldSlider.gameObject.activeSelf == false)
+            {
+                SecondBossSlider.Instance.hpCurrent -= 10;
+            }          
         }
         else if (SaveData.stagecount == -1)
         {
             TutorialBossSlider.Instance.hpCurrent -= 10;
+        }
+        else if (SaveData.stagecount == 2)
+        {
+            if (FinalBossSlider.Instance.fireshieldSlider.gameObject.activeSelf == true || FinalBossSlider.Instance.watershieldSlider.gameObject.activeSelf == true)
+            {
+                FinalBossSlider.Instance.hpCurrent -= 0;
+            }
+            else if (FinalBossSlider.Instance.fireshieldSlider.gameObject.activeSelf == false && FinalBossSlider.Instance.watershieldSlider.gameObject.activeSelf == false)
+            {
+                FinalBossSlider.Instance.hpCurrent -= 10;
+            }
+            
         }
     }
 
@@ -308,6 +363,10 @@ public class GiveElement : MonoBehaviour
         else if (SaveData.stagecount == -1)
         {
             TutorialBossSlider.Instance.damagePlus = 0;
+        }
+        else if (SaveData.stagecount == 2)
+        {
+            FinalBossSlider.Instance.damagePlus = 0;
         }
     }
 
