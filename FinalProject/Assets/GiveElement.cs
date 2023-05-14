@@ -10,8 +10,15 @@ public class GiveElement : MonoBehaviour
     public GameObject greenBlock;
     public GameObject blueBlock;
     public GameObject purpleBlock;
+
     public bool Active = false;
     public bool Active2 = false;
+
+    public GameObject redgreen;
+    public GameObject bluewhite;
+    public GameObject greenblue;
+    public GameObject purpleblue;
+    public GameObject whitepurple;
 
     private static GiveElement instance = null;
 
@@ -103,6 +110,8 @@ public class GiveElement : MonoBehaviour
                     TutorialBossSlider.Instance.damagePlus = 20;
                 }
 
+                whitepurple.SetActive(true);
+
                 Invoke("StopDamagePlus", 5f);
 
                 whiteBlock.SetActive(false);
@@ -156,6 +165,9 @@ public class GiveElement : MonoBehaviour
                 }
                 Debug.Log("추가데미지");
 
+                redgreen.SetActive(true);
+                Invoke("RedGreen", 1f);
+
                 redBlock.SetActive(false);
                 greenBlock.SetActive(false);
 
@@ -190,6 +202,7 @@ public class GiveElement : MonoBehaviour
             //번개 + 물 지속 데미지
             if (SaveData.blueblock == true)
             {
+                purpleblue.SetActive(true);
                 Active2 = true;
                 Debug.Log("지속 데미지");
                 InvokeRepeating("dotDamage", 0f, 1f);
@@ -219,9 +232,11 @@ public class GiveElement : MonoBehaviour
             //물 + 얼음 보스 스턴
             if (SaveData.whiteblock == true)
             {
+                bluewhite.SetActive(true);
                 Debug.Log("보스 스턴");
                 PlayerSlider.Instance.stuntime = 6;
                 SaveData.invokecount = false;
+                Invoke("BlueWhite", PlayerSlider.Instance.stuntime);
 
                 blueBlock.SetActive(false);
                 whiteBlock.SetActive(false);
@@ -238,6 +253,8 @@ public class GiveElement : MonoBehaviour
             //풀 + 물 체력 회복
             if (SaveData.blueblock == true)
             {
+                greenblue.SetActive(true);
+                Invoke("GreenBlue", 1f);
                 Debug.Log("체력 회복");
                 PlayerSlider.Instance.hpCurrent += 20;
 
@@ -268,11 +285,13 @@ public class GiveElement : MonoBehaviour
 
     void StopdotDamage()
     {
+        purpleblue.SetActive(false);
         CancelInvoke("dotDamage");
     }
 
     void StopDamagePlus()
     {
+        whitepurple.SetActive(false);
         if (SaveData.stagecount == 0)
         {
             FirstBossSlider.Instance.damagePlus = 0;
@@ -285,5 +304,20 @@ public class GiveElement : MonoBehaviour
         {
             TutorialBossSlider.Instance.damagePlus = 0;
         }
+    }
+
+    void RedGreen()
+    {
+        redgreen.SetActive(false);
+    }
+
+    void BlueWhite()
+    {
+        bluewhite.SetActive(false);
+    }
+
+    void GreenBlue()
+    {
+        greenblue.SetActive(false);
     }
 }

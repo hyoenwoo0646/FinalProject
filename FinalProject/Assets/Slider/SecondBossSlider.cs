@@ -20,19 +20,20 @@ public class SecondBossSlider : MonoBehaviour
     }
 
     public Slider bossSlider;
-    public Slider shieldSlider;
+    public Slider fireshieldSlider;
 
     public GameObject fill;
-    public GameObject shieldfill;
+    public GameObject fireshieldfill;
 
     public int hpFull;
     public int hpCurrent;
 
-    public int shieldFull;
-    public int shieldCurrent;
+    public int fireshieldFull;
+    public int fireshieldCurrent;
 
     int damagecount;
 
+    int shieldDefense = 10;
 
     int totalscore;
     int damage;
@@ -48,8 +49,8 @@ public class SecondBossSlider : MonoBehaviour
             instance = this;
         }
 
-        shieldCurrent = 1000;
-        shieldFull = 1000;
+        fireshieldCurrent = 300;
+        fireshieldFull = 300;
 
         hpCurrent = 2000;
         hpFull = 2000;
@@ -64,7 +65,7 @@ public class SecondBossSlider : MonoBehaviour
     void Update()
     {
         bossSlider.value = (float)hpCurrent / hpFull;
-        shieldSlider.value = (float)shieldCurrent / shieldFull;
+        fireshieldSlider.value = (float)fireshieldCurrent / fireshieldFull;
 
 
         totalscore = ScoreCounter.Instance.last.total_socre;
@@ -74,7 +75,20 @@ public class SecondBossSlider : MonoBehaviour
 
             damage = temp;
             finalDamage = damage + damagePlus;
-            hpCurrent -= finalDamage;
+
+
+            if (fireshieldCurrent >= 0)
+            {
+                if (SaveData.redblock == false)
+                {
+                    fireshieldCurrent -= finalDamage;
+                }
+            }
+
+            else if (fireshieldCurrent <= 0)
+            {
+                hpCurrent -= finalDamage;
+            }
 
             damagecount = 1;
             if (damagecount == 1)
@@ -87,7 +101,23 @@ public class SecondBossSlider : MonoBehaviour
         {
             damage = totalscore - temp;
             finalDamage = damage + damagePlus;
-            hpCurrent -= finalDamage;
+
+            if (fireshieldCurrent >= 0)
+            {
+                if (SaveData.redblock == false)
+                {
+                    fireshieldCurrent -= finalDamage;
+
+                    temp = totalscore;
+                }
+            }
+
+            else if (fireshieldCurrent <= 0)
+            {
+                hpCurrent -= finalDamage;
+
+                temp = totalscore;
+            }
 
             damagecount = 1;
             if (damagecount == 1)
@@ -96,7 +126,7 @@ public class SecondBossSlider : MonoBehaviour
                 damagecount = 0;
             }
 
-            temp = totalscore;
+
         }
 
 
@@ -105,9 +135,9 @@ public class SecondBossSlider : MonoBehaviour
             fill.SetActive(false);
         }
 
-        if(shieldSlider.value <= 0)
+        if (fireshieldSlider.value <= 0)
         {
-            fill.SetActive(false);
+            fireshieldfill.SetActive(false);
         }
     }
 }
