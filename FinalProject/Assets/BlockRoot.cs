@@ -440,6 +440,116 @@ public class BlockRoot : MonoBehaviour
 		block1.vanish_timer = vanish_timer0;
 		block0.beginSlide(offset0); // 원래 블록의 이동을 시작.
 		block1.beginSlide(offset1); // 이동할 곳의 블록 이동을 시작.
+
+		//불 + 풀 특수블럭
+		if(block0.color == Block.COLOR.REDSPECIAL && block1.color == Block.COLOR.GRESPECIAL)
+        {
+			if(SaveData.stagecount == 0)
+            {
+				FirstBossSlider.Instance.hpCurrent -= 500;
+			}
+			else if(SaveData.stagecount == 1)
+            {
+				SecondBossSlider.Instance.hpCurrent -= 500;
+			}
+			block0.toVanishing();
+			block1.toVanishing();
+		}
+
+
+		if (block1.color == Block.COLOR.REDSPECIAL && block0.color == Block.COLOR.GRESPECIAL)
+		{
+			if (SaveData.stagecount == 0)
+			{
+				FirstBossSlider.Instance.hpCurrent -= 500;
+			}
+			else if (SaveData.stagecount == 1)
+			{
+				SecondBossSlider.Instance.hpCurrent -= 500;
+			}
+			block0.toVanishing();
+			block1.toVanishing();
+		}
+
+		//얼음 + 번개 특수블럭
+		if(block0.color == Block.COLOR.WHISPECIAL && block1.color == Block.COLOR.PURSPECIAL)
+        {
+			if (SaveData.stagecount == 0)
+			{
+				FirstBossSlider.Instance.damagePlus = 50;
+			}
+			else if (SaveData.stagecount == 1)
+			{
+				SecondBossSlider.Instance.damagePlus = 50;
+			}
+			Invoke("StopDamagePlus", 5f);
+			block0.toVanishing();
+			block1.toVanishing();
+		}
+		if (block1.color == Block.COLOR.WHISPECIAL && block0.color == Block.COLOR.PURSPECIAL)
+		{
+			if (SaveData.stagecount == 0)
+			{
+				FirstBossSlider.Instance.damagePlus = 50;
+			}
+			else if (SaveData.stagecount == 1)
+			{
+				SecondBossSlider.Instance.damagePlus = 50;
+			}
+			Invoke("StopDamagerPlus", 5f);
+
+			block0.toVanishing();
+			block1.toVanishing();
+		}
+
+		//번개 + 물 특수블럭
+		if (block0.color == Block.COLOR.PURSPECIAL && block1.color == Block.COLOR.BLUSPECIAL)
+		{
+			InvokeRepeating("dotDamage", 0f, 1f);
+			Invoke("StopdotDamage", 5f);
+			block0.toVanishing();
+			block1.toVanishing();
+		}
+		if (block1.color == Block.COLOR.PURSPECIAL && block0.color == Block.COLOR.BLUSPECIAL)
+		{
+			InvokeRepeating("dotDamage", 0f, 1f);
+			Invoke("StopdotDamage", 5f);
+			block0.toVanishing();
+			block1.toVanishing();
+		}
+
+		//물 + 얼음 특수블럭
+		if (block0.color == Block.COLOR.BLUSPECIAL && block1.color == Block.COLOR.WHISPECIAL)
+		{
+			PlayerSlider.Instance.stuntime = 10;
+			SaveData.invokecount = false;
+
+			block0.toVanishing();
+			block1.toVanishing();
+		}
+
+		if (block1.color == Block.COLOR.BLUSPECIAL && block0.color == Block.COLOR.WHISPECIAL)
+		{
+			PlayerSlider.Instance.stuntime = 10;
+			SaveData.invokecount = false;
+
+			block0.toVanishing();
+			block1.toVanishing();
+		}
+
+		//풀 + 물 특수블럭
+		if (block0.color == Block.COLOR.GRESPECIAL && block1.color == Block.COLOR.BLUSPECIAL)
+		{
+			PlayerSlider.Instance.hpCurrent += 50;
+			block0.toVanishing();
+			block1.toVanishing();
+		}
+		if (block1.color == Block.COLOR.GRESPECIAL && block0.color == Block.COLOR.BLUSPECIAL)
+		{
+			PlayerSlider.Instance.hpCurrent += 50;
+			block0.toVanishing();
+			block1.toVanishing();
+		}
 	}
 
 
@@ -743,5 +853,34 @@ public class BlockRoot : MonoBehaviour
 		{
 			this.blocks[targetBlockX, targetBlockY].color = Block.COLOR.GRESPECIAL;
 		}	
+	}
+
+	void dotDamage()
+	{
+		if (SaveData.stagecount == 0)
+		{
+			FirstBossSlider.Instance.hpCurrent -= 50;
+		}
+		else if (SaveData.stagecount == 1)
+		{
+			SecondBossSlider.Instance.hpCurrent -= 50;
+		}
+	}
+
+	void StopdotDamage()
+	{
+		CancelInvoke("dotDamage");
+	}
+
+	void StopDamagePlus()
+	{
+		if (SaveData.stagecount == 0)
+		{
+			FirstBossSlider.Instance.damagePlus = 0;
+		}
+		else if (SaveData.stagecount == 1)
+		{
+			SecondBossSlider.Instance.damagePlus = 0;
+		}
 	}
 }

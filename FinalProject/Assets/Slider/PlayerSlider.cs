@@ -27,6 +27,7 @@ public class PlayerSlider : MonoBehaviour
     public int hpCurrent;
 
     public int bossdamage;
+    public int stuntime;
 
     private void Awake()
     {
@@ -53,7 +54,7 @@ public class PlayerSlider : MonoBehaviour
         if(SaveData.invokecount == false)
         {
             bossdamage = 0;
-            Invoke("clearstun", 6f);
+            Invoke("clearstun", stuntime);
             SaveData.invokecount = true;
         }
     }

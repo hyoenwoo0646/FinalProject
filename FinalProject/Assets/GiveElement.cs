@@ -178,6 +178,7 @@ public class GiveElement : MonoBehaviour
             if (SaveData.whiteblock == true)
             {
                 Debug.Log("보스 스턴");
+                PlayerSlider.Instance.stuntime = 6;
                 SaveData.invokecount = false;
 
                 blueBlock.SetActive(false);
