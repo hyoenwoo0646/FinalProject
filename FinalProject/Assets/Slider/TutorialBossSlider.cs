@@ -26,6 +26,8 @@ public class TutorialBossSlider : MonoBehaviour
     public int hpFull;
     public int hpCurrent;
 
+    public bool is_win = false;
+
     int damagecount;
 
 
@@ -94,6 +96,7 @@ public class TutorialBossSlider : MonoBehaviour
         if (bossSlider.value <= 0)
         {
             fill.SetActive(false);
+            is_win = true;
         }
 
     }

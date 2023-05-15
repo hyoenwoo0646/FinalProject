@@ -29,6 +29,7 @@ public class SecondBossSlider : MonoBehaviour
     public int hpFull;
     public int hpCurrent;
 
+    public bool Second_is_win = false;
     public int fireshieldFull;
     public int fireshieldCurrent;
 
@@ -156,6 +157,7 @@ public class SecondBossSlider : MonoBehaviour
         {
             fill.SetActive(false);
             panel.SetActive(true);
+            Second_is_win = true;
         }
 
         if (fireshieldSlider.value <= 0)

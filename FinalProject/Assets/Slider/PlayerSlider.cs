@@ -72,15 +72,31 @@ public class PlayerSlider : MonoBehaviour
                 SaveData.invokecount = true;
             }
 
-            if (playerSlider.value <= 0)
-            {
-                fill.SetActive(false);
-                panel.SetActive(true);
-            }
-        
+        if (playerSlider.value <= 0)
+        {
+            fill.SetActive(false);
+            panel.SetActive(true);
+            //if (FirstBossSlider.Instance.first_is_win == true)
+            //{
 
-        
-        
+            //    FirstBossSlider.Instance.first_is_win = false;
+            //}
+
+            //if (SecondBossSlider.Instance.Second_is_win == true)
+            //{
+            //    panel.SetActive(true);
+            //    SecondBossSlider.Instance.Second_is_win = false;
+            //}
+            //if (FinalBossSlider.Instance.Final_is_win == true)
+            //{
+            //    panel.SetActive(true);
+            //}
+
+        }
+
+
+
+
 
     }
 
