@@ -59,7 +59,10 @@ public class PlayerSlider : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if(hpCurrent >= 100)
+        {
+            hpCurrent = 100;
+        }
 
         playerSlider.value = (float)hpCurrent / hpFull;
             if (SaveData.invokecount == false)
