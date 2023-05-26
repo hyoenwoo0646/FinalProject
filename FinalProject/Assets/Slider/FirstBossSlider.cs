@@ -25,8 +25,6 @@ public class FirstBossSlider : MonoBehaviour
     public GameObject panel;
 
 
-    public bool first_is_win = false;
-
     public int hpFull;
     public int hpCurrent;
 
@@ -99,7 +97,7 @@ public class FirstBossSlider : MonoBehaviour
         {
             fill.SetActive(false);
             panel.SetActive(true);
-            first_is_win = true;
+            SaveData.Stage1Clear = true;
         }
     }
 }

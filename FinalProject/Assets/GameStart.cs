@@ -5,8 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class GameStart : MonoBehaviour
 {
-    public void Gstart()
+    public void GoTutorial()
     {
+        SaveData.stagecount = -1;
         SceneManager.LoadScene("Tutorial");
+    }
+
+    public void GoStage1()
+    {
+        SaveData.stagecount = 0;
+        SceneManager.LoadScene("MainScene");        
     }
 }

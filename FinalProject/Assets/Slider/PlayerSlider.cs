@@ -65,33 +65,34 @@ public class PlayerSlider : MonoBehaviour
         }
 
         playerSlider.value = (float)hpCurrent / hpFull;
-            if (SaveData.invokecount == false)
-            {
-                bossdamage = 0;
-                Invoke("clearstun", stuntime);
-                SaveData.invokecount = true;
-            }
+        if (SaveData.invokecount == false)
+        {
+            bossdamage = 0;
+            Invoke("clearstun", stuntime);
+            SaveData.invokecount = true;
+        }
+
+        if(SaveData.stagecount == -1 && SaveData.TutoClear == true)
+        {
+            CancelInvoke("hpdown");
+        }
+        if(SaveData.stagecount == 0 && SaveData.Stage1Clear == true)
+        {
+            CancelInvoke("hpdown");
+        }
+        if(SaveData.stagecount == 1 && SaveData.Stage2Clear == true)
+        {
+            CancelInvoke("hpdown");
+        }
+        if(SaveData.stagecount == 2 && SaveData.BossClear == true)
+        {
+            CancelInvoke("hpdown");
+        }
 
         if (playerSlider.value <= 0)
-        {
+        {      
             fill.SetActive(false);
-            panel.SetActive(true);
-            //if (FirstBossSlider.Instance.first_is_win == true)
-            //{
-
-            //    FirstBossSlider.Instance.first_is_win = false;
-            //}
-
-            //if (SecondBossSlider.Instance.Second_is_win == true)
-            //{
-            //    panel.SetActive(true);
-            //    SecondBossSlider.Instance.Second_is_win = false;
-            //}
-            //if (FinalBossSlider.Instance.Final_is_win == true)
-            //{
-            //    panel.SetActive(true);
-            //}
-
+            panel.SetActive(true);            
         }
 
 

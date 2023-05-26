@@ -24,5 +24,10 @@ public class SaveData : ScriptableObject
     public static bool specialblock = false;
 
     public static bool specialreact = false;
+
+    public static bool TutoClear = false;
+    public static bool Stage1Clear = false;
+    public static bool Stage2Clear = false;
+    public static bool BossClear = false;
 }
 

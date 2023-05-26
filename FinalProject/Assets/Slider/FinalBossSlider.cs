@@ -36,7 +36,6 @@ public class FinalBossSlider : MonoBehaviour
 
     public int watershieldFull;
     public int watershieldCurrent;
-    public bool Final_is_win = false;
 
     int damagecount;
 
@@ -191,7 +190,7 @@ public class FinalBossSlider : MonoBehaviour
         {
             fill.SetActive(false);
             Panel.SetActive(true);
-            Final_is_win = true;
+            SaveData.BossClear = true;
         }
 
         if (fireshieldSlider.value <= 0)

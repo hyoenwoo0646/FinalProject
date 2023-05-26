@@ -20,5 +20,9 @@ public class NextStage : MonoBehaviour
     public void next3()
     {
         SceneManager.LoadScene("Title");
+        SaveData.TutoClear = false;
+        SaveData.Stage1Clear = false;
+        SaveData.Stage2Clear = false;
+        SaveData.BossClear = false;
     }
 }
