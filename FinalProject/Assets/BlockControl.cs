@@ -8,7 +8,6 @@ public class Block {
 	public static float COLLISION_SIZE = 1.0f; // 블록의 충돌 크기.
 	public static float VANISH_TIME = 3.0f; // 발화하고 사라지는 시간.
 
-
 	public struct iPosition { // 그리드에서의 좌표를 나타내는 구조체.
 		public int x; // X좌표.
 		public int y; // Y좌표.
@@ -67,6 +66,9 @@ public class Block {
 
 public class BlockControl : MonoBehaviour {
 
+
+
+
 	public Block.COLOR color = (Block.COLOR)0; // 블록 색.
 	public BlockRoot block_root = null; // 블록의 신.
 	public Block.iPosition i_pos; // 블록 좌표.
@@ -86,7 +88,8 @@ public class BlockControl : MonoBehaviour {
 	// 10-------.
 	public Material opaque_material; // 불투명용 재질.
 	public Material transparent_material; // 반투명용 재질.
-	
+
+
 	Block.iPosition pos = new Block.iPosition();
 	Block block = new Block();
 
@@ -131,6 +134,7 @@ public class BlockControl : MonoBehaviour {
 		//image.GetComponent<Image>().sprite = Resources.Load("Element", typeof(Sprite)) as Sprite;
 
 		this.next_step = Block.STEP.IDLE; // 다음 블록을 대기 중으로.
+
 	}
 
 	void Update() {
@@ -251,6 +255,7 @@ public class BlockControl : MonoBehaviour {
 					if (BlockRoot.Instance.VaciCount >= 4)
 					{
 						BlockRoot.Instance.SelectSpecialColor();
+					
 					}
 					break;
 			}
@@ -325,6 +330,8 @@ public class BlockControl : MonoBehaviour {
 	public void setColor(Block.COLOR color)
 	{
 		this.color = color; // 현재 지정된 색을 멤버 변수에 보관.
+		Renderer renderer = GetComponent<Renderer>();
+		Material material = renderer.material;
 		Color color_value; // Color 클래스는 색을 나타낸다.
 		switch(this.color) { // 칠할 색에 따라서 분기한다.
 		default:
@@ -348,22 +355,27 @@ public class BlockControl : MonoBehaviour {
 			break;
 		case Block.COLOR.REDSPECIAL:
 			color_value = new Color(255 / 255f, 140 / 255f, 0 / 255f);
+			
 				break;
 			//red special
 		case Block.COLOR.BLUSPECIAL:
 			color_value = new Color(0 / 255f, 191 / 255f, 255 / 255f);
+			
 				//red special
 				break;
 		case Block.COLOR.WHISPECIAL:
 			color_value = new Color(240 / 255f, 230 / 255f, 140 / 255f);
+		
 				//red special
 				break;
 		case Block.COLOR.GRESPECIAL:
 			color_value = new Color(124 / 255f, 252 / 255f, 0 / 255f);
+			
 				//red special
 				break;
 		case Block.COLOR.PURSPECIAL:
 			color_value = new Color(199 / 255f, 21 / 255f, 133 / 255f);
+				
 				//red special
 				break;
 		}

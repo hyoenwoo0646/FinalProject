@@ -22,7 +22,9 @@ public class BlockRoot : MonoBehaviour
 
 	private static BlockRoot instance = null;
 	bool hasExecuted = false;
-	
+
+
+
 
 	public int targetBlockX = 2; // 예시로 2번째 열의 블록을 대상으로 설정
 	public int targetBlockY = 3; // 예시로 3번째 행의 블록을 대상으로 설정
@@ -52,6 +54,7 @@ public class BlockRoot : MonoBehaviour
 	{
 		this.main_camera = GameObject.FindGameObjectWithTag("MainCamera");
 		this.score_counter = this.gameObject.GetComponent<ScoreCounter>();
+	
 	}
 
 
@@ -425,6 +428,7 @@ public class BlockRoot : MonoBehaviour
 		// 각 블록의 색을 기억해 둔다.
 		Block.COLOR color0 = block0.color;
 		Block.COLOR color1 = block1.color;
+
 		// 각 블록의.
 		// 확대율을 기억해 둔다.
 		Vector3 scale0 =
@@ -946,6 +950,7 @@ public class BlockRoot : MonoBehaviour
 		if (SaveData.redblock)
         {
 			this.blocks[targetBlockX, targetBlockY].color = Block.COLOR.REDSPECIAL;
+			
 		}
 		if (SaveData.blueblock)
 		{
@@ -968,6 +973,8 @@ public class BlockRoot : MonoBehaviour
 			SaveData.specialblock = true;
 		}
 	}
+	
+
 
 	void dotDamage()
 	{
