@@ -154,6 +154,7 @@ public class SecondBossSlider : MonoBehaviour
 
         if (bossSlider.value <= 0)
         {
+            SoundManager.Instance.WinSound();
             fill.SetActive(false);
             panel.SetActive(true);
             SaveData.Stage2Clear = true;

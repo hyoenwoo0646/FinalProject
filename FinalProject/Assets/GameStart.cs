@@ -5,6 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class GameStart : MonoBehaviour
 {
+
+    void Start()
+    {
+        SoundManager.Instance.Title();
+    }
     public void GoTutorial()
     {
         SaveData.stagecount = -1;

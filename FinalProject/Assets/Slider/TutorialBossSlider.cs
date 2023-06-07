@@ -94,6 +94,7 @@ public class TutorialBossSlider : MonoBehaviour
 
         if (bossSlider.value <= 0)
         {
+            SoundManager.Instance.WinSound();
             fill.SetActive(false);
             SaveData.TutoClear = true;
         }

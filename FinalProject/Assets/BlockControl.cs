@@ -214,6 +214,7 @@ public class BlockControl : MonoBehaviour {
 				break;
 
 			case Block.STEP.VACANT:
+					SoundManager.Instance.BreakSound();
 				if(SaveData.isPause == false && SaveData.tutorialcount == 1)
                 {
 					SaveData.vacant = true;

@@ -95,6 +95,7 @@ public class FirstBossSlider : MonoBehaviour
 
         if(bossSlider.value <= 0)
         {
+            SoundManager.Instance.WinSound();
             fill.SetActive(false);
             panel.SetActive(true);
             SaveData.Stage1Clear = true;

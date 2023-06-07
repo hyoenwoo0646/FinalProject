@@ -90,7 +90,8 @@ public class PlayerSlider : MonoBehaviour
         }
 
         if (playerSlider.value <= 0)
-        {      
+        {
+            SoundManager.Instance.LoseSound();
             fill.SetActive(false);
             panel.SetActive(true);            
         }
