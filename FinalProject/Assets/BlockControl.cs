@@ -66,7 +66,7 @@ public class Block {
 
 public class BlockControl : MonoBehaviour {
 
-
+	public Material[] mat = new Material[10];
 
 
 	public Block.COLOR color = (Block.COLOR)0; // 블록 색.
@@ -337,51 +337,51 @@ public class BlockControl : MonoBehaviour {
 		switch(this.color) { // 칠할 색에 따라서 분기한다.
 		default:
 		case Block.COLOR.RED:
-			color_value = Color.red;
+				gameObject.GetComponent<MeshRenderer>().material = mat[0];
 			break;
 		case Block.COLOR.BLUE:
-			color_value = Color.blue;
-			break;
+				gameObject.GetComponent<MeshRenderer>().material = mat[1];
+				break;
 		case Block.COLOR.WHITE:
-			color_value = Color.white;
-			break;
+				gameObject.GetComponent<MeshRenderer>().material = mat[2];
+				break;
 		case Block.COLOR.GREEN:
-			color_value = Color.green;
-			break;
+				gameObject.GetComponent<MeshRenderer>().material = mat[3];
+				break;
 		case Block.COLOR.PURPLE:
-			color_value = new Color(0.3f, 0f, 0.5f);
-			break;
+				gameObject.GetComponent<MeshRenderer>().material = mat[4];
+				break;
 		case Block.COLOR.ORANGE:
 			color_value = new Color(1.0f, 0.46f, 0.0f);
 			break;
 		case Block.COLOR.REDSPECIAL:
-			color_value = new Color(255 / 255f, 140 / 255f, 0 / 255f);
-			
+				gameObject.GetComponent<MeshRenderer>().material = mat[5];
+
 				break;
 			//red special
 		case Block.COLOR.BLUSPECIAL:
-			color_value = new Color(0 / 255f, 191 / 255f, 255 / 255f);
-			
+				gameObject.GetComponent<MeshRenderer>().material = mat[6];
+
 				//red special
 				break;
 		case Block.COLOR.WHISPECIAL:
-			color_value = new Color(240 / 255f, 230 / 255f, 140 / 255f);
-		
+				gameObject.GetComponent<MeshRenderer>().material = mat[7];
+
 				//red special
 				break;
 		case Block.COLOR.GRESPECIAL:
-			color_value = new Color(124 / 255f, 252 / 255f, 0 / 255f);
-			
+				gameObject.GetComponent<MeshRenderer>().material = mat[8];
+
 				//red special
 				break;
 		case Block.COLOR.PURSPECIAL:
-			color_value = new Color(199 / 255f, 21 / 255f, 133 / 255f);
-				
+				gameObject.GetComponent<MeshRenderer>().material = mat[9];
+
 				//red special
 				break;
 		}
 		// 이 GameObject의 머티리얼 색상을 변경.
-		this.GetComponent<Renderer>().material.color = color_value;
+		//this.GetComponent<Renderer>().material.color = color_value;
 	}
 
 
