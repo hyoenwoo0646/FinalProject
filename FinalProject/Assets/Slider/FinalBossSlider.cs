@@ -53,11 +53,11 @@ public class FinalBossSlider : MonoBehaviour
             instance = this;
         }
 
-        fireshieldCurrent = 300;
-        fireshieldFull = 300;
+        fireshieldCurrent = 200;
+        fireshieldFull = 200;
 
-        watershieldCurrent = 300;
-        watershieldFull = 300;
+        watershieldCurrent = 200;
+        watershieldFull = 200;
 
         hpCurrent = 3000;
         hpFull = 3000;

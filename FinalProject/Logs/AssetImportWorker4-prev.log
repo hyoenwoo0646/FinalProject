@@ -1,0 +1,2053 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.24f1 (cf10dcf7010d) revision 13570268'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'ko' Physical Memory: 16318 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+E:\Editor\2021.3.24f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker4
+-projectPath
+E:/FinalProject/FinalProject/FinalProject
+-logFile
+Logs/AssetImportWorker4.log
+-srvPort
+6639
+Successfully changed project path to: E:/FinalProject/FinalProject/FinalProject
+E:/FinalProject/FinalProject/FinalProject
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [23984] Host "[IP] 192.168.0.2 [Port] 0 [Flags] 2 [Guid] 1400744912 [EditorId] 1400744912 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HE9ITCQ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [23984] Host "[IP] 192.168.0.2 [Port] 0 [Flags] 2 [Guid] 1400744912 [EditorId] 1400744912 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HE9ITCQ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 95.62 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.24f1 (cf10dcf7010d)
+[Subsystems] Discovering subsystems at path E:/Editor/2021.3.24f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/FinalProject/FinalProject/FinalProject/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1080 (ID=0x1b80)
+    Vendor:   NVIDIA
+    VRAM:     8079 MB
+    Driver:   31.0.15.1748
+Initialize mono
+Mono path[0] = 'E:/Editor/2021.3.24f1/Editor/Data/Managed'
+Mono path[1] = 'E:/Editor/2021.3.24f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'E:/Editor/2021.3.24f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56260
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: E:/Editor/2021.3.24f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003829 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 69.42 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.793 seconds
+Domain Reload Profiling:
+	ReloadAssembly (794ms)
+		BeginReloadAssembly (215ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (462ms)
+			LoadAssemblies (213ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (126ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (26ms)
+			SetupLoadedEditorAssemblies (258ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (70ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (128ms)
+				ProcessInitializeOnLoadMethodAttributes (53ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.006222 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.87 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.Exception: Error! Visual Scripting: couldn't find visual scripting package
+  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\PackageVersionUtility.cs:31 
+  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugin\BoltCoreManifest.cs:11 
+  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:33 
+  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:48 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x00525] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:208 
+  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00009] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:32 
+  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00034] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:76 
+  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x0002c] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:114 
+  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x00032] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:48 
+  at Unity.VisualScripting.VSUsageUtility..cctor () [0x00000] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:22 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.829 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1830ms)
+		BeginReloadAssembly (182ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (26ms)
+		EndReloadAssembly (1517ms)
+			LoadAssemblies (156ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (350ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (64ms)
+			SetupLoadedEditorAssemblies (941ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (78ms)
+				ProcessInitializeOnLoadAttributes (831ms)
+				ProcessInitializeOnLoadMethodAttributes (19ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (16ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3121 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (56.2 KB). Loaded Objects now: 3589.
+Memory consumption went from 112.4 MB to 112.4 MB.
+Total: 10.847100 ms (FindLiveObjects: 0.270400 ms CreateObjectMapping: 0.192000 ms MarkObjects: 10.274200 ms  DeleteObjects: 0.109100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 17963.930858 seconds.
+  path: Assets/Fantasy Skybox FREE/Cubemaps
+  artifactKey: Guid(b40198e48fec1db4ba2bdbb96a9e1e9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantasy Skybox FREE/Cubemaps using Guid(b40198e48fec1db4ba2bdbb96a9e1e9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1e5263a95ea1831989bf43ed3fd10b6') in 0.010706 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.094742 seconds.
+  path: Assets/Fantasy Skybox FREE/Cubemaps/Classic
+  artifactKey: Guid(69ee00d9176dabc4687615071b161c20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fantasy Skybox FREE/Cubemaps/Classic using Guid(69ee00d9176dabc4687615071b161c20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1a6affee706f891174727f3b3f486e3') in 0.006729 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.341639 seconds.
+  path: Assets/resource_default/box_a.png
+  artifactKey: Guid(ed3b4c75a68320349a9f4481bab4876c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/box_a.png using Guid(ed3b4c75a68320349a9f4481bab4876c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69ebbf429a8059f227449042c1ef6ea4') in 0.153538 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/resource_default/btn_c_red.png
+  artifactKey: Guid(dfe0f8b3b8f11c54d94569c6e1326583) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/btn_c_red.png using Guid(dfe0f8b3b8f11c54d94569c6e1326583) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fffabda56fc002abdc1dd557ed7b3b37') in 0.019711 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/resource_default/gage_b_fill06.png
+  artifactKey: Guid(9e2d10e868bfcc2459840cd98bcfde42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/gage_b_fill06.png using Guid(9e2d10e868bfcc2459840cd98bcfde42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dedbefdfec294d941430de8dceb8d473') in 0.016690 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/resource_default/checkbox_blank.png
+  artifactKey: Guid(32f25fd44c295474483ad5f89d5863fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/checkbox_blank.png using Guid(32f25fd44c295474483ad5f89d5863fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06e549cedb2851ac6478e9ee6204d788') in 0.016850 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/resource_default/checkbox_check.png
+  artifactKey: Guid(43e17fb59bccf0748b04cccfc220a522) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/checkbox_check.png using Guid(43e17fb59bccf0748b04cccfc220a522) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a666f6a5f44b4ceb9db2a10ee249b516') in 0.015469 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/resource_default/box_b.png
+  artifactKey: Guid(7ff78b329f164464ea5df9a3227b3f0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/box_b.png using Guid(7ff78b329f164464ea5df9a3227b3f0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d459eab7af48f3160e4ccc5a90e174b') in 0.017567 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/resource_default/gage_b_empty.png
+  artifactKey: Guid(f6c1dea84b7a31e4b81d0f719c477e2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/gage_b_empty.png using Guid(f6c1dea84b7a31e4b81d0f719c477e2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0842e3ca621b71b68d1963dd2191426d') in 0.015844 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/resource_default/box_c_04.png
+  artifactKey: Guid(03262c876f6187b4f91fe5239e698673) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/box_c_04.png using Guid(03262c876f6187b4f91fe5239e698673) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '985fabb751e1d40d069fdbbd9c68833a') in 0.017038 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/resource_default/btn_b_red.png
+  artifactKey: Guid(0a1a18af546cb004db55d57b6559928b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/btn_b_red.png using Guid(0a1a18af546cb004db55d57b6559928b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08735f8d56f5ef5e94c7638d3288e800') in 0.019585 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/resource_default/box_b_03.png
+  artifactKey: Guid(cd5efc45d507a414c81bd895a5528a0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/box_b_03.png using Guid(cd5efc45d507a414c81bd895a5528a0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ace6b7f1f1e7d7074db3cee6b1ebaa61') in 0.016549 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.536850 seconds.
+  path: Assets/FourEvilDragonsHP/Texture
+  artifactKey: Guid(029cb04ef2736154bb988bdf55c949e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FourEvilDragonsHP/Texture using Guid(029cb04ef2736154bb988bdf55c949e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '611aa2f465ef3ab78fbcf042b19a70cc') in 0.006448 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.049126 seconds.
+  path: Assets/FourEvilDragonsHP/Animators
+  artifactKey: Guid(5ad071ae1343c5b4ca58aad5c0ea1099) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FourEvilDragonsHP/Animators using Guid(5ad071ae1343c5b4ca58aad5c0ea1099) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cb7f40fd6a0476cd37785ba713d240a') in 0.006298 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.659840 seconds.
+  path: Assets/Travis Game Assets/Status Effects
+  artifactKey: Guid(435363c72b6550948aba4d18401b8067) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Travis Game Assets/Status Effects using Guid(435363c72b6550948aba4d18401b8067) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2d46b5b51ec9b50d2aa0935ebe7d0d4') in 0.006312 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.207968 seconds.
+  path: Assets/Travis Game Assets/Status Effects/Demo Scene
+  artifactKey: Guid(1b98ff9fcc142f84fadc06b6a9b7b141) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Travis Game Assets/Status Effects/Demo Scene using Guid(1b98ff9fcc142f84fadc06b6a9b7b141) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e7f5f11ad3b23714160c47e41b07c9d') in 0.006240 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.374769 seconds.
+  path: Assets/Travis Game Assets/Status Effects/Demo Scene/Animations
+  artifactKey: Guid(5791f37b26074974eae9fece409b9997) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Travis Game Assets/Status Effects/Demo Scene/Animations using Guid(5791f37b26074974eae9fece409b9997) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b7a9e7e46a7e5f1440ee10ef6d2bc61') in 0.006577 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.061361 seconds.
+  path: Assets/Travis Game Assets/Status Effects/Demo Scene/Animations/Skeleton@Buff01.fbx
+  artifactKey: Guid(8642cf204e18c5144a3de39fb31101ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Travis Game Assets/Status Effects/Demo Scene/Animations/Skeleton@Buff01.fbx using Guid(8642cf204e18c5144a3de39fb31101ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47384fbdbab52536b20216fc9ea81f99') in 0.029205 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Travis Game Assets/Status Effects/Demo Scene/Animations/SkeletonAnimationsAvatar.fbx
+  artifactKey: Guid(74e2c4e13b8109a4db3d33538a1c320c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Travis Game Assets/Status Effects/Demo Scene/Animations/SkeletonAnimationsAvatar.fbx using Guid(74e2c4e13b8109a4db3d33538a1c320c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebef1c52bdeb15640ecd85ff064f15a2') in 0.141685 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.933113 seconds.
+  path: Assets/Travis Game Assets/Status Effects/Materials/Buff_01a_NeonSwords_01.mat
+  artifactKey: Guid(48fdfe2ffecc046469bcfd0995544ea7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Travis Game Assets/Status Effects/Materials/Buff_01a_NeonSwords_01.mat using Guid(48fdfe2ffecc046469bcfd0995544ea7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ff3c91573a2c00e7949ec335d22a25e') in 0.056381 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Travis Game Assets/Status Effects/Materials/Debuff_03_PointGlowBig_02.mat
+  artifactKey: Guid(ed208d75fe2b28244995eda92240a283) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Travis Game Assets/Status Effects/Materials/Debuff_03_PointGlowBig_02.mat using Guid(ed208d75fe2b28244995eda92240a283) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bb6a34a46353b331c2ce0302cf096f4') in 0.058954 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Travis Game Assets/Status Effects/Materials/Buff_02a_PointBlur_02.mat
+  artifactKey: Guid(98cc821a6b46e7c488562c8df10ed5fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Travis Game Assets/Status Effects/Materials/Buff_02a_PointBlur_02.mat using Guid(98cc821a6b46e7c488562c8df10ed5fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de4f89ac31bda1ac9fe4cd04350f3b56') in 0.017048 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Travis Game Assets/Status Effects/Materials/Buff_03a_PointGlow_01.mat
+  artifactKey: Guid(acbc8d78b0831b2458c6c1631b6d9635) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Travis Game Assets/Status Effects/Materials/Buff_03a_PointGlow_01.mat using Guid(acbc8d78b0831b2458c6c1631b6d9635) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8678a5b4f1b88998fadd591da51dbaa') in 0.018554 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Travis Game Assets/Status Effects/Materials/Buff_03a_Twinkle_01.mat
+  artifactKey: Guid(72843f682d8127544b2a0ef943733222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Travis Game Assets/Status Effects/Materials/Buff_03a_Twinkle_01.mat using Guid(72843f682d8127544b2a0ef943733222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0e4ff7f5a5923e7c12486c6556c0c06') in 0.016738 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Travis Game Assets/Status Effects/Materials/Buff_02a_PointBlur_01.mat
+  artifactKey: Guid(4ec40d363a9d8e1488ed1143853f26f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Travis Game Assets/Status Effects/Materials/Buff_02a_PointBlur_01.mat using Guid(4ec40d363a9d8e1488ed1143853f26f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '269aee4f7f0185407efb1909bb35d291') in 0.016112 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Travis Game Assets/Status Effects/Materials/Buff_02a_PointGlowBig_02.mat
+  artifactKey: Guid(04ae3df6e6b9cfa47906d2073e94b54e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Travis Game Assets/Status Effects/Materials/Buff_02a_PointGlowBig_02.mat using Guid(04ae3df6e6b9cfa47906d2073e94b54e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77baf057042d000a646cd4afe557c96a') in 0.012627 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.424072 seconds.
+  path: Assets/Travis Game Assets/Status Effects/Models/Ring_01.fbx
+  artifactKey: Guid(7a41db306d0f2b44aa9b4c2cf8489ac6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Travis Game Assets/Status Effects/Models/Ring_01.fbx using Guid(7a41db306d0f2b44aa9b4c2cf8489ac6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '763fb1224af6e04d59d93adf59e69591') in 0.013056 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 21.971585 seconds.
+  path: Assets/Travis Game Assets/Status Effects/Demo Scene/Materials/HitImpactEffects_Floor.mat
+  artifactKey: Guid(b0b4e880ae2ab6540b044e0c0252a003) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Travis Game Assets/Status Effects/Demo Scene/Materials/HitImpactEffects_Floor.mat using Guid(b0b4e880ae2ab6540b044e0c0252a003) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69204d8a830dade943a521f6e252cf75') in 0.013494 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.318850 seconds.
+  path: Assets/Travis Game Assets/Status Effects/Demo Scene/Models/ClothedSkeletonModel.fbx
+  artifactKey: Guid(56cbd83b81fb08c4f9b22c0ddbc8ad49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Travis Game Assets/Status Effects/Demo Scene/Models/ClothedSkeletonModel.fbx using Guid(56cbd83b81fb08c4f9b22c0ddbc8ad49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e4d64b2b0193023ab4824e311e10068') in 0.027852 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.485998 seconds.
+  path: Assets/Travis Game Assets/Status Effects/Demo Scene/Prefabs/VillagerSkeleton.prefab
+  artifactKey: Guid(840a75a9827f2b84d9c72672b60d62c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Travis Game Assets/Status Effects/Demo Scene/Prefabs/VillagerSkeleton.prefab using Guid(840a75a9827f2b84d9c72672b60d62c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b63c1ed1052003d6e36de6bacb4eb0e') in 0.162113 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.674201 seconds.
+  path: Assets/Travis Game Assets/Status Effects/Demo Scene/Textures/HitImpactEffects_Floor.png
+  artifactKey: Guid(0c6177b2440338743a7447d732f82d49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Travis Game Assets/Status Effects/Demo Scene/Textures/HitImpactEffects_Floor.png using Guid(0c6177b2440338743a7447d732f82d49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01e50c0c4bd824c871df2d16adfeb766') in 0.014356 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Travis Game Assets/Status Effects/Demo Scene/Textures/NextPrevArrow.png
+  artifactKey: Guid(24139398538fce141848b8e6657d62f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Travis Game Assets/Status Effects/Demo Scene/Textures/NextPrevArrow.png using Guid(24139398538fce141848b8e6657d62f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd367b13142cd334a80d2ece991b5008') in 0.020590 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.327496 seconds.
+  path: Assets/Travis Game Assets/Status Effects/Prefabs/Buff_01a.prefab
+  artifactKey: Guid(ffdfb7851a968494f8fe76ee88f3791a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Travis Game Assets/Status Effects/Prefabs/Buff_01a.prefab using Guid(ffdfb7851a968494f8fe76ee88f3791a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f39329de5b9fe3b1acaa83d007dd5351') in 0.024793 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Travis Game Assets/Status Effects/Prefabs/StatusAilment_01.prefab
+  artifactKey: Guid(2e07e5ba5a6e8b74d8206f9be0e29d37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Travis Game Assets/Status Effects/Prefabs/StatusAilment_01.prefab using Guid(2e07e5ba5a6e8b74d8206f9be0e29d37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc59692c7e26b83c67896965520ef533') in 0.037310 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.624189 seconds.
+  path: Assets/Travis Game Assets/Status Effects/Textures/Haze_03.tga
+  artifactKey: Guid(0e695a7ec46d9474eab911646bbcb315) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Travis Game Assets/Status Effects/Textures/Haze_03.tga using Guid(0e695a7ec46d9474eab911646bbcb315) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8477926b8a94e6cbee90cff09d11dd87') in 0.021599 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Travis Game Assets/Status Effects/Textures/NoiseSpark_01.tga
+  artifactKey: Guid(2a16d8625714da5428eb71aa3a6e0a3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Travis Game Assets/Status Effects/Textures/NoiseSpark_01.tga using Guid(2a16d8625714da5428eb71aa3a6e0a3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1e4681bc113a6851a3f5d82b9bb43e6') in 0.017678 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Travis Game Assets/Status Effects/Textures/PointGlowBig_01.tga
+  artifactKey: Guid(c491ed24ac24daf48add0fac24614ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Travis Game Assets/Status Effects/Textures/PointGlowBig_01.tga using Guid(c491ed24ac24daf48add0fac24614ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca4594b9e248eb4db3896e2800a842fd') in 0.014949 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006184 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.Exception: Error! Visual Scripting: couldn't find visual scripting package
+  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\PackageVersionUtility.cs:31 
+  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugin\BoltCoreManifest.cs:11 
+  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:33 
+  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:48 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x00525] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:208 
+  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00009] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:32 
+  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00034] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:76 
+  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x0002c] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:114 
+  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x0000d] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:33 
+  at Unity.VisualScripting.VSUsageUtility..cctor () [0x00000] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:22 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.707 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1708ms)
+		BeginReloadAssembly (216ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (56ms)
+		EndReloadAssembly (1381ms)
+			LoadAssemblies (150ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (353ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (53ms)
+			SetupLoadedEditorAssemblies (578ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (64ms)
+				ProcessInitializeOnLoadAttributes (479ms)
+				ProcessInitializeOnLoadMethodAttributes (24ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (20ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.15 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3101 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 16 unused Assets / (24.7 KB). Loaded Objects now: 3655.
+Memory consumption went from 128.4 MB to 128.4 MB.
+Total: 12.520500 ms (FindLiveObjects: 0.308900 ms CreateObjectMapping: 0.307100 ms MarkObjects: 11.842600 ms  DeleteObjects: 0.060600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006529 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.61 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.Exception: Error! Visual Scripting: couldn't find visual scripting package
+  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\PackageVersionUtility.cs:31 
+  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugin\BoltCoreManifest.cs:11 
+  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:33 
+  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:48 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x00525] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:208 
+  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00009] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:32 
+  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00034] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:76 
+  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x0002c] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:114 
+  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x0000d] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:33 
+  at Unity.VisualScripting.VSUsageUtility..cctor () [0x00000] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:22 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.432 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1433ms)
+		BeginReloadAssembly (183ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (40ms)
+		EndReloadAssembly (1161ms)
+			LoadAssemblies (125ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (301ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (44ms)
+			SetupLoadedEditorAssemblies (480ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (60ms)
+				ProcessInitializeOnLoadAttributes (390ms)
+				ProcessInitializeOnLoadMethodAttributes (20ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (21ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.68 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3101 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 15 unused Assets / (24.7 KB). Loaded Objects now: 3659.
+Memory consumption went from 128.4 MB to 128.4 MB.
+Total: 10.177800 ms (FindLiveObjects: 0.385900 ms CreateObjectMapping: 0.248400 ms MarkObjects: 9.520700 ms  DeleteObjects: 0.021400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 507.079301 seconds.
+  path: Assets/Travis Game Assets/Status Effects/Demo Scene/Textures
+  artifactKey: Guid(bf9cac2e6a44c9748b2c86a1746d3dd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Travis Game Assets/Status Effects/Demo Scene/Textures using Guid(bf9cac2e6a44c9748b2c86a1746d3dd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd06f7ee046bea34a58914598777f287') in 0.012688 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.205269 seconds.
+  path: Assets/Travis Game Assets/Status Effects/Demo Scene/Scripts
+  artifactKey: Guid(44959d13fea64fe40be7b8946e706544) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Travis Game Assets/Status Effects/Demo Scene/Scripts using Guid(44959d13fea64fe40be7b8946e706544) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ba051576263073a5a9a2e173df603d9') in 0.008022 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.164228 seconds.
+  path: Assets/Travis Game Assets/Status Effects/Demo Scene/Prefabs
+  artifactKey: Guid(0a655a31bc30f174fa646f503a84524d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Travis Game Assets/Status Effects/Demo Scene/Prefabs using Guid(0a655a31bc30f174fa646f503a84524d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca2b39e8380355cf5ae140b79df90cc0') in 0.007279 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.965030 seconds.
+  path: Assets/Travis Game Assets/Status Effects/Models
+  artifactKey: Guid(743b47e46f74eb34890fb64a84112350) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Travis Game Assets/Status Effects/Models using Guid(743b47e46f74eb34890fb64a84112350) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5da9bf0d7221455a42ff2a5d90304f47') in 0.006975 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.460265 seconds.
+  path: Assets/Travis Game Assets/Status Effects/Materials
+  artifactKey: Guid(fec515fb2c02c6a4ab5045d43afe6c17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Travis Game Assets/Status Effects/Materials using Guid(fec515fb2c02c6a4ab5045d43afe6c17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b74c3a83f48bd7536e9551dbc2083cb') in 0.006942 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.557057 seconds.
+  path: Assets/Travis Game Assets/Status Effects/Demo Scene/Materials
+  artifactKey: Guid(c3d2353fd86bd6b43a178617363f40b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Travis Game Assets/Status Effects/Demo Scene/Materials using Guid(c3d2353fd86bd6b43a178617363f40b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e8aea0c2c2256e84d7c058ae5d4e7de') in 0.002350 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006200 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.89 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.Exception: Error! Visual Scripting: couldn't find visual scripting package
+  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\PackageVersionUtility.cs:31 
+  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugin\BoltCoreManifest.cs:11 
+  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:33 
+  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:48 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x00525] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:208 
+  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00009] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:32 
+  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00034] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:76 
+  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x0002c] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:114 
+  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x0000d] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:33 
+  at Unity.VisualScripting.VSUsageUtility..cctor () [0x00000] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:22 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.282 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1282ms)
+		BeginReloadAssembly (188ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (44ms)
+		EndReloadAssembly (1003ms)
+			LoadAssemblies (128ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (249ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (424ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (53ms)
+				ProcessInitializeOnLoadAttributes (345ms)
+				ProcessInitializeOnLoadMethodAttributes (16ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (18ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.04 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3100 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 16 unused Assets / (24.7 KB). Loaded Objects now: 3662.
+Memory consumption went from 130.3 MB to 130.3 MB.
+Total: 11.343400 ms (FindLiveObjects: 0.223800 ms CreateObjectMapping: 0.132200 ms MarkObjects: 10.958500 ms  DeleteObjects: 0.027300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 34.930729 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Animations
+  artifactKey: Guid(fff5d697cf4cce14eb8679b80df59c54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Animations using Guid(fff5d697cf4cce14eb8679b80df59c54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd19e4bb80d6f96f4cc376863cd1a475') in 0.009373 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.469913 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Animations/Fly1-01.controller
+  artifactKey: Guid(d9fa4cb34e4d0f24798d1defa40a354d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Animations/Fly1-01.controller using Guid(d9fa4cb34e4d0f24798d1defa40a354d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1415134cec20d91c6e4a2c13dc498f75') in 0.020728 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.161424 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Meshs/Aura.FBX
+  artifactKey: Guid(25c437cf483e79a44839a8f42e06407b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Meshs/Aura.FBX using Guid(25c437cf483e79a44839a8f42e06407b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e1e2a6936ce4dc64fdfcc8212558afc') in 0.105952 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Meshs/Fx_Light_02.FBX
+  artifactKey: Guid(6362f8418f02f4943a594380b945ec75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Meshs/Fx_Light_02.FBX using Guid(6362f8418f02f4943a594380b945ec75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8363e4b5126393ae9d5526f021a5a8c0') in 0.020285 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Meshs/line.FBX
+  artifactKey: Guid(2bd2d3966483f3c40b9d7d1e476c6739) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Meshs/line.FBX using Guid(2bd2d3966483f3c40b9d7d1e476c6739) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f9987b38dd9b9388cc36103929029d8') in 0.029717 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Meshs/Light_03.FBX
+  artifactKey: Guid(87e5430a48208df4ab02f32c3c2bbc65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Meshs/Light_03.FBX using Guid(87e5430a48208df4ab02f32c3c2bbc65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d39bdece64c30fd9b48fc4d1a899fd0') in 0.044304 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Meshs/ShockWave.FBX
+  artifactKey: Guid(eede9bcfaa5c69f4eb7f3d14ebe7f7ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Meshs/ShockWave.FBX using Guid(eede9bcfaa5c69f4eb7f3d14ebe7f7ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c014cade7b097bfef40ce1d100cd478') in 0.022642 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Meshs/Fx_Light_03.FBX
+  artifactKey: Guid(e219e85d806e22c4aa9d76b8b7d1afa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Meshs/Fx_Light_03.FBX using Guid(e219e85d806e22c4aa9d76b8b7d1afa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa8ccdc4c64768999470f80c01468169') in 0.028090 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Meshs/Light_01.FBX
+  artifactKey: Guid(b59fef5c60e722c4d9fa6a18210fcf2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Meshs/Light_01.FBX using Guid(b59fef5c60e722c4d9fa6a18210fcf2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3465cc618f74c5e43dcfacd8b39db586') in 0.024522 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Meshs/Light_02.FBX
+  artifactKey: Guid(d2ac9432cd2d208439842be20586c3b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Meshs/Light_02.FBX using Guid(d2ac9432cd2d208439842be20586c3b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '606023b687f8445791813e562aad8814') in 0.018573 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Meshs/Ringtrail.FBX
+  artifactKey: Guid(469d8d3b681564446a636b074b9f98d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Meshs/Ringtrail.FBX using Guid(469d8d3b681564446a636b074b9f98d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a77d247a65cd0e562cc12fbdb459917') in 0.017560 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.322236 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom
+  artifactKey: Guid(bb94078c085c1de4487ad03b74e38957) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom using Guid(bb94078c085c1de4487ad03b74e38957) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16891b12527f4995ccca5d30b295c81d') in 0.008727 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.069303 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom01-01.prefab
+  artifactKey: Guid(c97211e4c2d91304595befdd440ce66c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom01-01.prefab using Guid(c97211e4c2d91304595befdd440ce66c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a14953590900c46ec98241de5e92f3c2') in 0.046335 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom01-04.prefab
+  artifactKey: Guid(72f0b2cfd32fd2f479e56aea09702366) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom01-04.prefab using Guid(72f0b2cfd32fd2f479e56aea09702366) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1498363cee62e9ba721589bf317ec54') in 0.033578 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom05-03.prefab
+  artifactKey: Guid(5617deff1287276448e3c3d834e25f2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom05-03.prefab using Guid(5617deff1287276448e3c3d834e25f2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9f134c514172bc4f175a94e1cf98eaf') in 0.044024 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom11-03.prefab
+  artifactKey: Guid(5f9df618382b7be4dbc691bc791dfa58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom11-03.prefab using Guid(5f9df618382b7be4dbc691bc791dfa58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a135b9be14712d86e0b38cc0c9304cf3') in 0.046401 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom02-01.prefab
+  artifactKey: Guid(46b494c333b08b84bbeb27e7f63d10b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom02-01.prefab using Guid(46b494c333b08b84bbeb27e7f63d10b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c62bd1bc6fb5825159a63b77639fb2e8') in 0.041907 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom05-04.prefab
+  artifactKey: Guid(448225e25995b3840ac9785680bc5239) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom05-04.prefab using Guid(448225e25995b3840ac9785680bc5239) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf30bc90d9428c84fe18dde2e3c38d70') in 0.042035 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom10-02.prefab
+  artifactKey: Guid(8027689aeeb40ae45a72ad9eecea0367) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom10-02.prefab using Guid(8027689aeeb40ae45a72ad9eecea0367) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '452d462c9db2f977c5fc7ac78cca8c11') in 0.034904 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom07-04.prefab
+  artifactKey: Guid(ae23776901ccdcb408a1780e7b25fe6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom07-04.prefab using Guid(ae23776901ccdcb408a1780e7b25fe6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21638ec4001ad28e2f20424341075f50') in 0.038470 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom05-06.prefab
+  artifactKey: Guid(6256523171c0073468c6e0db1bd89d50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom05-06.prefab using Guid(6256523171c0073468c6e0db1bd89d50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9aebe4f5e3d9857fc05b0fdbda325ece') in 0.039542 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom10-08.prefab
+  artifactKey: Guid(d72655a5a874c88458282756c5aac419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom10-08.prefab using Guid(d72655a5a874c88458282756c5aac419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f83e57a3ab2f1942af1344fd5c96839') in 0.041007 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom04-06.prefab
+  artifactKey: Guid(11f492d5736e5664cb086824f1c04994) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom04-06.prefab using Guid(11f492d5736e5664cb086824f1c04994) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01156e6e4f065fac6b0a5bc57cb637a3') in 0.041238 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom02-02.prefab
+  artifactKey: Guid(33d3cb81f1ae2764d94687cd979b87b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom02-02.prefab using Guid(33d3cb81f1ae2764d94687cd979b87b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cc212f5ffac274e23fcb082a40db53f') in 0.042387 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom11-05.prefab
+  artifactKey: Guid(82490147873b0e54081479dab488ce15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom11-05.prefab using Guid(82490147873b0e54081479dab488ce15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2829d2bc022c4e3637567cd5222c34fb') in 0.033400 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom09-08.prefab
+  artifactKey: Guid(e14c8f9f46830ed4fb8ce4d1e377a269) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom09-08.prefab using Guid(e14c8f9f46830ed4fb8ce4d1e377a269) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15503714ffaecb1d93492dbe0e3bef46') in 0.029566 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom03-08.prefab
+  artifactKey: Guid(d2c5783b3b35c2e469c25786a43c104b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom03-08.prefab using Guid(d2c5783b3b35c2e469c25786a43c104b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da16bf3d6d55612f0b5e758dda12679c') in 0.033775 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom07-06.prefab
+  artifactKey: Guid(1e42cbe7c3eee584c9a0b548d882d441) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom07-06.prefab using Guid(1e42cbe7c3eee584c9a0b548d882d441) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcd6be2072ab626f876a9ec249f4b6be') in 0.034970 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom08-07.prefab
+  artifactKey: Guid(dbaf37e8df58c5d49b6eab00fcfb2c6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom08-07.prefab using Guid(dbaf37e8df58c5d49b6eab00fcfb2c6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18a0c327d5dcf3b5e57d0f07ac073830') in 0.032635 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom02-08.prefab
+  artifactKey: Guid(04355f6a7c2f3fe41845a2efcbd961d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom02-08.prefab using Guid(04355f6a7c2f3fe41845a2efcbd961d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1676f4614d679852a440a17f5a2bbb1') in 0.038657 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom04-01.prefab
+  artifactKey: Guid(5026cfb151317474499544483a0f7bf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom04-01.prefab using Guid(5026cfb151317474499544483a0f7bf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '409f7836537d0b264a0d66affc266904') in 0.036360 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom06-04.prefab
+  artifactKey: Guid(749b4a3af6e34444cb9b9adbebd89bfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom06-04.prefab using Guid(749b4a3af6e34444cb9b9adbebd89bfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b0fe2d0cd7db52a2fc0872523d74b16') in 0.036870 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom07-07.prefab
+  artifactKey: Guid(504296789bedaa0489ea21ac31af6a48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom07-07.prefab using Guid(504296789bedaa0489ea21ac31af6a48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a12df7a837e7a9fcb77e4653ff6c363a') in 0.034935 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom09-06.prefab
+  artifactKey: Guid(d965c78d728e6914b919ba65ccb8e7b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom09-06.prefab using Guid(d965c78d728e6914b919ba65ccb8e7b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a886e7462e130ee4745bb567e7ec6137') in 0.032990 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom10-06.prefab
+  artifactKey: Guid(407326b9d5113424994c311e4f909c83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom10-06.prefab using Guid(407326b9d5113424994c311e4f909c83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e08cc23bab511b6d2accf55f0c5f9ac3') in 0.044987 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom08-03.prefab
+  artifactKey: Guid(e11c1d60855a80548bf7623420909264) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom08-03.prefab using Guid(e11c1d60855a80548bf7623420909264) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ed1f9567e5791d35ccc9fe8b01218ab') in 0.041870 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom10-05.prefab
+  artifactKey: Guid(74da8d316a6ace24ca4a22656a91d383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom10-05.prefab using Guid(74da8d316a6ace24ca4a22656a91d383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd04734cb1c63b9b508aa8cffd282279a') in 0.041015 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom06-02.prefab
+  artifactKey: Guid(27e5edd287a3b1b47bcbc8e1d8c2d662) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom06-02.prefab using Guid(27e5edd287a3b1b47bcbc8e1d8c2d662) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cc5b21b5800f89b30e778611701ee53') in 0.042348 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom02-07.prefab
+  artifactKey: Guid(1a5de3c3563daf440a404d8d7c8a50dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom02-07.prefab using Guid(1a5de3c3563daf440a404d8d7c8a50dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d881c473bffb0c18c683e996cf80f78') in 0.041983 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom08-01.prefab
+  artifactKey: Guid(6087684790c5ac14ab33c7b8dede4b3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom08-01.prefab using Guid(6087684790c5ac14ab33c7b8dede4b3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4f91c607bd3b429470791be71ea6dd9') in 0.034989 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom02-06.prefab
+  artifactKey: Guid(9ce4d95fe52fe4e4995d6954116b62e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom02-06.prefab using Guid(9ce4d95fe52fe4e4995d6954116b62e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0f0a86229a376291bf1e103fd4fa2a9') in 0.036520 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom04-08.prefab
+  artifactKey: Guid(b8bda81895ae0e74d93656fadfdcc371) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom04-08.prefab using Guid(b8bda81895ae0e74d93656fadfdcc371) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c39ed16df466ffac6dd623f4e88bf7ad') in 0.031705 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom11-07.prefab
+  artifactKey: Guid(49a376834b3acbd4db45a69bf8479bcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom11-07.prefab using Guid(49a376834b3acbd4db45a69bf8479bcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f04b1da7f9d9e3a4a5301635694dc7fe') in 0.036011 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom06-03.prefab
+  artifactKey: Guid(9a1beacac54fbf340a3591700e98e72b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom06-03.prefab using Guid(9a1beacac54fbf340a3591700e98e72b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bb501ca0581479ccfec321588777acc') in 0.035461 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom04-05.prefab
+  artifactKey: Guid(01bc12ac9d0488f41a72a7bb7e9947cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom04-05.prefab using Guid(01bc12ac9d0488f41a72a7bb7e9947cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1da6c8b70585b28d1a79aa405ea07719') in 0.033027 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom06-01.prefab
+  artifactKey: Guid(ac9cb8e84fde0a74c91fe01dfdc769e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom06-01.prefab using Guid(ac9cb8e84fde0a74c91fe01dfdc769e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7f5641bc8a65abae21ae5c6e2e2117b') in 0.036434 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom09-01.prefab
+  artifactKey: Guid(b1041b0b6504dd14abe3a7e576ace224) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom09-01.prefab using Guid(b1041b0b6504dd14abe3a7e576ace224) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9140d18bae22a6dddae8de7b8da069ca') in 0.036002 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom09-02.prefab
+  artifactKey: Guid(ad110f2de151fcb4686fd59e00fdbae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom09-02.prefab using Guid(ad110f2de151fcb4686fd59e00fdbae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e0822d1e6e1ec31dbf784b3540c2c3b') in 0.047060 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom04-07.prefab
+  artifactKey: Guid(0be0cc62a8aa53d48a2fe4cdfabdfb45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom04-07.prefab using Guid(0be0cc62a8aa53d48a2fe4cdfabdfb45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52a334b76a4eb57c176df4e07c5e46a2') in 0.042489 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom05-05.prefab
+  artifactKey: Guid(6b9dea93b7a8cdb4eb0f0ca704f1bac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom05-05.prefab using Guid(6b9dea93b7a8cdb4eb0f0ca704f1bac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fd8e4c05d52fbdd3e37bab3af1427e1') in 0.038813 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom03-07.prefab
+  artifactKey: Guid(08791db522602d84c85d56fbe3a85c2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom03-07.prefab using Guid(08791db522602d84c85d56fbe3a85c2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8edac3e71f91d847fb98af9d50519dee') in 0.035323 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom07-03.prefab
+  artifactKey: Guid(e5046dd57849aa747a681b821fbf4d08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom07-03.prefab using Guid(e5046dd57849aa747a681b821fbf4d08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57d416aefa4d6a31cf5894d6c5a136dd') in 0.037664 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom03-04.prefab
+  artifactKey: Guid(035f8196f91d47747920af6b53bb8291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom03-04.prefab using Guid(035f8196f91d47747920af6b53bb8291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd31be2344ddc3c332be87f1085686489') in 0.047811 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom11-02.prefab
+  artifactKey: Guid(42ef4dc19c9100745a69ec8719907dd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom11-02.prefab using Guid(42ef4dc19c9100745a69ec8719907dd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '973c62845557cd5bfc4cf73a13990431') in 0.049406 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom12-01.prefab
+  artifactKey: Guid(6d16deff01a6f3d4eaab534e1199c60a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom12-01.prefab using Guid(6d16deff01a6f3d4eaab534e1199c60a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74cfa13c873805576b22b60c7b64672b') in 0.037711 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.464973 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom12-02.prefab
+  artifactKey: Guid(7630e2a4846bb2e49a07cce696cbc97b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom12-02.prefab using Guid(7630e2a4846bb2e49a07cce696cbc97b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d39cda099a014e833875c9e88529572') in 0.046212 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom13-08.prefab
+  artifactKey: Guid(6ce99d16cd40ee24d8ff43f7f3675fcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom13-08.prefab using Guid(6ce99d16cd40ee24d8ff43f7f3675fcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f25d874057136f08b6a86376af7ceadc') in 0.043705 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom19-03.prefab
+  artifactKey: Guid(36cd9e0c35d9d694b9f83d0ad4ace49b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom19-03.prefab using Guid(36cd9e0c35d9d694b9f83d0ad4ace49b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9df1c1ace5a7b0d06142c67aa606857') in 0.043249 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom15-07.prefab
+  artifactKey: Guid(755635629a671d540a376a4013d78e8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom15-07.prefab using Guid(755635629a671d540a376a4013d78e8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f931a147bad78b1a51e50f6314251f44') in 0.042162 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom18-02.prefab
+  artifactKey: Guid(f1bbbbfe0e6857048b8e5ed8d74fe5d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom18-02.prefab using Guid(f1bbbbfe0e6857048b8e5ed8d74fe5d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b106a10027f5935211786afc009ea7e') in 0.048375 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom18-04.prefab
+  artifactKey: Guid(2002ab4878cc8b14e84ebe85c2f6c8d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom18-04.prefab using Guid(2002ab4878cc8b14e84ebe85c2f6c8d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ca5ead809122daec2bc5dd8ba7caaf9') in 0.048364 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom19-06.prefab
+  artifactKey: Guid(35ad410368f94644fa211022e57da918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom19-06.prefab using Guid(35ad410368f94644fa211022e57da918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93c4e42f5f1a069c9293a1b2e79eeb63') in 0.042662 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom20-02.prefab
+  artifactKey: Guid(158831ffe97f81648a6db65accbe5cc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom20-02.prefab using Guid(158831ffe97f81648a6db65accbe5cc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8d24d8fdbee42723b53e440d753adea') in 0.045829 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom16-08.prefab
+  artifactKey: Guid(e5addd9e656eec14f965429899328e3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom16-08.prefab using Guid(e5addd9e656eec14f965429899328e3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1f01129e3f0c777c47441cbce7afd21') in 0.046757 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom14-06.prefab
+  artifactKey: Guid(6b73930e24654d649a1058c3b0038636) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom14-06.prefab using Guid(6b73930e24654d649a1058c3b0038636) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '984ce416a2af3f111030f82995ef52e8') in 0.055905 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom20-03.prefab
+  artifactKey: Guid(ac894da0fcb75ff43b1c911d30b95259) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom20-03.prefab using Guid(ac894da0fcb75ff43b1c911d30b95259) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba2ba20acd70c93f4737a09a1ab66b9b') in 0.054712 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom13-07.prefab
+  artifactKey: Guid(2d11aa8a43f400948a495b5e016ff9c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom13-07.prefab using Guid(2d11aa8a43f400948a495b5e016ff9c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0deb88c794dc931a7cc8b7894f9293ba') in 0.054828 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom17-05.prefab
+  artifactKey: Guid(adb9f29f0a04e2d42abd197c0450d623) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom17-05.prefab using Guid(adb9f29f0a04e2d42abd197c0450d623) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '575893fd1151b968252020510cbef15b') in 0.051378 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000390 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom17-06.prefab
+  artifactKey: Guid(66ba132f1a333eb498976b1b2744f791) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom17-06.prefab using Guid(66ba132f1a333eb498976b1b2744f791) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93e3f42c8efa3ba781e42db16f6d0941') in 0.052617 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom17-07.prefab
+  artifactKey: Guid(6b04400387e30dc4cb2a569f70adfc3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom17-07.prefab using Guid(6b04400387e30dc4cb2a569f70adfc3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f70ed5f34b60ccd0b5c8f4c75b31d9d3') in 0.044156 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom16-03.prefab
+  artifactKey: Guid(e88c873e23509254bbd03c1520190cd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom16-03.prefab using Guid(e88c873e23509254bbd03c1520190cd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21de94117f4b11ca42739d7d587b9c68') in 0.042757 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom19-07.prefab
+  artifactKey: Guid(5df1a5ecd16efcf40ad772eda0a09d62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom19-07.prefab using Guid(5df1a5ecd16efcf40ad772eda0a09d62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fbe26a89995c98e0a412820a5e11cf3') in 0.037300 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.478067 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Fly
+  artifactKey: Guid(3c26b9f3214f424418dc99796f1028a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Fly using Guid(3c26b9f3214f424418dc99796f1028a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60613eeb4f3a609f0d4ef08aedbe3dab') in 0.006990 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.061255 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Fly/Fly01-01.prefab
+  artifactKey: Guid(a97ce257277d3a8478674b56e65812ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Fly/Fly01-01.prefab using Guid(a97ce257277d3a8478674b56e65812ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ead217087c4eb8f3b4e51d08d3c425e') in 0.083809 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Fly/Fly03-03.prefab
+  artifactKey: Guid(f64568678cf27054f83774fbc9be8edb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Fly/Fly03-03.prefab using Guid(f64568678cf27054f83774fbc9be8edb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7705e07bd680d81eafeb6a20a5af660b') in 0.079694 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Fly/Fly02-09.prefab
+  artifactKey: Guid(8345d47a5c923164f9d82bdd3b54d1e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Fly/Fly02-09.prefab using Guid(8345d47a5c923164f9d82bdd3b54d1e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70a212f66a97eb0f46b12c174221c0e8') in 0.083349 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Fly/Fly02-07.prefab
+  artifactKey: Guid(d8c8f6a999bbaa14a84b3c69a31f81b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Fly/Fly02-07.prefab using Guid(d8c8f6a999bbaa14a84b3c69a31f81b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '394378a8f7104b68d369f67f437c2437') in 0.081362 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Fly/Fly02-06.prefab
+  artifactKey: Guid(964b6179a0900974497d29f3610b1251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Fly/Fly02-06.prefab using Guid(964b6179a0900974497d29f3610b1251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa2b88fa0cbf4a3e2b99b9934bb14f01') in 0.084327 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Fly/Fly07-09.prefab
+  artifactKey: Guid(e1fa6dd794135d94aa438ae10658bddd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Fly/Fly07-09.prefab using Guid(e1fa6dd794135d94aa438ae10658bddd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f788ce56f21e08316722a020aa197099') in 0.094021 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Fly/Fly05-06.prefab
+  artifactKey: Guid(a2a1c69165254704d9919c0a17107cf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Fly/Fly05-06.prefab using Guid(a2a1c69165254704d9919c0a17107cf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbc8efb19619270722abdb63626e74ef') in 0.100164 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Fly/Fly05-07.prefab
+  artifactKey: Guid(ff5401b22ecc16f4d97c2f490bf9e1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Fly/Fly05-07.prefab using Guid(ff5401b22ecc16f4d97c2f490bf9e1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23b424ce3a73ad83d9ebd340707be8f5') in 0.087255 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Fly/Fly10-01.prefab
+  artifactKey: Guid(db918b36e8fa4464a9ff945523bbd72e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Fly/Fly10-01.prefab using Guid(db918b36e8fa4464a9ff945523bbd72e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dac8c5395cd6f1817457258f9a96ae72') in 0.078392 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Fly/Fly01-05.prefab
+  artifactKey: Guid(c774b1c249794a648acd3a1071810547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Fly/Fly01-05.prefab using Guid(c774b1c249794a648acd3a1071810547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2208bda024fba454db7d6f75648995f2') in 0.096342 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Fly/Fly08-07.prefab
+  artifactKey: Guid(0e389621875f4b54da20b1246d88e9db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Fly/Fly08-07.prefab using Guid(0e389621875f4b54da20b1246d88e9db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d854a7280e00e0cf3b8c0bfd5f19b3f') in 0.099533 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Fly/Fly08-03.prefab
+  artifactKey: Guid(be35878c1bea22b4499717212599a1d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Fly/Fly08-03.prefab using Guid(be35878c1bea22b4499717212599a1d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84533a583f508c43a0964541502b9ae9') in 0.090028 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Fly/Fly09-08.prefab
+  artifactKey: Guid(46d566386b19e3f49b78f8a4ba28f178) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Fly/Fly09-08.prefab using Guid(46d566386b19e3f49b78f8a4ba28f178) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f40d7fb59fd69f6e547fc01f2b75985b') in 0.108876 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Fly/Fly02-05.prefab
+  artifactKey: Guid(ba19b440f1b53ba49ab13a2ad35f7966) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Fly/Fly02-05.prefab using Guid(ba19b440f1b53ba49ab13a2ad35f7966) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab6e4a54b363408187e192a5b744422b') in 0.091446 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Fly/Fly02-03.prefab
+  artifactKey: Guid(8b8e53294bb28d445b4971952a1e729a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Fly/Fly02-03.prefab using Guid(8b8e53294bb28d445b4971952a1e729a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ea778cf2f3d7cb6ddca7eb9a32c10c5') in 0.082056 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Fly/Fly04-03.prefab
+  artifactKey: Guid(945f4b54b9e7d5b41ad7634e388a7c58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Fly/Fly04-03.prefab using Guid(945f4b54b9e7d5b41ad7634e388a7c58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10b4355412b064705c99f4c3a09a84e8') in 0.103557 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Fly/Fly06-05.prefab
+  artifactKey: Guid(4f0d534afeac62d41a8f2bbcef7f0563) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Fly/Fly06-05.prefab using Guid(4f0d534afeac62d41a8f2bbcef7f0563) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3843a42b263e75738f01f73fe74e429') in 0.106574 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Fly/Fly03-05.prefab
+  artifactKey: Guid(1fc89f0a54d9317469a63b480deee524) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Fly/Fly03-05.prefab using Guid(1fc89f0a54d9317469a63b480deee524) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48b8a56ae4ff63ecb8efb8e14ed23c10') in 0.102744 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Fly/Fly01-09.prefab
+  artifactKey: Guid(861013fcfdae49f4eaabd56469050d85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Fly/Fly01-09.prefab using Guid(861013fcfdae49f4eaabd56469050d85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd9f36ff019e8a8ad35f514fbf1598aa') in 0.103536 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Fly/Fly09-03.prefab
+  artifactKey: Guid(cab4672a9a500a0428d834bdaead7b52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Fly/Fly09-03.prefab using Guid(cab4672a9a500a0428d834bdaead7b52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '355c45d2bd490bd872dce595f35e56e8') in 0.097008 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Fly/Fly08-04.prefab
+  artifactKey: Guid(39f6a9b6fdcd4d54f8f1f66fe2467ce8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Fly/Fly08-04.prefab using Guid(39f6a9b6fdcd4d54f8f1f66fe2467ce8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0eb2146b6d8b034f9169877b3325f518') in 0.096963 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Fly/Fly09-09.prefab
+  artifactKey: Guid(cd05c74e58da6df4bb25c8aeaa9c568a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Fly/Fly09-09.prefab using Guid(cd05c74e58da6df4bb25c8aeaa9c568a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88c3c9cc8f07a6b3a6405ceb779dcbbf') in 0.098868 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.414796 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Animations/Fly1-07.controller
+  artifactKey: Guid(bac98dca4dd9ccd4f975c59c5b7f2503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Animations/Fly1-07.controller using Guid(bac98dca4dd9ccd4f975c59c5b7f2503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab358e980b92c3d55f48d877f65df900') in 0.008534 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.399816 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Textures/PublicTexture
+  artifactKey: Guid(1d0a201fccc7b2a44aa798f4b2ba609d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Textures/PublicTexture using Guid(1d0a201fccc7b2a44aa798f4b2ba609d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '652eb11bef007e0e9440347bd8cfa90c') in 0.006527 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.061123 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Textures/PublicTexture/Arrow_01.png
+  artifactKey: Guid(0593bacef0ceeb84588cf97a240866c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Textures/PublicTexture/Arrow_01.png using Guid(0593bacef0ceeb84588cf97a240866c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b112234db876f1f054829a25f9b24c9') in 0.020797 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Textures/PublicTexture/Mask_01.png
+  artifactKey: Guid(55e04be28f133304dac19f9d202e7016) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Textures/PublicTexture/Mask_01.png using Guid(55e04be28f133304dac19f9d202e7016) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b74149ffafb90706562f0371a7c5528') in 0.011917 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Textures/PublicTexture/par_Fire.png
+  artifactKey: Guid(a7a99efbcfd92f94283f05b2611eedcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Textures/PublicTexture/par_Fire.png using Guid(a7a99efbcfd92f94283f05b2611eedcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f111af67082818b2311312ad31904e2') in 0.012914 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Textures/PublicTexture/pointLight.png
+  artifactKey: Guid(45124d0cf9cc31f43a39144bc0000f88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Textures/PublicTexture/pointLight.png using Guid(45124d0cf9cc31f43a39144bc0000f88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9ba336ade05cd65901e6468aa11fd9d') in 0.013374 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Textures/PublicTexture/Noise_01.png
+  artifactKey: Guid(ff386ef4382e3a44daea32285332ea5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Textures/PublicTexture/Noise_01.png using Guid(ff386ef4382e3a44daea32285332ea5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0860fea7b919e9bc77026103b4d14a40') in 0.016159 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Textures/PublicTexture/Tech_02.png
+  artifactKey: Guid(ef0f1cb8a13c31a40a8a7cfbafdc4452) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Textures/PublicTexture/Tech_02.png using Guid(ef0f1cb8a13c31a40a8a7cfbafdc4452) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5284a19b49647e4fb78bfd4df30659d4') in 0.016203 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Textures/PublicTexture/Mask_02.png
+  artifactKey: Guid(3c8c9d263b967194f989983155fde844) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Textures/PublicTexture/Mask_02.png using Guid(3c8c9d263b967194f989983155fde844) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44f6f6e5ee946da1ecae894a23798531') in 0.016990 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000125 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Textures/PublicTexture/star_00.png
+  artifactKey: Guid(d7f6de9eb68136445a49c11c8e1652df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Textures/PublicTexture/star_00.png using Guid(d7f6de9eb68136445a49c11c8e1652df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6888607b52a3e56a9930cd371c41e3d2') in 0.014207 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.781527 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Fly/Fly10-09.prefab
+  artifactKey: Guid(7e5e89015022e1948bf61315d1975424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Fly/Fly10-09.prefab using Guid(7e5e89015022e1948bf61315d1975424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8400f9d3b6626fa9b6a15db93a1fa297') in 0.054917 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 195.128628 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_1.png
+  artifactKey: Guid(3e20d1f7b809e994a97ef923777a83df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_1.png using Guid(3e20d1f7b809e994a97ef923777a83df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da2e12a5ba77abe390bf8d13b13760de') in 0.020567 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.009397 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_3.png
+  artifactKey: Guid(9ee9ae19231d7fb4fb8ba731bdfaec49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_3.png using Guid(9ee9ae19231d7fb4fb8ba731bdfaec49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fffa29cf4700901cec3ab970df1eb8e') in 0.018286 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.017336 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_6.png
+  artifactKey: Guid(b751d60db6251274dbd6b998de6fee2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_6.png using Guid(b751d60db6251274dbd6b998de6fee2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d246513df5f52089f3ae9d6fd302d8d') in 0.020652 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_85.png
+  artifactKey: Guid(5f0a6abe28979ed42a7bd1af82171184) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_85.png using Guid(5f0a6abe28979ed42a7bd1af82171184) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42c2ee7ee0f0dff5a5ea1049cb28157c') in 0.024447 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_87.png
+  artifactKey: Guid(9ab1a49f69f448a4aa5adbe1beb94c05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_87.png using Guid(9ab1a49f69f448a4aa5adbe1beb94c05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd053693527e074996ceefd415f8ad649') in 0.023634 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_46.png
+  artifactKey: Guid(2f8c375e65beb9b40bf6a4e134c6370f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_46.png using Guid(2f8c375e65beb9b40bf6a4e134c6370f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '830a0ebe46df8263817a0c3cfbd15ef6') in 0.026474 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_56.png
+  artifactKey: Guid(28a88288333a14c42b4b35c4ede111e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_56.png using Guid(28a88288333a14c42b4b35c4ede111e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6df22d3713bae4db36d97411cce26f5') in 0.024058 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_79.png
+  artifactKey: Guid(3399fcfcbcf1ace46b6f243a1958a48f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_79.png using Guid(3399fcfcbcf1ace46b6f243a1958a48f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '712a8907f6039e298761dc5aaf0a4654') in 0.019072 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_89.png
+  artifactKey: Guid(a201c8277fcebbc4fbb32f5cfa51fcac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_89.png using Guid(a201c8277fcebbc4fbb32f5cfa51fcac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3716cde34d2a0a276233463e7efeb302') in 0.018572 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_39.png
+  artifactKey: Guid(6157639324ae3ba4a9f1db2b6ff8e695) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_39.png using Guid(6157639324ae3ba4a9f1db2b6ff8e695) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5461f8db6a9a67fe9d89301437595779') in 0.019719 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_27.png
+  artifactKey: Guid(e7afc1284dac10d43978c9e5f5c8ae0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_27.png using Guid(e7afc1284dac10d43978c9e5f5c8ae0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb62003fe3e310859c5c02c9bddb67cb') in 0.025410 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_16.png
+  artifactKey: Guid(707ea5f045e65fa43a4827f83d0b2c69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_16.png using Guid(707ea5f045e65fa43a4827f83d0b2c69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0580a62742bc98e0d89d838de49a5efc') in 0.023495 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_83.png
+  artifactKey: Guid(9bde6e273251c204b9cde4a80156df31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_83.png using Guid(9bde6e273251c204b9cde4a80156df31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee683561b3c645ee6917f6b92d7efa58') in 0.017780 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_45.png
+  artifactKey: Guid(0e221961575f91b499cd8575b73f271b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_45.png using Guid(0e221961575f91b499cd8575b73f271b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb777653bf3790a2d976f3d2b5641336') in 0.025708 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_76.png
+  artifactKey: Guid(340a99f7d2293cf4fb3f7ae02fd561bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_76.png using Guid(340a99f7d2293cf4fb3f7ae02fd561bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62c381853a5b8a6e40d95783bb2f9ef5') in 0.019838 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_75.png
+  artifactKey: Guid(35953dc3c8eee5446bb8051669c0038d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_75.png using Guid(35953dc3c8eee5446bb8051669c0038d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bd09c31fc4d381419abaa37581eecb2') in 0.019353 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_36.png
+  artifactKey: Guid(82c3e4d83fecd1449a74b43c97625fca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_36.png using Guid(82c3e4d83fecd1449a74b43c97625fca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad19e687e2687c5867d3777bab74fd72') in 0.020199 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_25.png
+  artifactKey: Guid(366d97adb41f5324a8ca349d9eed4262) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_25.png using Guid(366d97adb41f5324a8ca349d9eed4262) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45e561b6f1d9e2d1faa86e94a06e6d68') in 0.024135 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_70.png
+  artifactKey: Guid(053550b1f0a056d4c9a0dc99a6e32e5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_70.png using Guid(053550b1f0a056d4c9a0dc99a6e32e5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91b93d97a6aab59955104e206d435514') in 0.020416 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_50.png
+  artifactKey: Guid(5a33708474e43e749b16c92fa6940d20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_50.png using Guid(5a33708474e43e749b16c92fa6940d20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '839f7e5a1d073ffd23c57bce7b4c1c53') in 0.021691 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_13.png
+  artifactKey: Guid(189b8f7ceb2eead43afe0c9a7d8127bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_13.png using Guid(189b8f7ceb2eead43afe0c9a7d8127bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f38cfcb4f2f0f88574200448cf0b595') in 0.023737 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_69.png
+  artifactKey: Guid(6238040981369024ea3efb33d5f2545c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_69.png using Guid(6238040981369024ea3efb33d5f2545c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9b9c6ee733b54d279802e02ea9a22ae') in 0.024224 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_38.png
+  artifactKey: Guid(cc146a3b2b721bc468643b4a1b9e786b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_38.png using Guid(cc146a3b2b721bc468643b4a1b9e786b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c329c8fd699f29956b704b3567dc95e2') in 0.027855 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000105 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_59.png
+  artifactKey: Guid(b4569e4cc094a1b4b92bbf92dfd04708) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_59.png using Guid(b4569e4cc094a1b4b92bbf92dfd04708) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea4ab22304e413bdcf11654880ef2406') in 0.024892 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_15.png
+  artifactKey: Guid(cf040b7165ecc9947995e972abccb071) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_15.png using Guid(cf040b7165ecc9947995e972abccb071) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4444a9c69d2848b9059719b70e2e69af') in 0.024909 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_57.png
+  artifactKey: Guid(ef5c70b11ea498b41a09665e382f7e1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_57.png using Guid(ef5c70b11ea498b41a09665e382f7e1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50de12ad59874c76a756d5c5292ef3f7') in 0.022980 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_12.png
+  artifactKey: Guid(65d0c3ccd1809984f9084b9283c7e0cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_12.png using Guid(65d0c3ccd1809984f9084b9283c7e0cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d899c5a5c5021207473fc188b3b324e') in 0.023969 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_40.png
+  artifactKey: Guid(4264190bc7331f542a9dae485dc760b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_40.png using Guid(4264190bc7331f542a9dae485dc760b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c076369552afa97159d73e38bcb10ed0') in 0.024888 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_48.png
+  artifactKey: Guid(8b9740e951c3a1e4ead9790055c9df8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_48.png using Guid(8b9740e951c3a1e4ead9790055c9df8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '039b6a55e16b65cb6406197379b4be8b') in 0.030087 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_20.png
+  artifactKey: Guid(8da212ee02a277a4c86d94c4af28de2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_20.png using Guid(8da212ee02a277a4c86d94c4af28de2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8da4c42dd3185162c335fbe50f61031') in 0.031498 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_24.png
+  artifactKey: Guid(26970395c724210489cc728ee243785a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_24.png using Guid(26970395c724210489cc728ee243785a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6025e214786df8418cc1305e3a5be79c') in 0.023244 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_30.png
+  artifactKey: Guid(f0f73250d2a799f48850e3cb46dfb7a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_30.png using Guid(f0f73250d2a799f48850e3cb46dfb7a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69571e114b75e6b39ef8e59d7e774fde') in 0.021431 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_66.png
+  artifactKey: Guid(34344866ee531a343b67bf8c6ef2c701) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_66.png using Guid(34344866ee531a343b67bf8c6ef2c701) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '518032b6fb0c2b12f93a4bd19877b456') in 0.021392 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_53.png
+  artifactKey: Guid(f5f41b57b411eb0418b7adca26a08a1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_53.png using Guid(f5f41b57b411eb0418b7adca26a08a1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79092672aebe1969fbd50e6f3d82ace4') in 0.020467 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_68.png
+  artifactKey: Guid(81399b06fca76c5448ef3627f6790831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_68.png using Guid(81399b06fca76c5448ef3627f6790831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d4ef42ab017f2491d03ab177eaf00d5') in 0.022333 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_14.png
+  artifactKey: Guid(e5d32bbde5fc07041b899f2b53af1ba0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_14.png using Guid(e5d32bbde5fc07041b899f2b53af1ba0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7814dedd1eecf50de0ab8b781ed06f0f') in 0.021323 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_64.png
+  artifactKey: Guid(e892866057a4b1740810d0abfbc22365) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_64.png using Guid(e892866057a4b1740810d0abfbc22365) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c5ee486eb1bacbfa2c2df7864c62481') in 0.025805 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_23.png
+  artifactKey: Guid(b9df18bd427c0744a9318866619def50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_23.png using Guid(b9df18bd427c0744a9318866619def50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4368fc59ec6fe91e9956f150dffe8092') in 0.019645 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_61.png
+  artifactKey: Guid(26bbb2a7a9605da4baddc46125b4df45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_61.png using Guid(26bbb2a7a9605da4baddc46125b4df45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '409053a0de24c5dc08c4a6e4b0d508cb') in 0.023046 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_86.png
+  artifactKey: Guid(98823d6cf85fe3f479fd2e5a1ed5d642) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_86.png using Guid(98823d6cf85fe3f479fd2e5a1ed5d642) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8ec0c0740a48f0dda60d795f437e399') in 0.021447 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_77.png
+  artifactKey: Guid(82073eab6e0e5fd4bbc4aa69d0a335a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_77.png using Guid(82073eab6e0e5fd4bbc4aa69d0a335a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c85addf21a079f62c0fa07e6aa8739c') in 0.018833 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_8.png
+  artifactKey: Guid(fd7960aa5cf0ba04c9079f6e5a60f28e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_8.png using Guid(fd7960aa5cf0ba04c9079f6e5a60f28e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1654cdad08ede933db4a255d91f6bdc1') in 0.015258 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_35.png
+  artifactKey: Guid(9e0489ccbf219be47993d51c44bb740d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_35.png using Guid(9e0489ccbf219be47993d51c44bb740d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '475931957ea1edc277dc7408d6d3e4f5') in 0.020456 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_49.png
+  artifactKey: Guid(e632a8f4a4866314ebea886ad2ff3d31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_49.png using Guid(e632a8f4a4866314ebea886ad2ff3d31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17de26148f07803e238377276e522f84') in 0.021315 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_7.png
+  artifactKey: Guid(d728ddb71f6449b499b700b8b94a955d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Textures/TraditionalTexture/Pattern_7.png using Guid(d728ddb71f6449b499b700b8b94a955d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a71a13283560868f092e552ea290c18f') in 0.014695 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.420839 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Materials/Bottom
+  artifactKey: Guid(9bbe26677607de2408820644d715f069) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Materials/Bottom using Guid(9bbe26677607de2408820644d715f069) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '519944f35114a58d1cd93dfe02fe056d') in 0.006591 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.796878 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Materials/Bottom/Bottom01-01
+  artifactKey: Guid(53aa4b7aefa381243ba21da60f28eeb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Materials/Bottom/Bottom01-01 using Guid(53aa4b7aefa381243ba21da60f28eeb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '870efc4d499c5d4458d6512eb0afcf87') in 0.006132 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.047923 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Materials/Bottom/Bottom01-01/Aura_00.mat
+  artifactKey: Guid(636e06e2d48182e4588923072bcce689) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Materials/Bottom/Bottom01-01/Aura_00.mat using Guid(636e06e2d48182e4588923072bcce689) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27e846f4e0414a40e15decbb85c8e1ef') in 0.026209 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Materials/Bottom/Bottom01-01/Aura_02.mat
+  artifactKey: Guid(c98e07e09e8897b46a3540b433e3793d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Materials/Bottom/Bottom01-01/Aura_02.mat using Guid(c98e07e09e8897b46a3540b433e3793d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60fe4fdc2a436deda635eb1c604f4da0') in 0.017872 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Materials/Bottom/Bottom01-01/Light_00.mat
+  artifactKey: Guid(b26269f943b8cf04984d25fe5d2e381b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Materials/Bottom/Bottom01-01/Light_00.mat using Guid(b26269f943b8cf04984d25fe5d2e381b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '292c205d5732256daf6c34a46665b01b') in 0.012410 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Materials/Bottom/Bottom01-01/LineLight.mat
+  artifactKey: Guid(3e91627eb3a82a74eb670143eeefdd8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Materials/Bottom/Bottom01-01/LineLight.mat using Guid(3e91627eb3a82a74eb670143eeefdd8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd727ef04b473c1037b6c26e12145c261') in 0.013242 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.903343 seconds.
+  path: Assets/Stage1.unity
+  artifactKey: Guid(b9b6073ea5049694e8b2f356ada70145) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stage1.unity using Guid(b9b6073ea5049694e8b2f356ada70145) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c0d4afa7122d34875ea238191d69524') in 0.010861 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.826424 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_1.mat
+  artifactKey: Guid(d859de6717ef56d4da21ba49b4466ceb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_1.mat using Guid(d859de6717ef56d4da21ba49b4466ceb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6b56dd8c9998a3c22b20d2bfa8da8ae') in 0.018134 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_22.mat
+  artifactKey: Guid(188e2f0a28001c04f81e28551753d28c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_22.mat using Guid(188e2f0a28001c04f81e28551753d28c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a107b86fdd7d6f08f3ca1d7f1bc8193d') in 0.024371 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_32.mat
+  artifactKey: Guid(a2d710831f240c74b95e149c5567ba9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_32.mat using Guid(a2d710831f240c74b95e149c5567ba9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13fd8a2b41ab99788e72bb88fc141d58') in 0.023203 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_85.mat
+  artifactKey: Guid(795f3665fca1ff5439ac87f2e7359aae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_85.mat using Guid(795f3665fca1ff5439ac87f2e7359aae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28c79fde985f7e47f32eb1bcd2446602') in 0.022480 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_29.mat
+  artifactKey: Guid(027cbbc45b72bc241a1cb8bf1c6db743) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_29.mat using Guid(027cbbc45b72bc241a1cb8bf1c6db743) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a38300b4f4806cea43bf74096a8622ba') in 0.021023 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_43.mat
+  artifactKey: Guid(a8aee12c367104c4290322dc50d1d9f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_43.mat using Guid(a8aee12c367104c4290322dc50d1d9f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb1a7402361538f1b802cea96c24ea4a') in 0.018595 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_87.mat
+  artifactKey: Guid(9f9ee66929c96ea47815842bec5515e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_87.mat using Guid(9f9ee66929c96ea47815842bec5515e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c5bf6f0d0979247a285595368ec6a53') in 0.020590 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_27.mat
+  artifactKey: Guid(8e58fa2a9f3065e4bb387839e8947880) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_27.mat using Guid(8e58fa2a9f3065e4bb387839e8947880) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '627faa5f942b19a398e877d3b4d2bf64') in 0.021279 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000132 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_62.mat
+  artifactKey: Guid(d4e5f1be413292143a9758584d561569) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_62.mat using Guid(d4e5f1be413292143a9758584d561569) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'baa0a53cdeeee6afe205cc108e7a5b25') in 0.027815 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_65.mat
+  artifactKey: Guid(13bf7ca8ed0c5a74d843f6ff8741a526) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_65.mat using Guid(13bf7ca8ed0c5a74d843f6ff8741a526) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3242480a39d7bdf3bba0e87c7e8f5c21') in 0.021652 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_55.mat
+  artifactKey: Guid(2d264cc185dedd14983e204b6c587e23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_55.mat using Guid(2d264cc185dedd14983e204b6c587e23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '815756a83416654809fd8a3244c75d2d') in 0.027387 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_45.mat
+  artifactKey: Guid(3f910b9a4f134ed41a47a84293e9ac27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_45.mat using Guid(3f910b9a4f134ed41a47a84293e9ac27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9828575059b179d3b439eb0ab6970701') in 0.033038 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_15.mat
+  artifactKey: Guid(ec29bcbeb964f2a48aaeaa2e9219a4ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_15.mat using Guid(ec29bcbeb964f2a48aaeaa2e9219a4ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b3792b3d082ceee340cf818a42af2bd') in 0.027791 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_28.mat
+  artifactKey: Guid(fee8d706240745343a711c6902543c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_28.mat using Guid(fee8d706240745343a711c6902543c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '073df1828564476bb914112da96e7b81') in 0.029704 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_63.mat
+  artifactKey: Guid(596054b0a0cacb64f940dec8be260abf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_63.mat using Guid(596054b0a0cacb64f940dec8be260abf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02198929ee3e473478af42a19a6ebe94') in 0.028929 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_60.mat
+  artifactKey: Guid(7e769ed0416af914dad0fb465c42241a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_60.mat using Guid(7e769ed0416af914dad0fb465c42241a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fba61efc491bc9eec0fd54c0ae95723') in 0.026788 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_7.mat
+  artifactKey: Guid(6c593c70961ad40408fc09a97d81ca02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_7.mat using Guid(6c593c70961ad40408fc09a97d81ca02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2483d73cf9687a5bc278ddce9f880811') in 0.021546 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_46.mat
+  artifactKey: Guid(46cadce63733ef441b18235372490157) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_46.mat using Guid(46cadce63733ef441b18235372490157) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fff04497abbdcfa0113f49cf8a6242b') in 0.028508 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_41.mat
+  artifactKey: Guid(bb73483f7d125dd438a85f3047a7a310) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_41.mat using Guid(bb73483f7d125dd438a85f3047a7a310) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff75de79a1d81aa528d742e1e514d61c') in 0.028551 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_78.mat
+  artifactKey: Guid(dab7ac4abc93d254c89e6835c34a43b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_78.mat using Guid(dab7ac4abc93d254c89e6835c34a43b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a45d9ed3862aebc51e869f773d50d9ec') in 0.027677 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_53.mat
+  artifactKey: Guid(ef86359f84f067c4a837b94c1e5155dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_53.mat using Guid(ef86359f84f067c4a837b94c1e5155dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82fd16160ca6ee9cdf4e67d1fcbfdbaa') in 0.028980 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_37.mat
+  artifactKey: Guid(510f9f122d603b0408d22be2c368d6aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_37.mat using Guid(510f9f122d603b0408d22be2c368d6aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65edb72198e1efbe19f5ca927bd1b92c') in 0.027616 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_6.mat
+  artifactKey: Guid(523480f786e1b934aa9ad04bb783e485) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_6.mat using Guid(523480f786e1b934aa9ad04bb783e485) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0ee3c238afc6f74c076d55b3093230f') in 0.021670 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_26.mat
+  artifactKey: Guid(f398478f95c6ba64bb5c70ba54220039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_26.mat using Guid(f398478f95c6ba64bb5c70ba54220039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbe8f5c21d840692c430d14e9e6b59ae') in 0.030010 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_82.mat
+  artifactKey: Guid(312a35a9fd274a74789c2d510ec76f25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_82.mat using Guid(312a35a9fd274a74789c2d510ec76f25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '436e35e1a7902ac9b017a4bb4bafa68b') in 0.026348 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_11.mat
+  artifactKey: Guid(94fa9b77ee561eb429fbc23177e46a9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_11.mat using Guid(94fa9b77ee561eb429fbc23177e46a9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8e0c2ae8ab316eda58dec173e4ce90e') in 0.025595 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.054413 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom20-04.prefab
+  artifactKey: Guid(c1809cc2fe691364c8a680db374a0a15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom20-04.prefab using Guid(c1809cc2fe691364c8a680db374a0a15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a929a4c2502a05f51651e9bef3346b14') in 0.044775 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom20-08.prefab
+  artifactKey: Guid(7398bc3a0425ba946834de6f36ca5897) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom20-08.prefab using Guid(7398bc3a0425ba946834de6f36ca5897) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '242355f8d819cbb864e7738b7a0ce985') in 0.032628 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 34.703868 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Shader
+  artifactKey: Guid(53f1cf7ec866a124dbccf51d23be1be6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Shader using Guid(53f1cf7ec866a124dbccf51d23be1be6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ae5bfd8fb1324086d7d0a2391ccae1c') in 0.008467 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.249343 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Shader/AdditiveBlend_Scroll.shadergraph
+  artifactKey: Guid(890dfa97271f71246b741d3906eb8415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Shader/AdditiveBlend_Scroll.shadergraph using Guid(890dfa97271f71246b741d3906eb8415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1736c866327388985e2b6753f3e5e15c') in 0.012520 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.118359 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Materials
+  artifactKey: Guid(9e975efa063549d4c86fa1e2aed4952b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Materials using Guid(9e975efa063549d4c86fa1e2aed4952b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a403e5840461906df7893489874c800') in 0.006670 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.492187 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Materials/Fly
+  artifactKey: Guid(f585e81a147fd0b4b9a00698c5131c00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Materials/Fly using Guid(f585e81a147fd0b4b9a00698c5131c00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3e057f8662233fceae2118fbcebeb8c') in 0.006119 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.709518 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Materials/Fly/Fly01-02
+  artifactKey: Guid(114fc635ee0d96e4b817a3c17f173e2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Materials/Fly/Fly01-02 using Guid(114fc635ee0d96e4b817a3c17f173e2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcf0d264cb9f20215d6c473ca5faaabd') in 0.006757 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.079591 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Materials/Fly/Fly01-02/ExlosionAura_00.mat
+  artifactKey: Guid(befbebf7fa661b343967b8ddd2884e12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Materials/Fly/Fly01-02/ExlosionAura_00.mat using Guid(befbebf7fa661b343967b8ddd2884e12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd23d2d3f567e59da7c8249ebf29b1d2') in 0.017109 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Materials/Fly/Fly01-02/TrailLight_02.mat
+  artifactKey: Guid(225b782f02f25ef4fbacc2527a16347e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Materials/Fly/Fly01-02/TrailLight_02.mat using Guid(225b782f02f25ef4fbacc2527a16347e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9741545c4436645e60fdd60199721a7c') in 0.018485 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Materials/Fly/Fly01-02/Light_01.mat
+  artifactKey: Guid(ae1ca6256f9f6204a9f40c50c06284eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Materials/Fly/Fly01-02/Light_01.mat using Guid(ae1ca6256f9f6204a9f40c50c06284eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7b750900a9fa00283ad1e18a06fd357') in 0.014337 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Materials/Fly/Fly01-02/Thunder.mat
+  artifactKey: Guid(efbca3b2ef8218c4787ff548eda4a365) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Materials/Fly/Fly01-02/Thunder.mat using Guid(efbca3b2ef8218c4787ff548eda4a365) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ddd0c4b01520965de57d6150f22e27b') in 0.016653 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Materials/Fly/Fly01-02/pointLight.mat
+  artifactKey: Guid(008c89dc13058b741b76163dac1a88c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Materials/Fly/Fly01-02/pointLight.mat using Guid(008c89dc13058b741b76163dac1a88c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20cf38c7a93373f2563af19d9babc4da') in 0.016075 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Materials/Fly/Fly01-02/Trail_Light_02.mat
+  artifactKey: Guid(b014d1ef416721649bc5cdec849e9074) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Materials/Fly/Fly01-02/Trail_Light_02.mat using Guid(b014d1ef416721649bc5cdec849e9074) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87b47cb1bafad14c8c0a0dec1691facc') in 0.017144 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.452750 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Meshs
+  artifactKey: Guid(e763370a1c5bdff47a304b8e51fe3705) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Meshs using Guid(e763370a1c5bdff47a304b8e51fe3705) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ac2d44df87a65a164031099b2797e13') in 0.006707 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.069031 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Materials/Fly/Fly09-09/Arrow_00.mat
+  artifactKey: Guid(949a2a7f36d761d499beba18d56ca033) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Materials/Fly/Fly09-09/Arrow_00.mat using Guid(949a2a7f36d761d499beba18d56ca033) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f92790232161a3f79f69d11a710bba1e') in 0.014175 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Materials/Fly/Fly09-09/ExlosionAura_03.mat
+  artifactKey: Guid(29770793d828cb7468f397a4524a3057) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Materials/Fly/Fly09-09/ExlosionAura_03.mat using Guid(29770793d828cb7468f397a4524a3057) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '549c7b22fb9f3b38a346250de0f741e6') in 0.016789 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Materials/Fly/Fly09-09/Trail_Arrow_02.mat
+  artifactKey: Guid(5df1909cad2b62f4fb26a190ed66bf7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Materials/Fly/Fly09-09/Trail_Arrow_02.mat using Guid(5df1909cad2b62f4fb26a190ed66bf7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc043b127e3430aae28c1e70fe1b51dc') in 0.021215 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Materials/Fly/Fly09-09/par_line.mat
+  artifactKey: Guid(d92b71ffe9663714a8ce8eb6e298ad77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Materials/Fly/Fly09-09/par_line.mat using Guid(d92b71ffe9663714a8ce8eb6e298ad77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10e19249df764ddd9ccf33d06333c294') in 0.012175 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Materials/Fly/Fly09-09/Light_00.mat
+  artifactKey: Guid(5a4f4403503ff8c4990eac93f12b541f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Materials/Fly/Fly09-09/Light_00.mat using Guid(5a4f4403503ff8c4990eac93f12b541f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8dd90c63ae0abf042474110e1a8cf71') in 0.010144 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.737298 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Prefabs
+  artifactKey: Guid(a532572a09133174286ac15ed0319b8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs using Guid(a532572a09133174286ac15ed0319b8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb165572abc29bd9f0a9ca6c09c0614d') in 0.006176 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.660671 seconds.
+  path: Assets/KoreanTraditionalPattern_Effect/Textures
+  artifactKey: Guid(32907501e8e46b047b250971063ffd96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KoreanTraditionalPattern_Effect/Textures using Guid(32907501e8e46b047b250971063ffd96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b74ce0b82afa457d9adda9bf03478bfb') in 0.006376 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 414.829578 seconds.
+  path: Assets/Hovl Studio/Magic effects pack
+  artifactKey: Guid(ccaf0d0261bfcfe4f874cb02d8931eb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hovl Studio/Magic effects pack using Guid(ccaf0d0261bfcfe4f874cb02d8931eb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9e48a4f2661ea2b8189c5cdf383e52d') in 0.007149 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.291890 seconds.
+  path: Assets/Hovl Studio/Magic effects pack/Prefabs
+  artifactKey: Guid(30f354b2984b43147b902803fe8a4ce7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hovl Studio/Magic effects pack/Prefabs using Guid(30f354b2984b43147b902803fe8a4ce7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '151eb4e0683c5f94695f719ac617c8be') in 0.002830 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.168140 seconds.
+  path: Assets/Hovl Studio/Magic effects pack/Prefabs/AoE effects
+  artifactKey: Guid(f0e78b2e61a2b2f40bf0a0be9e842772) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hovl Studio/Magic effects pack/Prefabs/AoE effects using Guid(f0e78b2e61a2b2f40bf0a0be9e842772) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'caf2f89897c7dba0c95cd9eed73f4601') in 0.006661 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.078423 seconds.
+  path: Assets/Hovl Studio/Magic effects pack/Prefabs/AoE effects/Meteors AOE.prefab
+  artifactKey: Guid(3355f6bfa6db8b24281b827de929694c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hovl Studio/Magic effects pack/Prefabs/AoE effects/Meteors AOE.prefab using Guid(3355f6bfa6db8b24281b827de929694c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b533b632173908803887f8dfd5698047') in 0.064424 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.964590 seconds.
+  path: Assets/Hovl Studio/Magic effects pack/Materials/Stone.mat
+  artifactKey: Guid(5e01cbbef75a454468e5eb490ac64181) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hovl Studio/Magic effects pack/Materials/Stone.mat using Guid(5e01cbbef75a454468e5eb490ac64181) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15ab9ddeff6ca31fb948ceb4479661fa') in 0.012958 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.634306 seconds.
+  path: Assets/Hovl Studio/Magic effects pack/Prefabs/Character auras
+  artifactKey: Guid(f28b9550250755a49a2bc61e35278603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hovl Studio/Magic effects pack/Prefabs/Character auras using Guid(f28b9550250755a49a2bc61e35278603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0a7a8d194dad840547b8629d33fcb97') in 0.006435 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.061429 seconds.
+  path: Assets/Hovl Studio/Magic effects pack/Prefabs/Character auras/Buff.prefab
+  artifactKey: Guid(97c43495f80a3244fad1301dfafbe252) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hovl Studio/Magic effects pack/Prefabs/Character auras/Buff.prefab using Guid(97c43495f80a3244fad1301dfafbe252) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0faf897b389c6600782a29a522f69f11') in 0.017083 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.014927 seconds.
+  path: Assets/Hovl Studio/Magic effects pack/Prefabs/Character auras/Lightning aura.prefab
+  artifactKey: Guid(4d9a3b35b3bc07649b697df7fb497b6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hovl Studio/Magic effects pack/Prefabs/Character auras/Lightning aura.prefab using Guid(4d9a3b35b3bc07649b697df7fb497b6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f1da83723ec2b82ec5551c39bf02b44') in 0.023640 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Hovl Studio/Magic effects pack/Prefabs/Character auras/Star aura.prefab
+  artifactKey: Guid(354b6251e950209409c75ab984acf000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hovl Studio/Magic effects pack/Prefabs/Character auras/Star aura.prefab using Guid(354b6251e950209409c75ab984acf000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aeb46786c0c35a88c2d3d45df35ddb76') in 0.019419 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Hovl Studio/Magic effects pack/Prefabs/Character auras/Healing.prefab
+  artifactKey: Guid(1245b8d2997d5b34fb1637be70a7eb05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hovl Studio/Magic effects pack/Prefabs/Character auras/Healing.prefab using Guid(1245b8d2997d5b34fb1637be70a7eb05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3218000fcfbd60a10d621d1dd12d6b94') in 0.017267 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.663967 seconds.
+  path: Assets/Hovl Studio/Magic effects pack/Materials/Arrow1.mat
+  artifactKey: Guid(00b2a55319476cf40b84578eb2f8c2df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hovl Studio/Magic effects pack/Materials/Arrow1.mat using Guid(00b2a55319476cf40b84578eb2f8c2df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ccb5cf30767ded65986de0761c25437') in 0.015411 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.984708 seconds.
+  path: Assets/Hovl Studio/Magic effects pack/Materials/Electro.mat
+  artifactKey: Guid(410fa9a27b8dd1f4989dd201babd7d76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hovl Studio/Magic effects pack/Materials/Electro.mat using Guid(410fa9a27b8dd1f4989dd201babd7d76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '398a7221f3c15e2a8544ac8291569ee6') in 0.011701 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.429224 seconds.
+  path: Assets/Hovl Studio/Magic effects pack/Materials/Heart.mat
+  artifactKey: Guid(e97a79db1dd66ad4d8f70932abe94b73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hovl Studio/Magic effects pack/Materials/Heart.mat using Guid(e97a79db1dd66ad4d8f70932abe94b73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84b9546c2266b756b9ba80bdc1f3812f') in 0.012230 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.807930 seconds.
+  path: Assets/Hovl Studio/Magic effects pack/Materials/Star.mat
+  artifactKey: Guid(f7fb42690dbaf0d408f1f55ea89b7be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hovl Studio/Magic effects pack/Materials/Star.mat using Guid(f7fb42690dbaf0d408f1f55ea89b7be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04b12b7d25a567395c6d13c2b0cc9a04') in 0.010495 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 24.072911 seconds.
+  path: Assets/FinalStage.unity
+  artifactKey: Guid(ee4f36f9eedd2514bb107ecba7543f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FinalStage.unity using Guid(ee4f36f9eedd2514bb107ecba7543f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7708bf732946ceeb36100da0ddba1da3') in 0.006258 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.893041 seconds.
+  path: Assets/Stage1.unity
+  artifactKey: Guid(b9b6073ea5049694e8b2f356ada70145) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stage1.unity using Guid(b9b6073ea5049694e8b2f356ada70145) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b351b7fc065d07e2ac664495aa6035dd') in 0.006077 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23.278905 seconds.
+  path: Assets/Resources
+  artifactKey: Guid(58f8218207162bb438ad72e93ba781da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources using Guid(58f8218207162bb438ad72e93ba781da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7e245f71cc403c34ee7f8ce761e3cfa') in 0.008491 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.089513 seconds.
+  path: Assets/Resources/Sound
+  artifactKey: Guid(7d10da7149ffbf240bba0c78b19996ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sound using Guid(7d10da7149ffbf240bba0c78b19996ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6534bc1b4854b506d006801c644c060') in 0.006395 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.174072 seconds.
+  path: Assets/Resources/Sound/Button.wav
+  artifactKey: Guid(7f0aa73d5836e9740ac0fd687d1e42f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sound/Button.wav using Guid(7f0aa73d5836e9740ac0fd687d1e42f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d32bf7a66129ed2bb8522fab294761f') in 0.051535 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Resources/Sound/TitleBGM.mp3
+  artifactKey: Guid(e259ce29c1d17ef439c3ec0938822f07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sound/TitleBGM.mp3 using Guid(e259ce29c1d17ef439c3ec0938822f07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b797f59502d7fafc5e8bfbbf1d8e29a') in 0.030702 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Resources/Sound/MP_Sad Trombone.mp3
+  artifactKey: Guid(c16dcc0d20ba2ae4cb9d1ab2ef63f049) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sound/MP_Sad Trombone.mp3 using Guid(c16dcc0d20ba2ae4cb9d1ab2ef63f049) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f62194367ea54d091740c0293c01ad3c') in 0.014934 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Resources/Sound/risk-136788.mp3
+  artifactKey: Guid(49e47d7da3bb88740a62356cdb07c4ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sound/risk-136788.mp3 using Guid(49e47d7da3bb88740a62356cdb07c4ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93504a601037b1f4a8709aa1aa6505cc') in 0.019620 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Resources/Sound/MP_맑은 미션 성공(jingle).mp3
+  artifactKey: Guid(097489d8a675dd748a8bf56424d09457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sound/MP_맑은 미션 성공(jingle).mp3 using Guid(097489d8a675dd748a8bf56424d09457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b1b4259cf8903310b81353c5a6890f1') in 0.013719 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 50.454749 seconds.
+  path: Assets/Resources/Sound/dragon-breathe-ire-6216.mp3
+  artifactKey: Guid(6093e222682ae2b49bc120d8c8f8d1ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sound/dragon-breathe-ire-6216.mp3 using Guid(6093e222682ae2b49bc120d8c8f8d1ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f6ec94f065082e62ec7f0b2beae4845') in 0.014906 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.020779 seconds.
+  path: Assets/Resources/Sound/fire-breath-6922.mp3
+  artifactKey: Guid(58b62ae9b6c64cd4b830edc287203de5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sound/fire-breath-6922.mp3 using Guid(58b62ae9b6c64cd4b830edc287203de5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bedc89dcff38e138568a322001413d7') in 0.021826 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Resources/Sound/dragon-roar-96996.mp3
+  artifactKey: Guid(6d25489be42ccad4daae8daabb6c5efb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sound/dragon-roar-96996.mp3 using Guid(6d25489be42ccad4daae8daabb6c5efb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0c0ad0735e1c8a5d4aa742fd75f72bf') in 0.021260 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Resources/Sound/return-of-the-demon-slayer-8686.mp3
+  artifactKey: Guid(17acc37cd88164645970ab11136b1d8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sound/return-of-the-demon-slayer-8686.mp3 using Guid(17acc37cd88164645970ab11136b1d8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7e5fcc7aca08f34bddfaa6bae4adb95') in 0.017654 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

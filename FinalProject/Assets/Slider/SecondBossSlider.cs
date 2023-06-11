@@ -48,8 +48,8 @@ public class SecondBossSlider : MonoBehaviour
             instance = this;
         }
 
-        fireshieldCurrent = 300;
-        fireshieldFull = 300;
+        fireshieldCurrent = 200;
+        fireshieldFull = 200;
 
         hpCurrent = 2000;
         hpFull = 2000;

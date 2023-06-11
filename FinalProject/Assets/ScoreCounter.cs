@@ -74,7 +74,7 @@ public class ScoreCounter : MonoBehaviour {
 	}
 	private void update_score()
 	{
-		this.last.score = this.last.ignite * 10; // 스코어를 갱신.
+		this.last.score = this.last.ignite * 5; // 스코어를 갱신.
 	}
 	public void updateTotalScore()
 	{

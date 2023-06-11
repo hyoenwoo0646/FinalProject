@@ -457,11 +457,11 @@ public class BlockRoot : MonoBehaviour
 			GiveElement.Instance.RedGreenReact();
 			if(SaveData.stagecount == -1)
             {
-				TutorialBossSlider.Instance.hpCurrent -= 500;
+				TutorialBossSlider.Instance.hpCurrent -= 600;
             }
 			else if(SaveData.stagecount == 0)
             {
-				FirstBossSlider.Instance.hpCurrent -= 500;
+				FirstBossSlider.Instance.hpCurrent -= 600;
 			}
 			else if(SaveData.stagecount == 1)
             {
@@ -471,7 +471,7 @@ public class BlockRoot : MonoBehaviour
 				}
 				else if (SecondBossSlider.Instance.fireshieldSlider.gameObject.activeSelf == false)
 				{
-					SecondBossSlider.Instance.hpCurrent -= 500;
+					SecondBossSlider.Instance.hpCurrent -= 600;
 				}
 			}
 			else if (SaveData.stagecount == 2)
@@ -482,7 +482,7 @@ public class BlockRoot : MonoBehaviour
 				}
 				else if (FinalBossSlider.Instance.fireshieldSlider.gameObject.activeSelf == false && FinalBossSlider.Instance.watershieldSlider.gameObject.activeSelf == false)
 				{
-					FinalBossSlider.Instance.hpCurrent -= 500;
+					FinalBossSlider.Instance.hpCurrent -= 600;
 				}
 				
 			}
@@ -497,11 +497,11 @@ public class BlockRoot : MonoBehaviour
 			GiveElement.Instance.RedGreenReact();
 			if (SaveData.stagecount == -1)
 			{
-				TutorialBossSlider.Instance.hpCurrent -= 500;
+				TutorialBossSlider.Instance.hpCurrent -= 600;
 			}
 			if (SaveData.stagecount == 0)
 			{
-				FirstBossSlider.Instance.hpCurrent -= 500;
+				FirstBossSlider.Instance.hpCurrent -= 600;
 			}
 			else if (SaveData.stagecount == 1)
 			{
@@ -511,7 +511,7 @@ public class BlockRoot : MonoBehaviour
 				}
 				else if (SecondBossSlider.Instance.fireshieldSlider.gameObject.activeSelf == false)
 				{
-					SecondBossSlider.Instance.hpCurrent -= 500;
+					SecondBossSlider.Instance.hpCurrent -= 600;
 				}
 			}
 			else if (SaveData.stagecount == 2)
@@ -522,7 +522,7 @@ public class BlockRoot : MonoBehaviour
 				}
 				else if (FinalBossSlider.Instance.fireshieldSlider.gameObject.activeSelf == false && FinalBossSlider.Instance.watershieldSlider.gameObject.activeSelf == false)
 				{
-					FinalBossSlider.Instance.hpCurrent -= 500;
+					FinalBossSlider.Instance.hpCurrent -= 600;
 				}
 				
 			}
@@ -537,7 +537,7 @@ public class BlockRoot : MonoBehaviour
 			GiveElement.Instance.WhitePurpleReact();
 			if (SaveData.stagecount == -1)
 			{
-				TutorialBossSlider.Instance.damagePlus -= 50;
+				TutorialBossSlider.Instance.damagePlus = 50;
 			}
 			if (SaveData.stagecount == 0)
 			{
@@ -575,7 +575,7 @@ public class BlockRoot : MonoBehaviour
 			GiveElement.Instance.WhitePurpleReact();
 			if (SaveData.stagecount == -1)
 			{
-				TutorialBossSlider.Instance.damagePlus -= 50;
+				TutorialBossSlider.Instance.damagePlus = 50;
 			}
 			if (SaveData.stagecount == 0)
 			{
@@ -612,6 +612,7 @@ public class BlockRoot : MonoBehaviour
 		if (block0.color == Block.COLOR.PURSPECIAL && block1.color == Block.COLOR.BLUSPECIAL)
 		{
 			SaveData.specialreact = true;
+			GiveElement.Instance.dottDamage = 60;
 			GiveElement.Instance.PurpleBlueReact();
 			block0.toVanishing();
 			block1.toVanishing();
@@ -619,6 +620,7 @@ public class BlockRoot : MonoBehaviour
 		if (block1.color == Block.COLOR.PURSPECIAL && block0.color == Block.COLOR.BLUSPECIAL)
 		{
 			SaveData.specialreact = true;
+			GiveElement.Instance.dottDamage = 60;
 			GiveElement.Instance.PurpleBlueReact();
 			block0.toVanishing();
 			block1.toVanishing();
