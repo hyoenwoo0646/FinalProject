@@ -22,6 +22,12 @@ public class GiveElement : MonoBehaviour
 
 
     public ParticleSystem stun;
+    public ParticleSystem plusdamage;
+    public ParticleSystem plusdamage1;
+    public ParticleSystem plusdamage2;
+    public ParticleSystem heal;
+    public ParticleSystem wlthr;
+    public ParticleSystem damageup;
 
 
     private static GiveElement instance = null;
@@ -409,19 +415,31 @@ public class GiveElement : MonoBehaviour
     public void RedGreenReact()
     {
         redgreen.SetActive(true);
+        if (!plusdamage.isPlaying)
+        {
+            plusdamage.Play();
+            plusdamage1.Play();
+            plusdamage2.Play();
+        }
         Invoke("RedGreen", 1f);
     }
     
     public void WhitePurpleReact()
     {
         whitepurple.SetActive(true);
-
+        SoundManager.Instance.Sword();
         Invoke("StopDamagePlus", 5f);
     }
 
     public void PurpleBlueReact()
     {
         purpleblue.SetActive(true);
+        if (!wlthr.isPlaying)
+        {
+            wlthr.Play();
+ 
+        }
+
         Debug.Log("지속 데미지");
         InvokeRepeating("dotDamage", 0f, 1f);
         Invoke("StopdotDamage", 5f);
@@ -440,6 +458,11 @@ public class GiveElement : MonoBehaviour
     public void GreenBlueReact()
     {
         greenblue.SetActive(true);
+        if (!heal.isPlaying)
+        {
+            heal.Play();
+        
+        }
         Invoke("GreenBlue", 1f);
     }
 }

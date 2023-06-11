@@ -10,7 +10,12 @@ public class SoundManager : MonoBehaviour
     public AudioClip breakSound;
     public AudioClip winSound;
     public AudioClip loseSound;
-   
+    public AudioClip sword;
+
+    public AudioClip[] atteckSound;
+    public AudioClip[] damageSound;
+
+
 
     private AudioSource audioSource;
 
@@ -73,6 +78,32 @@ public class SoundManager : MonoBehaviour
     public void LoseSound()
     {
         audioSource.clip = loseSound;
+        audioSource.Play();
+    }
+
+    public void PlayRandomSound()
+    {
+        if (atteckSound.Length > 0)
+        {
+            int randomIndex = Random.Range(0, atteckSound.Length);
+            AudioClip randomClip = atteckSound[randomIndex];
+            audioSource.PlayOneShot(randomClip);
+        }
+    }
+
+    public void PlayDamageRandomSound()
+    {
+        if (damageSound.Length > 0)
+        {
+            int randomIndex = Random.Range(0, damageSound.Length);
+            AudioClip randomClip = damageSound[randomIndex];
+            audioSource.PlayOneShot(randomClip);
+        }
+    }
+
+    public void Sword()
+    {
+        audioSource.clip = sword;
         audioSource.Play();
     }
 }

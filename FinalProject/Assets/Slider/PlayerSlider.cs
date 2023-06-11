@@ -113,7 +113,8 @@ public class PlayerSlider : MonoBehaviour
     void hpdown()
     {
         hpCurrent = hpCurrent - bossdamage;
-        //여기다가 사운드 스크립트 넣으면 됨
+        SoundManager.Instance.PlayRandomSound();
+        SoundManager.Instance.PlayDamageRandomSound();
     }
 
     void clearstun()

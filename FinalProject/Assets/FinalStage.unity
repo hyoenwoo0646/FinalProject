@@ -158,7 +158,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -1627,6 +1627,16 @@ MonoBehaviour:
   breakSound: {fileID: 8300000, guid: bf1a54d55a4aac54cbd7f03f754131f7, type: 3}
   winSound: {fileID: 8300000, guid: 097489d8a675dd748a8bf56424d09457, type: 3}
   loseSound: {fileID: 8300000, guid: c16dcc0d20ba2ae4cb9d1ab2ef63f049, type: 3}
+  atteckSound:
+  - {fileID: 8300000, guid: 6093e222682ae2b49bc120d8c8f8d1ef, type: 3}
+  - {fileID: 8300000, guid: fa4f109b9a77405448572ff23772c381, type: 3}
+  - {fileID: 8300000, guid: 9bccbcdc530081f4da0faa473a791c63, type: 3}
+  - {fileID: 8300000, guid: 6d25489be42ccad4daae8daabb6c5efb, type: 3}
+  - {fileID: 8300000, guid: 308d00f090676c647b37136765ecae32, type: 3}
+  - {fileID: 8300000, guid: 58b62ae9b6c64cd4b830edc287203de5, type: 3}
+  damageSound:
+  - {fileID: 8300000, guid: d7cd8fa36fa17bc4faa4b4e6d3f01878, type: 3}
+  - {fileID: 8300000, guid: ed66943f128861b4ebe9c3f891e520fe, type: 3}
 --- !u!82 &590843553
 AudioSource:
   m_ObjectHideFlags: 0
