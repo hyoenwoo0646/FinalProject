@@ -27,6 +27,12 @@ public class DamageText : MonoBehaviour
 
     public Canvas canvas;
     public GameObject dmgTxt;
+    public GameObject cautionTxt;
+
+    public void CreateCautionText(Vector3 hitpoint)
+    {
+        GameObject cautionText = Instantiate(cautionTxt, hitpoint, Quaternion.identity, canvas.transform);
+    }
 
 
     public void CreateDamageText(Vector3 hitPoint, int hitDamage)

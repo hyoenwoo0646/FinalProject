@@ -17,6 +17,13 @@ public class GiveElement : MonoBehaviour
     public GameObject purpleblue;
     public GameObject whitepurple;
 
+    public int plusDamage = 200;
+    public int dottDamage = 10;
+
+
+    public ParticleSystem stun;
+
+
     private static GiveElement instance = null;
 
     public static GiveElement Instance
@@ -51,6 +58,11 @@ public class GiveElement : MonoBehaviour
     {
         ElementGiving();
         ElementReact();
+
+        if(bluewhite.activeSelf == false && stun.isPlaying)
+        {
+            stun.Stop();
+        }
     }
 
     //원소 부여
@@ -167,7 +179,8 @@ public class GiveElement : MonoBehaviour
                 }
                 if (SaveData.stagecount == 0)
                 {
-                    FirstBossSlider.Instance.hpCurrent -= 200;
+                    FirstBossSlider.Instance.hpCurrent -= plusDamage;
+                    DamageText.Instance.CreateDamageText(Camera.main.WorldToScreenPoint(new Vector3(0, 5.5f, 0)), plusDamage);
                 }
                 else if (SaveData.stagecount == 1)
                 {
@@ -177,12 +190,14 @@ public class GiveElement : MonoBehaviour
                     }
                     else if (SecondBossSlider.Instance.fireshieldSlider.gameObject.activeSelf == false)
                     {
-                        SecondBossSlider.Instance.hpCurrent -= 200;
+                        SecondBossSlider.Instance.hpCurrent -= plusDamage;
+                        DamageText.Instance.CreateDamageText(Camera.main.WorldToScreenPoint(new Vector3(0, 5.5f, 0)), plusDamage);
                     }         
                 }
                 else if (SaveData.stagecount == -1)
                 {
-                    TutorialBossSlider.Instance.hpCurrent -= 200;
+                    TutorialBossSlider.Instance.hpCurrent -= plusDamage;
+                    DamageText.Instance.CreateDamageText(Camera.main.WorldToScreenPoint(new Vector3(0, 5.5f, 0)), plusDamage);
                 }
                 else if (SaveData.stagecount == 2)
                 {
@@ -192,7 +207,8 @@ public class GiveElement : MonoBehaviour
                     }
                     else if (FinalBossSlider.Instance.fireshieldSlider.gameObject.activeSelf == false && FinalBossSlider.Instance.watershieldSlider.gameObject.activeSelf == false)
                     {
-                        FinalBossSlider.Instance.hpCurrent -= 200;
+                        FinalBossSlider.Instance.hpCurrent -= plusDamage;
+                        DamageText.Instance.CreateDamageText(Camera.main.WorldToScreenPoint(new Vector3(0, 5.5f, 0)), plusDamage);
                     }                  
                 }
                 Debug.Log("추가데미지");
@@ -313,6 +329,7 @@ public class GiveElement : MonoBehaviour
         if (SaveData.stagecount == 0)
         {
             FirstBossSlider.Instance.hpCurrent -= 10;
+            DamageText.Instance.CreateDamageText(Camera.main.WorldToScreenPoint(new Vector3(0, 5.5f, 0)), dottDamage);
         }
         else if (SaveData.stagecount == 1)
         {
@@ -323,11 +340,13 @@ public class GiveElement : MonoBehaviour
             else if (SecondBossSlider.Instance.fireshieldSlider.gameObject.activeSelf == false)
             {
                 SecondBossSlider.Instance.hpCurrent -= 10;
+                DamageText.Instance.CreateDamageText(Camera.main.WorldToScreenPoint(new Vector3(0, 5.5f, 0)), dottDamage);
             }          
         }
         else if (SaveData.stagecount == -1)
         {
             TutorialBossSlider.Instance.hpCurrent -= 10;
+            DamageText.Instance.CreateDamageText(Camera.main.WorldToScreenPoint(new Vector3(0, 5.5f, 0)), dottDamage);
         }
         else if (SaveData.stagecount == 2)
         {
@@ -338,6 +357,7 @@ public class GiveElement : MonoBehaviour
             else if (FinalBossSlider.Instance.fireshieldSlider.gameObject.activeSelf == false && FinalBossSlider.Instance.watershieldSlider.gameObject.activeSelf == false)
             {
                 FinalBossSlider.Instance.hpCurrent -= 10;
+                DamageText.Instance.CreateDamageText(Camera.main.WorldToScreenPoint(new Vector3(0, 5.5f, 0)), dottDamage);
             }
             
         }
@@ -378,6 +398,7 @@ public class GiveElement : MonoBehaviour
     void BlueWhite()
     {
         bluewhite.SetActive(false);
+
     }
 
     void GreenBlue()
@@ -409,6 +430,10 @@ public class GiveElement : MonoBehaviour
     public void BlueWhiteReact()
     {
         bluewhite.SetActive(true);
+        if (!stun.isPlaying)
+        {
+            stun.Play();
+        }
         Invoke("BlueWhite", PlayerSlider.Instance.stuntime);
     }
 

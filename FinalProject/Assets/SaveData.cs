@@ -29,5 +29,7 @@ public class SaveData : ScriptableObject
     public static bool Stage1Clear = false;
     public static bool Stage2Clear = false;
     public static bool BossClear = false;
+
+    public static bool cautionCount = true;
 }
 

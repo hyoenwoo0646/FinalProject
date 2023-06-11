@@ -19,7 +19,6 @@ public class PlayerSlider : MonoBehaviour
         }
     }
 
-
     public Slider playerSlider;
     public GameObject fill;
     public GameObject panel;
@@ -28,6 +27,8 @@ public class PlayerSlider : MonoBehaviour
     public bool playgame = false;
     public int hpFull;
     public int hpCurrent;
+
+    GameObject cautionText;
 
     public int bossdamage;
     public int stuntime;
@@ -72,7 +73,7 @@ public class PlayerSlider : MonoBehaviour
             SaveData.invokecount = true;
         }
 
-        if(SaveData.stagecount == -1 && SaveData.TutoClear == true)
+        if(SaveData.stagecount == -1)
         {
             CancelInvoke("hpdown");
         }
@@ -96,22 +97,39 @@ public class PlayerSlider : MonoBehaviour
             panel.SetActive(true);            
         }
 
+        if(playerSlider.value <= 0.3 && SaveData.cautionCount == true)
+        {
+            cautionTextUp();
+            SaveData.cautionCount = false;
+        }
 
-
-
-
+        if(playerSlider.value > 0.3)
+        {
+            CancelInvoke("caution");
+            SaveData.cautionCount = true;
+        }
     }
 
     void hpdown()
     {
         hpCurrent = hpCurrent - bossdamage;
+        //여기다가 사운드 스크립트 넣으면 됨
     }
 
     void clearstun()
     {
+        
         bossdamage = 5;
     }
 
+    void cautionTextUp()
+    {
+        InvokeRepeating("caution", 0f, 2f);
+    }
 
+    void caution()
+    {
+        DamageText.Instance.CreateCautionText(Camera.main.WorldToScreenPoint(new Vector3(7.0f, 1.0f, 0)));
 
+    }
 }
