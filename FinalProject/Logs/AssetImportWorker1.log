@@ -1,23 +1,23 @@
 Using pre-set license
 Built from '2021.3/staging' branch; Version is '2021.3.24f1 (cf10dcf7010d) revision 13570268'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'ko' Physical Memory: 16318 MB
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'ko' Physical Memory: 16334 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-E:\Editor\2021.3.24f1\Editor\Unity.exe
+D:\Unity\2021.3.24f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker1
 -projectPath
-E:/FinalProject/FinalProject/FinalProject
+D:/UnityProjects/FinalProj/FinalProject/FinalProject
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-8436
-Successfully changed project path to: E:/FinalProject/FinalProject/FinalProject
-E:/FinalProject/FinalProject/FinalProject
+10400
+Successfully changed project path to: D:/UnityProjects/FinalProj/FinalProject/FinalProject
+D:/UnityProjects/FinalProj/FinalProject/FinalProject
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,82 +47,82 @@ E:/FinalProject/FinalProject/FinalProject
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [11940] Host "[IP] 192.168.0.2 [Port] 0 [Flags] 2 [Guid] 4070609021 [EditorId] 4070609021 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HE9ITCQ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [9168] Host "[IP] 192.168.25.3 [Port] 0 [Flags] 2 [Guid] 3891379998 [EditorId] 3891379998 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-U6G1BF4) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [11940] Host "[IP] 192.168.0.2 [Port] 0 [Flags] 2 [Guid] 4070609021 [EditorId] 4070609021 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HE9ITCQ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [9168] Host "[IP] 192.168.25.3 [Port] 0 [Flags] 2 [Guid] 3891379998 [EditorId] 3891379998 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-U6G1BF4) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 147.03 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 113.79 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.24f1 (cf10dcf7010d)
-[Subsystems] Discovering subsystems at path E:/Editor/2021.3.24f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path E:/FinalProject/FinalProject/FinalProject/Assets
+[Subsystems] Discovering subsystems at path D:/Unity/2021.3.24f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/UnityProjects/FinalProj/FinalProject/FinalProject/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1080 (ID=0x1b80)
+    Renderer: NVIDIA GeForce GTX 1070 Ti (ID=0x1b82)
     Vendor:   NVIDIA
     VRAM:     8079 MB
-    Driver:   31.0.15.1748
+    Driver:   31.0.15.1694
 Initialize mono
-Mono path[0] = 'E:/Editor/2021.3.24f1/Editor/Data/Managed'
-Mono path[1] = 'E:/Editor/2021.3.24f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'E:/Editor/2021.3.24f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56284
+Mono path[0] = 'D:/Unity/2021.3.24f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity/2021.3.24f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/Unity/2021.3.24f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56348
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: E:/Editor/2021.3.24f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.006225 seconds.
+Register platform support module: D:/Unity/2021.3.24f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.008861 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 91.15 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 105.32 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.888 seconds
+- Completed reload, in  1.190 seconds
 Domain Reload Profiling:
-	ReloadAssembly (889ms)
-		BeginReloadAssembly (186ms)
+	ReloadAssembly (1192ms)
+		BeginReloadAssembly (259ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (3ms)
-		EndReloadAssembly (567ms)
-			LoadAssemblies (183ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (754ms)
+			LoadAssemblies (259ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (147ms)
+			SetupTypeCache (204ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (38ms)
-			SetupLoadedEditorAssemblies (310ms)
+			RebuildScriptCaches (47ms)
+			SetupLoadedEditorAssemblies (418ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (9ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (91ms)
+				InitializePlatformSupportModulesInManaged (14ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (105ms)
 				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (138ms)
-				ProcessInitializeOnLoadMethodAttributes (70ms)
+				ProcessInitializeOnLoadAttributes (200ms)
+				ProcessInitializeOnLoadMethodAttributes (96ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.007082 seconds.
+Registered in 0.015510 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image D:\UnityProjects\FinalProj\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\UnityProjects\FinalProj\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.50 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.17 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 System.Exception: Error! Visual Scripting: couldn't find visual scripting package
-  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\PackageVersionUtility.cs:31 
-  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugin\BoltCoreManifest.cs:11 
-  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:33 
-  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:48 
-  at Unity.VisualScripting.PluginContainer.Initialize () [0x00525] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:208 
-  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00009] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:32 
-  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00034] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:76 
-  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x0002c] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:114 
-  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x00032] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:48 
-  at Unity.VisualScripting.VSUsageUtility..cctor () [0x00000] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:22 
+  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in D:\UnityProjects\FinalProj\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\PackageVersionUtility.cs:31 
+  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in D:\UnityProjects\FinalProj\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugin\BoltCoreManifest.cs:11 
+  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in D:\UnityProjects\FinalProj\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:33 
+  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in D:\UnityProjects\FinalProj\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:48 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x00525] in D:\UnityProjects\FinalProj\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:208 
+  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00009] in D:\UnityProjects\FinalProj\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:32 
+  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00034] in D:\UnityProjects\FinalProj\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:76 
+  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x0002c] in D:\UnityProjects\FinalProj\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:114 
+  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x00032] in D:\UnityProjects\FinalProj\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:48 
+  at Unity.VisualScripting.VSUsageUtility..cctor () [0x00000] in D:\UnityProjects\FinalProj\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:22 
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
 UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
 UnityEngine.Logger:Log (UnityEngine.LogType,object)
@@ -130,43 +130,43 @@ UnityEngine.Debug:LogError (object)
 UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 
 Mono: successfully reloaded assembly
-- Completed reload, in  1.779 seconds
+- Completed reload, in  2.444 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1780ms)
-		BeginReloadAssembly (234ms)
+	ReloadAssembly (2445ms)
+		BeginReloadAssembly (316ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
+			DisableScriptedObjects (12ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (24ms)
-		EndReloadAssembly (1367ms)
-			LoadAssemblies (212ms)
+			CreateAndSetChildDomain (37ms)
+		EndReloadAssembly (1952ms)
+			LoadAssemblies (286ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (340ms)
+			SetupTypeCache (403ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (59ms)
-			SetupLoadedEditorAssemblies (809ms)
+			RebuildScriptCaches (73ms)
+			SetupLoadedEditorAssemblies (1257ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (82ms)
-				ProcessInitializeOnLoadAttributes (691ms)
-				ProcessInitializeOnLoadMethodAttributes (25ms)
-				AfterProcessingInitializeOnLoad (5ms)
+				BeforeProcessingInitializeOnLoad (113ms)
+				ProcessInitializeOnLoadAttributes (1095ms)
+				ProcessInitializeOnLoadMethodAttributes (31ms)
+				AfterProcessingInitializeOnLoad (9ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (21ms)
+			AwakeInstancesAfterBackupRestoration (25ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.12 seconds
-Refreshing native plugins compatible for Editor in 1.22 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 2.54 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3120 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 22 unused Assets / (56.2 KB). Loaded Objects now: 3583.
-Memory consumption went from 111.7 MB to 111.6 MB.
-Total: 20.241900 ms (FindLiveObjects: 0.363000 ms CreateObjectMapping: 0.568200 ms MarkObjects: 19.194300 ms  DeleteObjects: 0.115500 ms)
+Unloading 22 unused Assets / (56.1 KB). Loaded Objects now: 3583.
+Memory consumption went from 111.7 MB to 111.7 MB.
+Total: 39.125900 ms (FindLiveObjects: 0.935900 ms CreateObjectMapping: 0.985700 ms MarkObjects: 36.869700 ms  DeleteObjects: 0.327100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -180,22 +180,40 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 28722.005661 seconds.
-  path: Assets/Caution.prefab
-  artifactKey: Guid(71db6e7b1ac09774dabfc42835b9e177) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Caution.prefab using Guid(71db6e7b1ac09774dabfc42835b9e177) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad74872dcdbfc13f0b470dedf286a428') in 0.542205 seconds 
+  Time since last request: 1937681.403755 seconds.
+  path: Assets/2222.png
+  artifactKey: Guid(58e697d7a631d044ba4a8b6c63325228) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2222.png using Guid(58e697d7a631d044ba4a8b6c63325228) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b0ff4c2ee0742f6e19980151149c7a5') in 0.322854 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Lose.prefab
-  artifactKey: Guid(a72e213f46a128840b5c60835463d3ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Lose.prefab using Guid(a72e213f46a128840b5c60835463d3ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fc1557aa2612cd64ad36ce3015d479b') in 0.417155 seconds 
+  Time since last request: 0.000036 seconds.
+  path: Assets/SaveData.asset
+  artifactKey: Guid(2bf239a1fc13257499b277f1f49ec2a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SaveData.asset using Guid(2bf239a1fc13257499b277f1f49ec2a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b499d5ab1f62eb612b518624ff13658a') in 0.017974 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/StatusAilment_01_Aura.prefab
+  artifactKey: Guid(ef39092217c1bfc458cc89c668b4ae0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StatusAilment_01_Aura.prefab using Guid(ef39092217c1bfc458cc89c668b4ae0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d1e86e23c61e73a808baa01a5fb5858') in 0.222212 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000035 seconds.
-  path: Assets/react.PNG
-  artifactKey: Guid(f9f3151b19a93d74b80841da26921d59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/react.PNG using Guid(f9f3151b19a93d74b80841da26921d59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '964948ce0b68ed6d1f762314f747fe13') in 0.110517 seconds 
+  path: Assets/3333.png
+  artifactKey: Guid(c922d009f7a0bbe4499cfe2f4a7b3f5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3333.png using Guid(c922d009f7a0bbe4499cfe2f4a7b3f5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2fa174e795c830af2a3a57ebf5e6c64') in 0.071378 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000086 seconds.
+  path: Assets/Skybox.mat
+  artifactKey: Guid(7987b8c6e6b89ae4da933d395c862de5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Skybox.mat using Guid(7987b8c6e6b89ae4da933d395c862de5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a082d5d1ce06ed3be83bf2e1bef2987') in 0.286154 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Sphere.prefab
+  artifactKey: Guid(36ae109d317028f418f9a48db1afb699) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sphere.prefab using Guid(36ae109d317028f418f9a48db1afb699) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d0a69eb030ec23a49d8447c31bf52d8') in 0.300333 seconds 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting

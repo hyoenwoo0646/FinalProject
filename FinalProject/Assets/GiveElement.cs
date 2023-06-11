@@ -318,7 +318,7 @@ public class GiveElement : MonoBehaviour
                 GreenBlueReact();
 
                 Debug.Log("체력 회복");
-                PlayerSlider.Instance.hpCurrent += 20;
+                PlayerSlider.Instance.hpCurrent += 10;
 
                 greenBlock.SetActive(false);
                 blueBlock.SetActive(false);

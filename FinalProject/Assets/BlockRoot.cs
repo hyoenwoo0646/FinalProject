@@ -654,7 +654,7 @@ public class BlockRoot : MonoBehaviour
 		{
 			SaveData.specialreact = true;
 			GiveElement.Instance.GreenBlueReact();
-			PlayerSlider.Instance.hpCurrent += 50;
+			PlayerSlider.Instance.hpCurrent += 30;
 			block0.toVanishing();
 			block1.toVanishing();
 		}
@@ -662,7 +662,7 @@ public class BlockRoot : MonoBehaviour
 		{
 			SaveData.specialreact = true;
 			GiveElement.Instance.GreenBlueReact();
-			PlayerSlider.Instance.hpCurrent += 50;
+			PlayerSlider.Instance.hpCurrent += 30;
 			block0.toVanishing();
 			block1.toVanishing();
 		}

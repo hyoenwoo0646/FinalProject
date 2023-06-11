@@ -1,23 +1,23 @@
 Using pre-set license
 Built from '2021.3/staging' branch; Version is '2021.3.24f1 (cf10dcf7010d) revision 13570268'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'ko' Physical Memory: 16334 MB
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'ko' Physical Memory: 16318 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-D:\Unity\2021.3.24f1\Editor\Unity.exe
+E:\Editor\2021.3.24f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker9
 -projectPath
-D:/UnityProjects/FinalProj/FinalProject/FinalProject
+E:/FinalProject/FinalProject/FinalProject
 -logFile
 Logs/AssetImportWorker9.log
 -srvPort
-8900
-Successfully changed project path to: D:/UnityProjects/FinalProj/FinalProject/FinalProject
-D:/UnityProjects/FinalProj/FinalProject/FinalProject
+8436
+Successfully changed project path to: E:/FinalProject/FinalProject/FinalProject
+E:/FinalProject/FinalProject/FinalProject
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,82 +47,82 @@ D:/UnityProjects/FinalProj/FinalProject/FinalProject
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [1264] Host "[IP] 192.168.25.3 [Port] 0 [Flags] 2 [Guid] 2726494112 [EditorId] 2726494112 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-U6G1BF4) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [26320] Host "[IP] 192.168.0.2 [Port] 0 [Flags] 2 [Guid] 145841089 [EditorId] 145841089 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HE9ITCQ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [1264] Host "[IP] 192.168.25.3 [Port] 0 [Flags] 2 [Guid] 2726494112 [EditorId] 2726494112 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-U6G1BF4) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [26320] Host "[IP] 192.168.0.2 [Port] 0 [Flags] 2 [Guid] 145841089 [EditorId] 145841089 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HE9ITCQ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 117.22 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 87.34 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.24f1 (cf10dcf7010d)
-[Subsystems] Discovering subsystems at path D:/Unity/2021.3.24f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/UnityProjects/FinalProj/FinalProject/FinalProject/Assets
+[Subsystems] Discovering subsystems at path E:/Editor/2021.3.24f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/FinalProject/FinalProject/FinalProject/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1070 Ti (ID=0x1b82)
+    Renderer: NVIDIA GeForce GTX 1080 (ID=0x1b80)
     Vendor:   NVIDIA
     VRAM:     8079 MB
-    Driver:   31.0.15.1694
+    Driver:   31.0.15.1748
 Initialize mono
-Mono path[0] = 'D:/Unity/2021.3.24f1/Editor/Data/Managed'
-Mono path[1] = 'D:/Unity/2021.3.24f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'D:/Unity/2021.3.24f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56832
+Mono path[0] = 'E:/Editor/2021.3.24f1/Editor/Data/Managed'
+Mono path[1] = 'E:/Editor/2021.3.24f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'E:/Editor/2021.3.24f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56184
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: D:/Unity/2021.3.24f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.006563 seconds.
+Register platform support module: E:/Editor/2021.3.24f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003920 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 106.17 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 76.56 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.023 seconds
+- Completed reload, in  0.733 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1024ms)
-		BeginReloadAssembly (208ms)
+	ReloadAssembly (734ms)
+		BeginReloadAssembly (137ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (673ms)
-			LoadAssemblies (207ms)
+		EndReloadAssembly (483ms)
+			LoadAssemblies (136ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (159ms)
+			SetupTypeCache (119ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (41ms)
-			SetupLoadedEditorAssemblies (397ms)
+			RebuildScriptCaches (32ms)
+			SetupLoadedEditorAssemblies (282ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (11ms)
+				InitializePlatformSupportModulesInManaged (8ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (106ms)
+				RefreshPlugins (77ms)
 				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (188ms)
-				ProcessInitializeOnLoadMethodAttributes (90ms)
+				ProcessInitializeOnLoadAttributes (134ms)
+				ProcessInitializeOnLoadMethodAttributes (61ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.014598 seconds.
+Registered in 0.005457 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\UnityProjects\FinalProj\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\UnityProjects\FinalProj\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.46 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.58 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 System.Exception: Error! Visual Scripting: couldn't find visual scripting package
-  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in D:\UnityProjects\FinalProj\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\PackageVersionUtility.cs:31 
-  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in D:\UnityProjects\FinalProj\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugin\BoltCoreManifest.cs:11 
-  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in D:\UnityProjects\FinalProj\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:33 
-  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in D:\UnityProjects\FinalProj\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:48 
-  at Unity.VisualScripting.PluginContainer.Initialize () [0x00525] in D:\UnityProjects\FinalProj\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:208 
-  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00009] in D:\UnityProjects\FinalProj\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:32 
-  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00034] in D:\UnityProjects\FinalProj\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:76 
-  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x0002c] in D:\UnityProjects\FinalProj\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:114 
-  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x00032] in D:\UnityProjects\FinalProj\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:48 
-  at Unity.VisualScripting.VSUsageUtility..cctor () [0x00000] in D:\UnityProjects\FinalProj\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:22 
+  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\PackageVersionUtility.cs:31 
+  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugin\BoltCoreManifest.cs:11 
+  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:33 
+  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:48 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x00525] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:208 
+  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00009] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:32 
+  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00034] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:76 
+  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x0002c] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:114 
+  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x00032] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:48 
+  at Unity.VisualScripting.VSUsageUtility..cctor () [0x00000] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:22 
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
 UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
 UnityEngine.Logger:Log (UnityEngine.LogType,object)
@@ -130,152 +130,43 @@ UnityEngine.Debug:LogError (object)
 UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 
 Mono: successfully reloaded assembly
-- Completed reload, in  2.096 seconds
+- Completed reload, in  1.403 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2097ms)
-		BeginReloadAssembly (260ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (32ms)
-		EndReloadAssembly (1672ms)
-			LoadAssemblies (233ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (385ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (72ms)
-			SetupLoadedEditorAssemblies (1014ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (110ms)
-				ProcessInitializeOnLoadAttributes (858ms)
-				ProcessInitializeOnLoadMethodAttributes (28ms)
-				AfterProcessingInitializeOnLoad (9ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (20ms)
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
-Refreshing native plugins compatible for Editor in 1.75 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3120 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 22 unused Assets / (56.3 KB). Loaded Objects now: 3590.
-Memory consumption went from 114.9 MB to 114.9 MB.
-Total: 19.107700 ms (FindLiveObjects: 0.415500 ms CreateObjectMapping: 0.118200 ms MarkObjects: 18.394800 ms  DeleteObjects: 0.177500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 1935575.986654 seconds.
-  path: Assets/Travis Game Assets/Status Effects/Textures/NeonSword.tga
-  artifactKey: Guid(112c36aa6fb6b31459a6f24f67ca6df1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Travis Game Assets/Status Effects/Textures/NeonSword.tga using Guid(112c36aa6fb6b31459a6f24f67ca6df1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4762314487bbfa1939cf86ee65718daf') in 0.168795 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 14.949581 seconds.
-  path: Assets/Travis Game Assets/Status Effects/Materials/Buff_01a_PointGlowBig_01.mat
-  artifactKey: Guid(5325e645a67a91b4b9f371dc035969c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Travis Game Assets/Status Effects/Materials/Buff_01a_PointGlowBig_01.mat using Guid(5325e645a67a91b4b9f371dc035969c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5caa81512108e63794f7e8bebf50bb95') in 0.123362 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000066 seconds.
-  path: Assets/Travis Game Assets/Status Effects/Materials/Buff_03a_Trail_01.mat
-  artifactKey: Guid(fc18349e16804e245945431f9ad07cfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Travis Game Assets/Status Effects/Materials/Buff_03a_Trail_01.mat using Guid(fc18349e16804e245945431f9ad07cfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a519a77b00b0faed3d804e8fdb73041d') in 0.029395 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000052 seconds.
-  path: Assets/Travis Game Assets/Status Effects/Materials/Buff_02a_PointBlur_02.mat
-  artifactKey: Guid(98cc821a6b46e7c488562c8df10ed5fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Travis Game Assets/Status Effects/Materials/Buff_02a_PointBlur_02.mat using Guid(98cc821a6b46e7c488562c8df10ed5fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db7b1c6a1f91b957f7c76fcca5b62986') in 0.026067 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000063 seconds.
-  path: Assets/Travis Game Assets/Status Effects/Materials/Buff_02a_PointGlow_01.mat
-  artifactKey: Guid(b533c019761eb994a8718bbd549244f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Travis Game Assets/Status Effects/Materials/Buff_02a_PointGlow_01.mat using Guid(b533c019761eb994a8718bbd549244f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e483e7f072ccbf13cb4a7b8509a36ff3') in 0.026443 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 53.160604 seconds.
-  path: Assets/Travis Game Assets/Status Effects/Prefabs/Buff_03a.prefab
-  artifactKey: Guid(7e691a0229efacd4cba2922df3888456) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Travis Game Assets/Status Effects/Prefabs/Buff_03a.prefab using Guid(7e691a0229efacd4cba2922df3888456) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e62fb93f15e11170debfbc8479f39ea2') in 0.047976 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.013063 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\UnityProjects\FinalProj\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\UnityProjects\FinalProj\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.38 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-System.Exception: Error! Visual Scripting: couldn't find visual scripting package
-  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in D:\UnityProjects\FinalProj\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\PackageVersionUtility.cs:31 
-  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in D:\UnityProjects\FinalProj\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugin\BoltCoreManifest.cs:11 
-  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in D:\UnityProjects\FinalProj\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:33 
-  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in D:\UnityProjects\FinalProj\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:48 
-  at Unity.VisualScripting.PluginContainer.Initialize () [0x00525] in D:\UnityProjects\FinalProj\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:208 
-  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00009] in D:\UnityProjects\FinalProj\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:32 
-  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00034] in D:\UnityProjects\FinalProj\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:76 
-  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x0002c] in D:\UnityProjects\FinalProj\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:114 
-  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x0000d] in D:\UnityProjects\FinalProj\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:33 
-  at Unity.VisualScripting.VSUsageUtility..cctor () [0x00000] in D:\UnityProjects\FinalProj\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:22 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-Mono: successfully reloaded assembly
-- Completed reload, in  2.479 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2481ms)
-		BeginReloadAssembly (349ms)
+	ReloadAssembly (1404ms)
+		BeginReloadAssembly (139ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (68ms)
-		EndReloadAssembly (1986ms)
-			LoadAssemblies (282ms)
+			CreateAndSetChildDomain (19ms)
+		EndReloadAssembly (1162ms)
+			LoadAssemblies (121ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (473ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (84ms)
-			SetupLoadedEditorAssemblies (859ms)
+			SetupTypeCache (278ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (49ms)
+			SetupLoadedEditorAssemblies (700ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (103ms)
-				ProcessInitializeOnLoadAttributes (691ms)
-				ProcessInitializeOnLoadMethodAttributes (38ms)
-				AfterProcessingInitializeOnLoad (16ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (71ms)
+				ProcessInitializeOnLoadAttributes (598ms)
+				ProcessInitializeOnLoadMethodAttributes (21ms)
+				AfterProcessingInitializeOnLoad (4ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (25ms)
+			AwakeInstancesAfterBackupRestoration (17ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 6.31 ms, found 3 plugins.
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.11 seconds
+Refreshing native plugins compatible for Editor in 0.61 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3100 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 16 unused Assets / (24.8 KB). Loaded Objects now: 3637.
-Memory consumption went from 115.6 MB to 115.6 MB.
-Total: 28.285100 ms (FindLiveObjects: 0.678800 ms CreateObjectMapping: 0.274400 ms MarkObjects: 27.202700 ms  DeleteObjects: 0.125500 ms)
+Unloading 3120 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (56.2 KB). Loaded Objects now: 3590.
+Memory consumption went from 112.6 MB to 112.5 MB.
+Total: 11.346100 ms (FindLiveObjects: 0.251800 ms CreateObjectMapping: 0.195300 ms MarkObjects: 10.814400 ms  DeleteObjects: 0.083700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -287,6 +178,204 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 29278.795376 seconds.
+  path: Assets/FourEvilDragonsHP/Mesh/DragonTheNightmareMesh.fbx
+  artifactKey: Guid(2f4e6492f506bbb4a8aeba850e3bb52f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FourEvilDragonsHP/Mesh/DragonTheNightmareMesh.fbx using Guid(2f4e6492f506bbb4a8aeba850e3bb52f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77439e4dde28b64f174f8a7582ac6799') in 0.180409 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.066027 seconds.
+  path: Assets/resource_default/box_a_02.png
+  artifactKey: Guid(cdcc1931095dc8544b4ab733bf2b3fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/box_a_02.png using Guid(cdcc1931095dc8544b4ab733bf2b3fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51e7088b78f363b794edb3ce5cb2b018') in 0.041361 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/resource_default/box_c_02.png
+  artifactKey: Guid(e8def83b1cf543e4a9513f7aaa7bd953) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/box_c_02.png using Guid(e8def83b1cf543e4a9513f7aaa7bd953) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc77779a6d41ef0b8fb57fa846465337') in 0.020907 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/resource_default/point_beige.png
+  artifactKey: Guid(e73dd9c018a08e74e9e3b6b52eba48b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/point_beige.png using Guid(e73dd9c018a08e74e9e3b6b52eba48b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea3f2f8fbd9d128de9cbc0c755cc24b8') in 0.019342 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/resource_default/box_b.png
+  artifactKey: Guid(7ff78b329f164464ea5df9a3227b3f0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/box_b.png using Guid(7ff78b329f164464ea5df9a3227b3f0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d459eab7af48f3160e4ccc5a90e174b') in 0.019199 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/resource_default/gage_b_fill02.png
+  artifactKey: Guid(bcb5b4fb84e360f4ab517305cc7ea5ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/gage_b_fill02.png using Guid(bcb5b4fb84e360f4ab517305cc7ea5ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88e564fda41eb167d896b0f9f6ad782d') in 0.018658 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/resource_default/innerbox_a.png
+  artifactKey: Guid(d987d57fd92b64048bbfeee60e636663) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/innerbox_a.png using Guid(d987d57fd92b64048bbfeee60e636663) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5440156735780ee7d7c6aa0929cc1a97') in 0.018651 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000087 seconds.
+  path: Assets/resource_default/innerbox_a_btn_01.png
+  artifactKey: Guid(34d3404d20b7a8245b1fac6e7855b705) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/innerbox_a_btn_01.png using Guid(34d3404d20b7a8245b1fac6e7855b705) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f7725d26d8f43d50ef2c86c8cc221c8') in 0.017390 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/resource_default/textinput_a.png
+  artifactKey: Guid(e4430d406d9e002418f1d3cf864fb0ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/textinput_a.png using Guid(e4430d406d9e002418f1d3cf864fb0ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0566f153e22e0379c9e595a77769be4b') in 0.017664 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/resource_default/box_b_01.png
+  artifactKey: Guid(a4b88956494e64a4a896b1e2e09d76aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/box_b_01.png using Guid(a4b88956494e64a4a896b1e2e09d76aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee7d7cf628206a90c0e359e9ab48f056') in 0.020374 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/resource_default/gage_b_fill_progress.png
+  artifactKey: Guid(3ce5d913607d46846a0812d1b479e3d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/gage_b_fill_progress.png using Guid(3ce5d913607d46846a0812d1b479e3d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '992453373c1bce572d94f278b8156f2c') in 0.020618 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/resource_default/box_c_01.png
+  artifactKey: Guid(2416bf88655c40c40adc903253fb2ba1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/box_c_01.png using Guid(2416bf88655c40c40adc903253fb2ba1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '850ee284f4054cffd5f38036344fefc3') in 0.025613 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/resource_default/box_b_03.png
+  artifactKey: Guid(cd5efc45d507a414c81bd895a5528a0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/box_b_03.png using Guid(cd5efc45d507a414c81bd895a5528a0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ace6b7f1f1e7d7074db3cee6b1ebaa61') in 0.022585 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/resource_default/box_c_03.png
+  artifactKey: Guid(4acc179c0277ddf4fa72e6d397096d84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/resource_default/box_c_03.png using Guid(4acc179c0277ddf4fa72e6d397096d84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '757773c62b0e04696cc07e674be6732c') in 0.018410 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.746097 seconds.
+  path: Assets/Hovl Studio/Magic effects pack/Demo scene/Lightmap-0_comp_light.exr
+  artifactKey: Guid(9960b70afbb00c1468c54c31462b736a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hovl Studio/Magic effects pack/Demo scene/Lightmap-0_comp_light.exr using Guid(9960b70afbb00c1468c54c31462b736a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a17a37ffa357201df121eef7845c2686') in 0.036300 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.888708 seconds.
+  path: Assets/Hovl Studio/Magic effects pack/Materials/DistortionPoint.mat
+  artifactKey: Guid(fe8d615cbaec71545b42f9163243b02d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hovl Studio/Magic effects pack/Materials/DistortionPoint.mat using Guid(fe8d615cbaec71545b42f9163243b02d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4961603814242664d2a7a67ab2f17568') in 0.117612 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Hovl Studio/Magic effects pack/Materials/VFXatlas.psd
+  artifactKey: Guid(670f1c056a06d7049b90d1fd1e480427) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hovl Studio/Magic effects pack/Materials/VFXatlas.psd using Guid(670f1c056a06d7049b90d1fd1e480427) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62855c3a26ef7d30cc154f1673cb29b1') in 0.046803 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Hovl Studio/Magic effects pack/Materials/Gradient.mat
+  artifactKey: Guid(2ae196836e3f6ce438e93e246a6ab900) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hovl Studio/Magic effects pack/Materials/Gradient.mat using Guid(2ae196836e3f6ce438e93e246a6ab900) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f76f9e2c157b370746ff6d5453118401') in 0.017959 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Hovl Studio/Magic effects pack/Materials/Trail67.mat
+  artifactKey: Guid(228fc1317f61ac4408d84a68ea9822d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hovl Studio/Magic effects pack/Materials/Trail67.mat using Guid(228fc1317f61ac4408d84a68ea9822d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6e25be462a54326632c75c9f2d6f053') in 0.016494 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.931194 seconds.
+  path: Assets/Hovl Studio/Magic effects pack/Prefabs/Slash effects/Stone slash.prefab
+  artifactKey: Guid(3407e378c048bb5438424b28c7740b48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hovl Studio/Magic effects pack/Prefabs/Slash effects/Stone slash.prefab using Guid(3407e378c048bb5438424b28c7740b48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7202b02a9066d092bbf5a35f518e0cf') in 0.058018 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.534679 seconds.
+  path: Assets/Hovl Studio/Magic effects pack/Prefabs/Portals/Portal red.prefab
+  artifactKey: Guid(52c7d057cba585641bb68312c10d7791) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hovl Studio/Magic effects pack/Prefabs/Portals/Portal red.prefab using Guid(52c7d057cba585641bb68312c10d7791) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a2670bb92f3106d4717c692cb8d2237') in 0.019654 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 26.447891 seconds.
+  path: Assets/Hovl Studio/Magic effects pack/Prefabs/Magic circles/Magic circle 2.prefab
+  artifactKey: Guid(48c5715f9603c3842a353516a8baefbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hovl Studio/Magic effects pack/Prefabs/Magic circles/Magic circle 2.prefab using Guid(48c5715f9603c3842a353516a8baefbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb3e2f2af2c7583f1fdd24fc39bad0cf') in 0.022470 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.595783 seconds.
+  path: Assets/Hovl Studio/Magic effects pack/Prefabs/Hits and explosions/Green hit.prefab
+  artifactKey: Guid(3138a83bedbd6ad4481ba0b061da2eb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hovl Studio/Magic effects pack/Prefabs/Hits and explosions/Green hit.prefab using Guid(3138a83bedbd6ad4481ba0b061da2eb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e5ded0a19443246033ecdec461c7b07') in 0.020057 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Hovl Studio/Magic effects pack/Prefabs/Hits and explosions/Stones hit.prefab
+  artifactKey: Guid(9b21333b068a5084ba09535839bee3c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hovl Studio/Magic effects pack/Prefabs/Hits and explosions/Stones hit.prefab using Guid(9b21333b068a5084ba09535839bee3c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9678cb49c25e2d721a4ba03e44dd305') in 0.021123 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.306193 seconds.
+  path: Assets/Hovl Studio/Magic effects pack/Prefabs/Character auras/Healing.prefab
+  artifactKey: Guid(1245b8d2997d5b34fb1637be70a7eb05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hovl Studio/Magic effects pack/Prefabs/Character auras/Healing.prefab using Guid(1245b8d2997d5b34fb1637be70a7eb05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17aa6d99d2fa3d03e040a587493f4742') in 0.018506 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.693274 seconds.
+  path: Assets/Hovl Studio/Magic effects pack/Textures/Concrete slab.png
+  artifactKey: Guid(1b13dc101cf2ac7418019fd776161658) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hovl Studio/Magic effects pack/Textures/Concrete slab.png using Guid(1b13dc101cf2ac7418019fd776161658) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c776e0e793bb5c52dc8ffba936ab073b') in 0.022250 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Hovl Studio/Magic effects pack/Textures/Mask1.png
+  artifactKey: Guid(c829f3f833484ac45b5b9150cb06631c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hovl Studio/Magic effects pack/Textures/Mask1.png using Guid(c829f3f833484ac45b5b9150cb06631c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9aa15dd907050204435239cd41ed498') in 0.015732 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Hovl Studio/Magic effects pack/Textures/Stone.png
+  artifactKey: Guid(ad3c6deb60874964aa592b7f1458ac54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hovl Studio/Magic effects pack/Textures/Stone.png using Guid(ad3c6deb60874964aa592b7f1458ac54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b03372541f8c8c930f06f825bb0c2263') in 0.012739 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Hovl Studio/Magic effects pack/Textures/Concrete slab_MetallicSmoothness.png
+  artifactKey: Guid(a685c8f461a651a46a2631ea3decafae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hovl Studio/Magic effects pack/Textures/Concrete slab_MetallicSmoothness.png using Guid(a685c8f461a651a46a2631ea3decafae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '724f64796053c913f36688a5e2543ffc') in 0.025309 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Hovl Studio/Magic effects pack/Textures/Concrete slab_Normal.png
+  artifactKey: Guid(3a0dde7201a17f646865e8deeac56596) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hovl Studio/Magic effects pack/Textures/Concrete slab_Normal.png using Guid(3a0dde7201a17f646865e8deeac56596) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad729f0e150086fd2a6808b36013f644') in 0.026464 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.222920 seconds.
+  path: Assets/Travis Game Assets/Status Effects/Materials/StatusAilment_01_Star_02.mat
+  artifactKey: Guid(384e5bbfbd4d9484394b85dec83b1e93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Travis Game Assets/Status Effects/Materials/StatusAilment_01_Star_02.mat using Guid(384e5bbfbd4d9484394b85dec83b1e93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a7295a79a5cde74b83696cba12857a3') in 0.021116 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.155324 seconds.
+  path: Assets/ZombiSoft/TinyHealthSystem/Globes/HealthGlobe.psd
+  artifactKey: Guid(63d760332d7990a41a5079214726a810) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ZombiSoft/TinyHealthSystem/Globes/HealthGlobe.psd using Guid(63d760332d7990a41a5079214726a810) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0159bd7ac6dbb8658d8f87b3d0cd486f') in 0.020921 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.420050 seconds.
+  path: Assets/ZombiSoft/TinyHealthSystem/Bars/ManaBar 1.psd
+  artifactKey: Guid(4318d32b4c6c3a54c81fa6a01bcbf476) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ZombiSoft/TinyHealthSystem/Bars/ManaBar 1.psd using Guid(4318d32b4c6c3a54c81fa6a01bcbf476) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae1473997498cb0335b1888b2fcd531b') in 0.025828 seconds 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting
