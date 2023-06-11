@@ -1,23 +1,23 @@
 Using pre-set license
 Built from '2021.3/staging' branch; Version is '2021.3.24f1 (cf10dcf7010d) revision 13570268'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'ko' Physical Memory: 16318 MB
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'ko' Physical Memory: 16334 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-E:\Editor\2021.3.24f1\Editor\Unity.exe
+D:\Unity\2021.3.24f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker9
 -projectPath
-E:/FinalProject/FinalProject/FinalProject
+D:/UnityProjects/FinalProj/FinalProject/FinalProject
 -logFile
 Logs/AssetImportWorker9.log
 -srvPort
-6639
-Successfully changed project path to: E:/FinalProject/FinalProject/FinalProject
-E:/FinalProject/FinalProject/FinalProject
+8900
+Successfully changed project path to: D:/UnityProjects/FinalProj/FinalProject/FinalProject
+D:/UnityProjects/FinalProj/FinalProject/FinalProject
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,82 +47,82 @@ E:/FinalProject/FinalProject/FinalProject
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [26128] Host "[IP] 192.168.0.2 [Port] 0 [Flags] 2 [Guid] 2412479634 [EditorId] 2412479634 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HE9ITCQ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [1264] Host "[IP] 192.168.25.3 [Port] 0 [Flags] 2 [Guid] 2726494112 [EditorId] 2726494112 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-U6G1BF4) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [26128] Host "[IP] 192.168.0.2 [Port] 0 [Flags] 2 [Guid] 2412479634 [EditorId] 2412479634 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HE9ITCQ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [1264] Host "[IP] 192.168.25.3 [Port] 0 [Flags] 2 [Guid] 2726494112 [EditorId] 2726494112 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-U6G1BF4) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 308.58 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 117.22 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.24f1 (cf10dcf7010d)
-[Subsystems] Discovering subsystems at path E:/Editor/2021.3.24f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path E:/FinalProject/FinalProject/FinalProject/Assets
+[Subsystems] Discovering subsystems at path D:/Unity/2021.3.24f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/UnityProjects/FinalProj/FinalProject/FinalProject/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1080 (ID=0x1b80)
+    Renderer: NVIDIA GeForce GTX 1070 Ti (ID=0x1b82)
     Vendor:   NVIDIA
     VRAM:     8079 MB
-    Driver:   31.0.15.1748
+    Driver:   31.0.15.1694
 Initialize mono
-Mono path[0] = 'E:/Editor/2021.3.24f1/Editor/Data/Managed'
-Mono path[1] = 'E:/Editor/2021.3.24f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'E:/Editor/2021.3.24f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56788
+Mono path[0] = 'D:/Unity/2021.3.24f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity/2021.3.24f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/Unity/2021.3.24f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56832
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: E:/Editor/2021.3.24f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.176208 seconds.
+Register platform support module: D:/Unity/2021.3.24f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.006563 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 97.53 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 106.17 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  4.775 seconds
+- Completed reload, in  1.023 seconds
 Domain Reload Profiling:
-	ReloadAssembly (4776ms)
-		BeginReloadAssembly (4000ms)
+	ReloadAssembly (1024ms)
+		BeginReloadAssembly (208ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (496ms)
-			LoadAssemblies (3999ms)
+		EndReloadAssembly (673ms)
+			LoadAssemblies (207ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (113ms)
+			SetupTypeCache (159ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (30ms)
-			SetupLoadedEditorAssemblies (301ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (397ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
+				InitializePlatformSupportModulesInManaged (11ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (98ms)
-				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (128ms)
-				ProcessInitializeOnLoadMethodAttributes (67ms)
+				RefreshPlugins (106ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (188ms)
+				ProcessInitializeOnLoadMethodAttributes (90ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.006502 seconds.
+Registered in 0.014598 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image D:\UnityProjects\FinalProj\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\UnityProjects\FinalProj\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.79 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.46 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 System.Exception: Error! Visual Scripting: couldn't find visual scripting package
-  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\PackageVersionUtility.cs:31 
-  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugin\BoltCoreManifest.cs:11 
-  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:33 
-  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:48 
-  at Unity.VisualScripting.PluginContainer.Initialize () [0x00525] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:208 
-  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00009] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:32 
-  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00034] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:76 
-  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x0002c] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:114 
-  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x00032] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:48 
-  at Unity.VisualScripting.VSUsageUtility..cctor () [0x00000] in E:\FinalProject\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:22 
+  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in D:\UnityProjects\FinalProj\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\PackageVersionUtility.cs:31 
+  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in D:\UnityProjects\FinalProj\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugin\BoltCoreManifest.cs:11 
+  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in D:\UnityProjects\FinalProj\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:33 
+  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in D:\UnityProjects\FinalProj\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:48 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x00525] in D:\UnityProjects\FinalProj\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:208 
+  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00009] in D:\UnityProjects\FinalProj\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:32 
+  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00034] in D:\UnityProjects\FinalProj\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:76 
+  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x0002c] in D:\UnityProjects\FinalProj\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:114 
+  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x00032] in D:\UnityProjects\FinalProj\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:48 
+  at Unity.VisualScripting.VSUsageUtility..cctor () [0x00000] in D:\UnityProjects\FinalProj\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:22 
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
 UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
 UnityEngine.Logger:Log (UnityEngine.LogType,object)
@@ -130,43 +130,43 @@ UnityEngine.Debug:LogError (object)
 UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 
 Mono: successfully reloaded assembly
-- Completed reload, in  3.988 seconds
+- Completed reload, in  2.096 seconds
 Domain Reload Profiling:
-	ReloadAssembly (3989ms)
-		BeginReloadAssembly (151ms)
+	ReloadAssembly (2097ms)
+		BeginReloadAssembly (260ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
+			DisableScriptedObjects (9ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (19ms)
-		EndReloadAssembly (3696ms)
-			LoadAssemblies (2649ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (1672ms)
+			LoadAssemblies (233ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (281ms)
+			SetupTypeCache (385ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (50ms)
-			SetupLoadedEditorAssemblies (716ms)
+			RebuildScriptCaches (72ms)
+			SetupLoadedEditorAssemblies (1014ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (69ms)
-				ProcessInitializeOnLoadAttributes (618ms)
-				ProcessInitializeOnLoadMethodAttributes (19ms)
-				AfterProcessingInitializeOnLoad (5ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (110ms)
+				ProcessInitializeOnLoadAttributes (858ms)
+				ProcessInitializeOnLoadMethodAttributes (28ms)
+				AfterProcessingInitializeOnLoad (9ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (19ms)
+			AwakeInstancesAfterBackupRestoration (20ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
-Refreshing native plugins compatible for Editor in 1.22 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.75 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3120 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 22 unused Assets / (56.2 KB). Loaded Objects now: 3589.
-Memory consumption went from 114.8 MB to 114.8 MB.
-Total: 10.902300 ms (FindLiveObjects: 0.260200 ms CreateObjectMapping: 0.182900 ms MarkObjects: 10.388000 ms  DeleteObjects: 0.070300 ms)
+Unloading 22 unused Assets / (56.3 KB). Loaded Objects now: 3590.
+Memory consumption went from 114.9 MB to 114.9 MB.
+Total: 19.107700 ms (FindLiveObjects: 0.415500 ms CreateObjectMapping: 0.118200 ms MarkObjects: 18.394800 ms  DeleteObjects: 0.177500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -180,184 +180,113 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 18861.051368 seconds.
-  path: Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_3.mat
-  artifactKey: Guid(efe5e6b829bbdd7488e0c85d516b3a6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_3.mat using Guid(efe5e6b829bbdd7488e0c85d516b3a6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8615ea1f734ca16dbaa986b5334df71') in 0.204666 seconds 
+  Time since last request: 1935575.986654 seconds.
+  path: Assets/Travis Game Assets/Status Effects/Textures/NeonSword.tga
+  artifactKey: Guid(112c36aa6fb6b31459a6f24f67ca6df1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Travis Game Assets/Status Effects/Textures/NeonSword.tga using Guid(112c36aa6fb6b31459a6f24f67ca6df1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4762314487bbfa1939cf86ee65718daf') in 0.168795 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_20.mat
-  artifactKey: Guid(baec7316c3d55b3408a7611aaee2cd3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_20.mat using Guid(baec7316c3d55b3408a7611aaee2cd3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78abcc963d6d8595f2a2f0de8f85192d') in 0.047761 seconds 
+  Time since last request: 14.949581 seconds.
+  path: Assets/Travis Game Assets/Status Effects/Materials/Buff_01a_PointGlowBig_01.mat
+  artifactKey: Guid(5325e645a67a91b4b9f371dc035969c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Travis Game Assets/Status Effects/Materials/Buff_01a_PointGlowBig_01.mat using Guid(5325e645a67a91b4b9f371dc035969c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5caa81512108e63794f7e8bebf50bb95') in 0.123362 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_86.mat
-  artifactKey: Guid(0bdfed00879f86a49bcd693aae03b9aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_86.mat using Guid(0bdfed00879f86a49bcd693aae03b9aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e79010959da01766004ef6ad2f94227d') in 0.025838 seconds 
+  Time since last request: 0.000066 seconds.
+  path: Assets/Travis Game Assets/Status Effects/Materials/Buff_03a_Trail_01.mat
+  artifactKey: Guid(fc18349e16804e245945431f9ad07cfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Travis Game Assets/Status Effects/Materials/Buff_03a_Trail_01.mat using Guid(fc18349e16804e245945431f9ad07cfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a519a77b00b0faed3d804e8fdb73041d') in 0.029395 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_81.mat
-  artifactKey: Guid(9bbf712cc605b2f4fba69a19da8d3508) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_81.mat using Guid(9bbf712cc605b2f4fba69a19da8d3508) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7e92a4f43a8f5b3d1e145109071cd8d') in 0.026787 seconds 
+  Time since last request: 0.000052 seconds.
+  path: Assets/Travis Game Assets/Status Effects/Materials/Buff_02a_PointBlur_02.mat
+  artifactKey: Guid(98cc821a6b46e7c488562c8df10ed5fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Travis Game Assets/Status Effects/Materials/Buff_02a_PointBlur_02.mat using Guid(98cc821a6b46e7c488562c8df10ed5fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db7b1c6a1f91b957f7c76fcca5b62986') in 0.026067 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_48.mat
-  artifactKey: Guid(34954cdf02508a24da07ea2e74caee12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_48.mat using Guid(34954cdf02508a24da07ea2e74caee12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdf0f2bcb753a435e20e63aaa9cf7b68') in 0.031558 seconds 
+  Time since last request: 0.000063 seconds.
+  path: Assets/Travis Game Assets/Status Effects/Materials/Buff_02a_PointGlow_01.mat
+  artifactKey: Guid(b533c019761eb994a8718bbd549244f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Travis Game Assets/Status Effects/Materials/Buff_02a_PointGlow_01.mat using Guid(b533c019761eb994a8718bbd549244f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e483e7f072ccbf13cb4a7b8509a36ff3') in 0.026443 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_59.mat
-  artifactKey: Guid(450aff4e81ab6454982aa3d448444922) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_59.mat using Guid(450aff4e81ab6454982aa3d448444922) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9408603fafe274fb2427d7678a7b366') in 0.028395 seconds 
+  Time since last request: 53.160604 seconds.
+  path: Assets/Travis Game Assets/Status Effects/Prefabs/Buff_03a.prefab
+  artifactKey: Guid(7e691a0229efacd4cba2922df3888456) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Travis Game Assets/Status Effects/Prefabs/Buff_03a.prefab using Guid(7e691a0229efacd4cba2922df3888456) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e62fb93f15e11170debfbc8479f39ea2') in 0.047976 seconds 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_49.mat
-  artifactKey: Guid(0ce724cf14f043f44b252722b1060b90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_49.mat using Guid(0ce724cf14f043f44b252722b1060b90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58b7b0ed88ef4d1184f8d38cdf163bbf') in 0.023370 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_61.mat
-  artifactKey: Guid(08d0cd36555d659499a5726d2734657a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_61.mat using Guid(08d0cd36555d659499a5726d2734657a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50467306b5897febc8abeab1e6d3f883') in 0.029211 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_57.mat
-  artifactKey: Guid(dfbd76864acb0844f9749b98e361612d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_57.mat using Guid(dfbd76864acb0844f9749b98e361612d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cefb71abf852ae226b6816dc3dd8fa05') in 0.029736 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_56.mat
-  artifactKey: Guid(d4c62d6f53a08bd4c84a029b17f41c26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_56.mat using Guid(d4c62d6f53a08bd4c84a029b17f41c26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e582c7c300f363a8ee6dcfdd54701405') in 0.025270 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_33.mat
-  artifactKey: Guid(983cdb7286c43424bbf012996255dea1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_33.mat using Guid(983cdb7286c43424bbf012996255dea1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33d56f967a19112eab0199c212b3642e') in 0.028722 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_35.mat
-  artifactKey: Guid(61f9f4d400343c246a4995631c065fa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_35.mat using Guid(61f9f4d400343c246a4995631c065fa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '748fa3645c24f5151c4f1e64c53d456b') in 0.029595 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_39.mat
-  artifactKey: Guid(fed6818ad0dd0684bafa7fb443b55657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_39.mat using Guid(fed6818ad0dd0684bafa7fb443b55657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd73c6f920fbc236245cee015c265cdb') in 0.029887 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_19.mat
-  artifactKey: Guid(b5bde5a16e94711489470453a62620d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_19.mat using Guid(b5bde5a16e94711489470453a62620d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8c208b8d81698e1088eee6290f3631e') in 0.029051 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_13.mat
-  artifactKey: Guid(e29e495d0606fc147a9bbcaa64e8cf1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_13.mat using Guid(e29e495d0606fc147a9bbcaa64e8cf1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8919423df8c0cacbf1c25e69fa87d2e1') in 0.027451 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_9.mat
-  artifactKey: Guid(f5b78004dafb6654ead94cc750c945ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_9.mat using Guid(f5b78004dafb6654ead94cc750c945ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46f7528199642234824665557321a3e8') in 0.021534 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_10.mat
-  artifactKey: Guid(86380b9676666274384ae75bc224a6dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_10.mat using Guid(86380b9676666274384ae75bc224a6dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36487da8abd79ba24f77ae1d1f23594a') in 0.029989 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_30.mat
-  artifactKey: Guid(8f33c6701311fdb4688295fdea423565) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_30.mat using Guid(8f33c6701311fdb4688295fdea423565) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ff286ccdf81d9b2aa807961bc1b56ec') in 0.027858 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_12.mat
-  artifactKey: Guid(d2b9c08409ba5a14c8c1a6fcd90023e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/KoreanTraditionalPattern_Effect/Materials/TraditionalPatternMaterials/Pattern_12.mat using Guid(d2b9c08409ba5a14c8c1a6fcd90023e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1e8b0413a75d0245e62a341e14770d5') in 0.024379 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 12.058139 seconds.
-  path: Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom20-06.prefab
-  artifactKey: Guid(4a57a31b4bf761b469b9892f6b8ffbf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/KoreanTraditionalPattern_Effect/Prefabs/Bottom/Bottom20-06.prefab using Guid(4a57a31b4bf761b469b9892f6b8ffbf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0eb9b78906d260d3829273cfd38756e3') in 0.073931 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 42.431302 seconds.
-  path: Assets/KoreanTraditionalPattern_Effect/Materials/Fly/Fly01-02/ExlosionAura_02.mat
-  artifactKey: Guid(5ba544c15e05e9043b45c2ec361f6d95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/KoreanTraditionalPattern_Effect/Materials/Fly/Fly01-02/ExlosionAura_02.mat using Guid(5ba544c15e05e9043b45c2ec361f6d95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a701182636947b55868bd6dd641704d') in 0.015330 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/KoreanTraditionalPattern_Effect/Materials/Fly/Fly01-02/RingTrail.mat
-  artifactKey: Guid(8a39bb4ddffc2d445995fce9d66a6a94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/KoreanTraditionalPattern_Effect/Materials/Fly/Fly01-02/RingTrail.mat using Guid(8a39bb4ddffc2d445995fce9d66a6a94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '378241a62e1be1aa797f19147ef6584f') in 0.019137 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/KoreanTraditionalPattern_Effect/Materials/Fly/Fly01-02/Trail_02.mat
-  artifactKey: Guid(32b5ee37c8b3c3d459aa47819ba97fcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/KoreanTraditionalPattern_Effect/Materials/Fly/Fly01-02/Trail_02.mat using Guid(32b5ee37c8b3c3d459aa47819ba97fcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fb81093695540aa2d0ceac15390e717') in 0.015895 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/KoreanTraditionalPattern_Effect/Materials/Fly/Fly01-02/Trail_Flame_00.mat
-  artifactKey: Guid(af7d30e2054556e4da4e779c9e01b5d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/KoreanTraditionalPattern_Effect/Materials/Fly/Fly01-02/Trail_Flame_00.mat using Guid(af7d30e2054556e4da4e779c9e01b5d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfece4618b99916ed5180ccc5c5b1a0c') in 0.018580 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/KoreanTraditionalPattern_Effect/Materials/Fly/Fly01-02/RingSmoke_00.mat
-  artifactKey: Guid(977b4a8603ed43d45bc4293a4de25245) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/KoreanTraditionalPattern_Effect/Materials/Fly/Fly01-02/RingSmoke_00.mat using Guid(977b4a8603ed43d45bc4293a4de25245) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0969233adb3ffeac65497c1418784f2f') in 0.016855 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.557365 seconds.
-  path: Assets/KoreanTraditionalPattern_Effect/Materials/Fly/Fly09-09/ExlosionAura_00.mat
-  artifactKey: Guid(17df45cfdc13b624b89289f462a63c02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/KoreanTraditionalPattern_Effect/Materials/Fly/Fly09-09/ExlosionAura_00.mat using Guid(17df45cfdc13b624b89289f462a63c02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0809fe4c624b81861ff40532affcf499') in 0.011218 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/KoreanTraditionalPattern_Effect/Materials/Fly/Fly09-09/Ring_Energy_02.mat
-  artifactKey: Guid(031d12c745ed64f458c646bc5bd4dc51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/KoreanTraditionalPattern_Effect/Materials/Fly/Fly09-09/Ring_Energy_02.mat using Guid(031d12c745ed64f458c646bc5bd4dc51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b0774ed630517dfc7dda4e12cf90cc0') in 0.023771 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/KoreanTraditionalPattern_Effect/Materials/Fly/Fly09-09/Star.mat
-  artifactKey: Guid(0d1a5a23f4127e0488a7de17b1b32963) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/KoreanTraditionalPattern_Effect/Materials/Fly/Fly09-09/Star.mat using Guid(0d1a5a23f4127e0488a7de17b1b32963) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '905063f1ecabe81cdf8986a20c1ef76e') in 0.018197 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/KoreanTraditionalPattern_Effect/Materials/Fly/Fly09-09/RingTrail.mat
-  artifactKey: Guid(02df1778915bca04f871bf34642b2fca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/KoreanTraditionalPattern_Effect/Materials/Fly/Fly09-09/RingTrail.mat using Guid(02df1778915bca04f871bf34642b2fca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6e14650a0943543b5aaf2a26602bf48') in 0.015154 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/KoreanTraditionalPattern_Effect/Materials/Fly/Fly09-09/Trail_Flame_01.mat
-  artifactKey: Guid(a332301b0baca524dbfe29b9ebc923c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/KoreanTraditionalPattern_Effect/Materials/Fly/Fly09-09/Trail_Flame_01.mat using Guid(a332301b0baca524dbfe29b9ebc923c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1acc03f4a0e73d94ca31fb430c8762b') in 0.014931 seconds 
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.013063 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\UnityProjects\FinalProj\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\UnityProjects\FinalProj\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.38 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.Exception: Error! Visual Scripting: couldn't find visual scripting package
+  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in D:\UnityProjects\FinalProj\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\PackageVersionUtility.cs:31 
+  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in D:\UnityProjects\FinalProj\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugin\BoltCoreManifest.cs:11 
+  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in D:\UnityProjects\FinalProj\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:33 
+  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in D:\UnityProjects\FinalProj\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:48 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x00525] in D:\UnityProjects\FinalProj\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:208 
+  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00009] in D:\UnityProjects\FinalProj\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:32 
+  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00034] in D:\UnityProjects\FinalProj\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:76 
+  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x0002c] in D:\UnityProjects\FinalProj\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:114 
+  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x0000d] in D:\UnityProjects\FinalProj\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:33 
+  at Unity.VisualScripting.VSUsageUtility..cctor () [0x00000] in D:\UnityProjects\FinalProj\FinalProject\FinalProject\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:22 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.479 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2481ms)
+		BeginReloadAssembly (349ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (68ms)
+		EndReloadAssembly (1986ms)
+			LoadAssemblies (282ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (473ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (84ms)
+			SetupLoadedEditorAssemblies (859ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (103ms)
+				ProcessInitializeOnLoadAttributes (691ms)
+				ProcessInitializeOnLoadMethodAttributes (38ms)
+				AfterProcessingInitializeOnLoad (16ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (25ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 6.31 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3100 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 16 unused Assets / (24.8 KB). Loaded Objects now: 3637.
+Memory consumption went from 115.6 MB to 115.6 MB.
+Total: 28.285100 ms (FindLiveObjects: 0.678800 ms CreateObjectMapping: 0.274400 ms MarkObjects: 27.202700 ms  DeleteObjects: 0.125500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting
